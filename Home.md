@@ -1,2 +1,2 @@
-- [RAMDanceToolkit English](RAMDanceToolkit%20English)
-- [RAMDanceToolkit 日本語]( RAMDanceToolkit%20日本語 )
+- [RAMDanceToolkit English](RAMDanceToolkit-English)
+- [RAMDanceToolkit 日本語]( RAMDanceToolkit-日本語 )
