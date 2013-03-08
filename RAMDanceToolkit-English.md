@@ -25,6 +25,8 @@ Whole documentation of "Reactor for Awareness in Motion"
 （ここに testApp<<ofBaseApp と testApp<<ramBaseApp<<ofBaseApp の図）
 
 
+[[/Images/structure.png]]
+
 
 	- Toolkitの中身の仕組み図(Ito 3/8)
 	- フィルタの概念:
