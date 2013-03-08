@@ -12,38 +12,112 @@
 - Utility
 
 
-## ramBaseApp
-ramBaseApp is inherited from ofBaseApp, to be inherited by testApp.  
-ramBaseApp provide several functions that can be used on testApp.
+# ramBaseApp
+
+ramBaseApp provide several functions that can be used on testApp, and pass recieved OSC message automatically (generally listening on port 10000) to ramActorManager for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
 
 
-#### void testApp::sumFunction(…)
+---
 
-location      | access |
---------------|--------|
-ramBaseApp    | public |
+### void ramBaseApp::drawActor(const ramActor &actor)
 
-ramBaseApp is inherited from ofBaseApp, to be inherited by testApp.  
-ramBaseApp provide several functions that can be used on testApp.
+text here
+
+---
+
+### void ramBaseApp::drawRigid(const ramRigidBody &rigid)
+
+text here
+
+---
+
+### void ramBaseApp::onActorSetup(const ramActor &actor)
+
+text here
+
+---
+
+### void ramBaseApp::onActorExit(const ramActor &actor)
+
+text here
+
+---
+
+### void ramBaseApp::onRigidSetup(const ramRigidBody &rigid)
+
+text here
+
+---
+
+### void ramBaseApp::onRigidExit(const ramRigidBody &rigid)
+
+text here
+
+---
+
+void ramBaseApp::collision(const ramNode& jointA, const ramNode& jointB)
+
+text here
+
+---
+
+### void ramBaseApp::setDrawFloorAuto(bool v = true)
+
+text here
 
 
-#### void testApp::sumFunction(…)
 
-location      | access |
---------------|--------|
-ramBaseApp    | public |
+# global shortcut
 
-ramBaseApp is inherited from ofBaseApp, to be inherited by testApp.  
-ramBaseApp provide several functions that can be used on testApp.
+ramBaseApp provide several functions that can be used on testApp, and pass recieved OSC message automatically (generally listening on port 10000) to ramActorManager for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
 
 
-#### void testApp::sumFunction(…)
 
-location      | access |
---------------|--------|
-ramBaseApp    | public |
+---
 
-ramBaseApp is inherited from ofBaseApp, to be inherited by testApp.  
-ramBaseApp provide several functions that can be used on testApp.
+### void ramBaseApp::drawActor(const ramActor &actor)
 
+text here
+
+---
+
+### void ramBaseApp::drawRigid(const ramRigidBody &rigid)
+
+text here
+
+---
+
+### void ramBaseApp::onActorSetup(const ramActor &actor)
+
+text here
+
+---
+
+### void ramBaseApp::onActorExit(const ramActor &actor)
+
+text here
+
+---
+
+### void ramBaseApp::onRigidSetup(const ramRigidBody &rigid)
+
+text here
+
+---
+
+### void ramBaseApp::onRigidExit(const ramRigidBody &rigid)
+
+text here
+
+---
+
+void ramBaseApp::collision(const ramNode& jointA, const ramNode& jointB)
+
+text here
+
+---
+
+### void ramBaseApp::setDrawFloorAuto(bool v = true)
+
+text here
 
