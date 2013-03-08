@@ -55,10 +55,15 @@ Whole documentation of "Reactor for Awareness in Motion"
 	NodeIdentifier + NodeFinder
 
 
-## Download compiled application
+## Downloads 
 
-- [Mac OS X 10.7+](#) (xxxxMB)
-- [Windows 7]() (xxxxMB)
+### Latest version (x.x.x)
+
+- Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+- Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+
+### Other versions
+Download links are available on [YCAM InterLab server](#).
 
 
 ## Licenses
