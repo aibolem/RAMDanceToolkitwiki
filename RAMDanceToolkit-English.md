@@ -6,13 +6,17 @@ The toolkit itself is built using a project file in libs/. This toolkit is used 
 
 
 ## Links
-- [Introduction to RAMDanceToolkit application (vimeo)](#)  
-Screen cast concerning how to use RAMDanceToolkit application by Kyle McDonald
-- [Getting started with RAMDanceToolkit for developer (vimeo)](#)  
-Screen cast concerning how to develop using RAMDanceToolkit API  by Kyle McDonald
-- [RAM API Reference](RAM Reference)   
+
+### [Introduction to RAMDanceToolkit application (vimeo)](#) 
+Screencast concerning how to use RAMDanceToolkit application by Kyle McDonald
+
+### [Getting started with RAMDanceToolkit for developer (vimeo)](#)  
+Screencast concerning how to develop using RAMDanceToolkit API by Kyle McDonald
+
+### [RAM API Reference](RAM API Reference)   
 The reference for the RAMDanceToolkit core API
-- [RAMDanceToolkit - YCAM InterLab](#)   
+
+### [RAMDanceToolkit - YCAM InterLab](#)   
 Whole documentation of "Reactor for Awareness in Motion"
 
 
