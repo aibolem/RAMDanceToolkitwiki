@@ -35,7 +35,7 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 Regularly testApp is inherited from ofBaseApp but all of testApp in RAMDanceToolkit projects are inherited from `ramBaseApp` which is inherited from ofBaseApp. The regular methods in testApp can be used as your usual hacking. ramBaseApp provides additional methods and events to testApp to manipulate the data sent from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or other motion capture system. 
 
-[[/Images/Home/inherited.png]]
+[[/Images/Home/inheritence.png]]
 
 RAMDanceToolkit starts running from writing one line code in your testApp::setup() like:
 
@@ -45,12 +45,16 @@ RAMDanceToolkit starts running from writing one line code in your testApp::setup
 		
 		ramInitialize(10000); // osc port
 	}
-	
+
+---
+
 
 ### OSC data format
 	
 	- インプットのフォーマット : OSCフォーマット(ito3/8)
 
+
+---
 
  
 ### Scene
