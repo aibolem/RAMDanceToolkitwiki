@@ -70,6 +70,8 @@ Draws plane using passed ramNode.
 
 ---
 
+<br><br>
+
 
 # ramSimpleShadow
 
@@ -107,6 +109,9 @@ Sets shadow alpha.
 
 
 
+---
+
+<br><br>
 
 
 # ramColor
@@ -143,7 +148,17 @@ are available as preset.
 	// ramColor::RED_NORMAL returns ofColor::fromHex(0xff6666)
 	ofSerColor( ramColor::RED_NORMAL );
 
+---
+
+<br><br>
+
+
 # ramGraphView
+
+---
+
+<br><br>
+
 
 # ramNodeLine
 
