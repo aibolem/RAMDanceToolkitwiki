@@ -32,8 +32,77 @@
 
 ## ramBaseApp
 
-ramBaseApp provide several functions that can be used on testApp, and pass recieved OSC message automatically (generally listening on port 10000) to ramActorManager for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
+ramBaseApp pass recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
 
+testApp is inherited several functions and events from ramBaseApp to manipulate actors and rigidbodies.  
+
+	//--------------------------------------------------------------
+	void testApp::setup()
+	{
+	
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::update()
+	{
+	
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::draw()
+	{
+		
+	}
+	
+	
+	
+	#pragma mark - ram methods
+	//--------------------------------------------------------------
+	void testApp::drawActor(const ramActor &actor)
+	{
+		// To be called as many as number of recieving OSC data of ramActor.  
+		// Each of the actor is passed as the argument `const ramActor &actor`.
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::drawRigid(const ramRigidBody &rigid)
+	{
+		// To be called as many as number of recieving OSC data of ramRigidBody.  
+		// Each of the actor is passed as the argument `const ramRigidBody &rigid`.
+	}
+	
+	
+	#pragma mark - ram Events
+	
+	//--------------------------------------------------------------
+	void testApp::onActorSetup(const ramActor &actor)
+	{
+		// To be called when ramActorManager start to recieve OSC data of new ramActor.  
+		// The new actor is passed as the argument `const ramActor &actor`.
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::onActorExit(const ramActor &actor)
+	{
+		// To be called when `const ramActor &actor` is outdated.  
+		// 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::onRigidSetup(const ramRigidBody &rigid)
+	{
+		// To be called when ramActorManager start to recieve OSC data of new ramRigidBody.  
+		// The new rigidbody is passed as the argument `const ramRigidBody &rigid`.
+	}
+	
+	//--------------------------------------------------------------
+	void testApp::onRigidExit(const ramRigidBody &rigid)
+	{
+		// To be called when `const ramRigidBody &rigid` is outdated.  
+		// 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
+	}
+<!--
+---
 
 #### void ramBaseApp::drawActor(const ramActor &actor)
 
@@ -76,13 +145,17 @@ To be called when `const ramRigidBody &rigid` is outdated.
 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
 
 ---
-<!--
+
 #### void ramBaseApp::collision(const ramNode& jointA, const ramNode& jointB)
 
 text here
 
 ---
 -->
+
+
+And ramBaseApp provides some more functions.
+
 
 #### void ramBaseApp::setDrawFloorAuto(bool v = true)
 
@@ -91,7 +164,8 @@ Floor is not drawn if `bool v` is false.
 
 
 
----
+
+
 
 
 
@@ -108,9 +182,13 @@ ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relat
 Both of these classes are inherited from ramNodeArray which provides some calculation methods to control positions. See also [ofxNodeArary](https://github.com/YCAMInterlab/ofxNodeArray) inherited by ramNodeArray.
 
 
+---
+
 #### int ramNodeArray::getNumNode()
 
 Returns size of the nodes in ramNodeArray.
+
+---
 
 #### ramNode& ramNodeArray::getNode(int node_id)
 
@@ -175,10 +253,99 @@ Therefore the code to access nodes in your testApp.cpp will be like this:
 
 ---
 
+#### bool ramNodeArray::isActor()
+
+Returns true if the ramNodeArray is ramActor.
+
+---
+
+#### bool ramNodeArray::isRigid()
+
+Returns true if the ramNodeArray is ramRigidBody.
+
+---
+
+#### bool ramNodeArray::isTypeOf(ramNodeArrayType t)
+
+Returns true if the ramNodeArray is same type to `ramNodeArrayType t` which is defined in _ramActor.h_.
+
+	enum ramNodeArrayType
+	{
+		RAM_NODEARRAY_TYPE_ACTOR     = 0,
+		RAM_NODEARRAY_TYPE_RIGIDBODY = 1
+	};
+
+---
+
+#### string& ramNodeArray::getName()
+
+Return the name of node array e.g. _Yoko_, _Cyril_, _Yasu_ …
+
+---
+
+#### bool ramNodeArray::operator==(const ramNodeArray &arr)
+
+Return true if the right hand side ramNodeArray is same to left hand side.
+
+---
+
+#### bool ramNodeArray::operator!=(const ramNodeArray &arr)
+
+Return true if the right hand side ramNodeArray is not same to left hand side.
+
+---
+
+#### ramNodeArray& ramNodeArray::operator+(const ramNodeArray &arr)
+
+Returns ramNodeArray which has synthesized global position.
+
+---
+
+#### ramNodeArray& ramNodeArray::operator+=(const ramNodeArray &arr)
+
+Returns ramNodeArray which has synthesized global position.
+
+---
+
+#### ramNodeArray& ramNodeArray::operator-(const ramNodeArray &arr)
+
+Returns ramNodeArray which has synthesized global position.
+
+---
+
+#### ramNodeArray& ramNodeArray::operator-=(const ramNodeArray &arr)
+
+Returns ramNodeArray which has synthesized global position.
+
+---
+
+#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
 
 
 
+---
 
+#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+
+
+
+---
+
+#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+
+
+
+---
+
+#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+
+
+---
+
+#### float ramNodeArray::getTimestamp()
+
+Returns the last update client time of the ramNodeArray.
+The last update client time is updated when RAMDanceToolkit recieved new OSC data of the node array.
 
 ---
 
