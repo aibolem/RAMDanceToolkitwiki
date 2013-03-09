@@ -3,7 +3,6 @@
 - [English]()
 - [日本語]()
 
-<br> 
 
 ## RAM API Reference
 
