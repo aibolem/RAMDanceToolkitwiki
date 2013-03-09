@@ -133,7 +133,8 @@ And ramBaseApp provides some more functions.
 
 Floor is not drawn if `bool v` is false.
 
----
+
+<hr style="margin-bottom:50px">
 
 
 

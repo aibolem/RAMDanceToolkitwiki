@@ -3,6 +3,8 @@
 
 RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_.
 
+## ramGraphics
+
 ---
 
 #### void ramBox(const ramNode& o, float size)
@@ -66,6 +68,46 @@ Draws plane using passed ramNode.
 	ramStripe(some_node1, some_node2, some_node3, some_node4, some_node5, … some_node12);
 
 
+---
+
+
+## ramSimpleShadow
+
+To draw shadow on the floor, wrap your code to draw something using ramBeginShadow(), ramEndShadow().
+
+---
+
+#### void ramBeginShadow()
+
+Starts drawing shadow.
+
+---
+
+#### void ramBeginShadow()
+
+Ends drawing shadow.
+
+---
+
+#### void ramSetShadowAlpha(float alpha)
+
+Sets shadow alpha.
+
+---
+
+#### void ramSetShadowAlpha(float alpha)
+
+Sets shadow alpha.
+
+---
+
+#### void ramEnableShadow(bool v = true)
+
+Sets shadow alpha.
+
+
+
+
 
 ## ramColor
 
@@ -101,6 +143,8 @@ are available as preset.
 	// ramColor::RED_NORMAL returns ofColor::fromHex(0xff6666)
 	ofSerColor( ramColor::RED_NORMAL );
 
+## ramGraphView
 
+## ramNodeLine
 
 
