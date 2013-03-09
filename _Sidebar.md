@@ -1,4 +1,9 @@
-## RAM API Reference (English)
+# Top Page
+
+- [English]()
+- [日本語]()
+
+# RAM API Reference
 
 - [Core]()
 - [Events]()
@@ -8,5 +13,5 @@
 - [UI]()
 - [Utility]()
 
-[サイドバーを編集](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
+[Edit sidebar](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
 
