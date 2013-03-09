@@ -7,12 +7,11 @@
 ## RAM API Reference
 
 - [Core]()
+- [Graphics]()
 - [Events]()
 - [Filter]()
-- [Graphics]()
 - [Recognizer]()
 - [UI]()
 - [Utility]()
 
 [Edit sidebar](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
-
