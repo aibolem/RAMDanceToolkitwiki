@@ -7,9 +7,9 @@ RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_
 ### table of contents
 
 - [ramGraphics](#wiki-ramGraphics)
-- [ramSimpleShadow](#wiki-ramNodeArray)
-- [ramColor](#wiki-ramNode)
-- [ramGraphView](#wiki-ramActorManager)
+- [ramSimpleShadow](#wiki-ramSimpleShadow)
+- [ramColor](#wiki-ramColor)
+- [ramGraphView](#wiki-ramGraphView)
 - [ramNodeLine](#wiki-ramNodeLine)
 
 
