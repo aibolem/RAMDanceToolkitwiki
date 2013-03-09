@@ -1,6 +1,5 @@
-## Structure
 
-### ramBaseApp
+## ramBaseApp
 
 [[/Images/Home/inheritence.png]]
 
@@ -15,24 +14,34 @@ RAMDanceToolkit starts running from writing one line code in your testApp::setup
 		ramInitialize(10000); // osc port
 	}
 
----
 
 
-### OSC data format
+## OSC data format
 	
 	- インプットのフォーマット : OSCフォーマット(ito3/8)
 
 
----
 
  
-### Scene
+## Scene
  
  
 [[/Images/Home/structure.png]]
 
-We call the sequence this image shows as `Scene`.  
+This image shows an abstract sequence of signal processing flow.  
 
+1. Recieive motion data from MOTIONER or other sencer
+2. In update phase, 
+3. In draw phase, 
+4. Output visuals to screen, projector, or 
+
+We call this sequence as `Scene`.  
+
+
+### Filter
+### Recognizer
+### Events
+### Visualizer
 
 	- フィルタの概念:
 	     - 各フィルタの説明＋スクリーンショット（3/8）
