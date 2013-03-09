@@ -2,7 +2,7 @@ RAMDanceTooklkit is the primary source/application for the "Reactor for Awarenes
 
 The toolkit itself is built using a project file in libs/. This toolkit is used by applications in apps/ such as RAMDanceToolkit which demonstrates a number of scenes built with the toolkit. addons/ contains submodules that refer to addons which are not shipped with openFrameworks.
 
-[[/Images/ram-1.png]]
+[[/Images/Home/ram.png]]
 
 
 # Links
@@ -22,10 +22,13 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 
 # Structure
-（ここに testApp<<ofBaseApp と testApp<<ramBaseApp<<ofBaseApp の図）
+
+[[/Images/Home/inherited.png]]
+
+rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明
 
 
-[[/Images/structure.png]]
+[[/Images/Home/structure.png]]
 
 	- インプットのフォーマット : OSCフォーマット(ito3/8)
 
