@@ -25,6 +25,19 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 
 
+## Downloads 
+
+### Latest version (x.x.x)
+
+- Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+- Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+
+### Other versions
+Download links are available on [YCAM InterLab server](#).
+
+
+
+
 
 ## Licenses
 RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald is licensed under the Apache License, Version2.0
@@ -102,16 +115,6 @@ We call the sequence this image shows as `Scene`.
 	- 各シーンごとのスクリーンショット＋パラメータの説明：shmizu
 
 
-
-## Downloads 
-
-### Latest version (x.x.x)
-
-- Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
-- Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
-
-### Other versions
-Download links are available on [YCAM InterLab server](#).
 
 
 
