@@ -8,8 +8,13 @@ The toolkit itself is built using a project file in libs/. This toolkit is used 
 
 
 
+## [RAMDanceToolkit - YCAM InterLab](#)   
+Whole documentation of "Reactor for Awareness in Motion"
 
-## Links
+
+
+
+## Video
 
 ### [Introduction to RAMDanceToolkit application (vimeo)](#) 
 Screencast concerning how to use RAMDanceToolkit application by Kyle McDonald
@@ -17,11 +22,33 @@ Screencast concerning how to use RAMDanceToolkit application by Kyle McDonald
 ### [Getting started with RAMDanceToolkit for developer (vimeo)](#)  
 Screencast concerning how to develop using RAMDanceToolkit API by Kyle McDonald
 
-### [RAM API Reference](RAM API Reference)   
+
+
+
+
+
+## Licenses
+RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald is licensed under the Apache License, Version2.0
+
+    Copyright 2012-2013 YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    
+
+
+## [RAM API Reference](RAM API Reference)   
 The reference for the RAMDanceToolkit core API
 
-### [RAMDanceToolkit - YCAM InterLab](#)   
-Whole documentation of "Reactor for Awareness in Motion"
 
 
 
@@ -33,9 +60,9 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 ### ramBaseApp
 
-Regularly testApp is inherited from ofBaseApp but all of testApp in RAMDanceToolkit projects are inherited from `ramBaseApp` which is inherited from ofBaseApp. The regular methods in testApp can be used as your usual hacking. ramBaseApp provides additional methods and events to testApp to manipulate the data sent from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or other motion capture system. 
-
 [[/Images/Home/inheritence.png]]
+
+Regularly testApp is inherited from ofBaseApp but all of testApp in RAMDanceToolkit projects are inherited from `ramBaseApp` which is inherited from ofBaseApp. The regular methods in testApp can be used as your usual hacking. ramBaseApp provides additional methods and events to testApp to manipulate the data sent from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or other motion capture system. 
 
 RAMDanceToolkit starts running from writing one line code in your testApp::setup() like:
 
@@ -61,6 +88,8 @@ RAMDanceToolkit starts running from writing one line code in your testApp::setup
  
  
 [[/Images/Home/structure.png]]
+
+We call the sequence this image shows as `Scene`.  
 
 
 	- フィルタの概念:
@@ -89,20 +118,3 @@ Download links are available on [YCAM InterLab server](#).
 
 
 
-
-## Licenses
-RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald is licensed under the Apache License, Version2.0
-
-    Copyright 2012-2013 YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
