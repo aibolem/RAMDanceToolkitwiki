@@ -3,7 +3,7 @@
 
 ## ramBaseApp
 
-ramBaseApp pass recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
+ramBaseApp passes recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
 
 testApp is inherited several functions and events from ramBaseApp to manipulate actors and rigidbodies.  
 
@@ -134,11 +134,11 @@ And ramBaseApp provides some more functions.
 Floor is not drawn if `bool v` is false.
 
 
---
+---
 
+<br><br><br><br><br><br><br><br>
 
-
-<h2 style="margin-top:50px;">ramActor, ramRigidBody, ramNodeArray</h2>
+## ramActor, ramRigidBody, ramNodeArray
 
 ramActor always has 23 nodes these has a parent‐child relationship. 
 ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
