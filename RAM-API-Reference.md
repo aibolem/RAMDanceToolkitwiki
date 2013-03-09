@@ -166,16 +166,8 @@ Floor is not drawn if `bool v` is false.
 
 
 
-
-
-
-
-
-
-
 ## ramActor, ramRigidBody, ramNodeArray
 
-RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody.   
 ramActor always has 23 nodes these has a parent‐child relationship. 
 ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
 
@@ -478,8 +470,8 @@ Alias to _transformGL()_ .
 
 #### void ramNode::endTransform()
 
-Alias to _restoreTransformGL()_ .
-The sample code putted at ramNode::operator ofVec3f() didn't include orientation so here is the another sample to use orientation of ramNode.
+Alias to _restoreTransformGL()_ .  
+The sample code putted at ramNode::operator ofVec3f() didn't use the orientation so here is the another sample to use orientation of ramNode.
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -565,6 +557,73 @@ Returns the reference to self which is limited using `float length`.
 #### ramNode ramNode::getLimited(const SuperClass &base, float length)
 
 Returns the copy of self which is limited using `float length`.
+
+
+
+
+
+
+
+
+
+
+
+## ramActorManager
+
+RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
+There are some shortcuts you can use anywhere to access the actors.
+
+---
+
+#### ramActorManager& getActorManager()
+
+Returns reference to ramActorManager.
+
+---
+
+#### ramNodeArray& getNodeArray(string name)
+
+Returns reference to ramNodeArray whose name is same to `string name`.
+
+---
+
+#### ramNodeArray& getNodeArray(int index)
+
+Returns reference to ramNodeArray whose index is same to `int index`.  
+For example, the index of first actor RAMDanceToolkit recieved is `0`.
+
+---
+
+#### ramNodeArray& hasNodeArray(string name)
+
+Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
+
+---
+
+#### ramNodeArray& hasNodeArray(string name)
+
+Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
+
+---
+
+#### size_t getNumNodeArray()
+
+Returns number of the ramNodeArray RAMDanceToolkit is recieving at the time.
+
+---
+
+#### vector<string>& getNodeArrayNames()
+
+Returns all names of ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+
+---
+
+#### vector<ramNodeArray> getAllNodeArrays()
+
+Returns all ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+
+
+
 
 
 
