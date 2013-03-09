@@ -21,6 +21,6 @@
 
 ## Project information base
 
-- [RAMDanceToolkit - YCAM InterLab]
+- [RAMDanceToolkit - YCAM InterLab]()
 
 [Edit sidebar](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
