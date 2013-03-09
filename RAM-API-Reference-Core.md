@@ -8,9 +8,6 @@
 - [ramActorManager](#wiki-ramActorManager)
 
 
-<br>
-
-
 <h1 id="wiki-ramBaseApp">ramBaseApp</h1>
 
 ramBaseApp passes recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
