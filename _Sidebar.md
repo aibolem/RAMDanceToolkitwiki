@@ -1,30 +1,30 @@
 ## Top Page
 
-- [English]()
-- [日本語]()
+- [English](RAMDanceToolkit-English)
+- [日本語](RAMDanceToolkit-日本語)
 
 
 ## RAM API Reference
 
-- [Core]()
-- [Graphics]()
-- [Events]()
-- [Filter]()
-- [Recognizer]()
-- [UI]()
-- [Utility]()
+- [Core](RAM-API-Reference-Core)
+- [Graphics](RAM-API-Reference-Graphics)
+- [Events](RAM-API-Reference-Events)
+- [Filter](RAM-API-Reference-Filter)
+- [Recognizer](RAM-API-Reference-Recognizer)
+- [UI](RAM-API-Reference-UI)
+- [Utility](RAM-API-Reference-Utility)
 
 
 ## Movies on Vimeo
 
-- [Introduction to RAMDanceToolkit application]()
-- [Getting started with RAMDanceToolkit for developer]()
+- [Introduction to RAMDanceToolkit application](#)
+- [Getting started with RAMDanceToolkit for developer](#)
 
 
 ## RAMDanceToolkit Scenes
 
-- [How to create scene]()
-- [Preset scenes]()
+- [How to create scene](How to create scene)
+- [Preset scenes](Preset scenes)
 
 <!--
 - [Abacus]()
@@ -54,6 +54,6 @@
 
 ## Project information base
 
-- [RAMDanceToolkit - YCAM InterLab]()
+- [RAMDanceToolkit - YCAM InterLab](http://interlab.ycam.jp/en/)
 
 [Edit sidebar](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
