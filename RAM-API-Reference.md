@@ -1,6 +1,6 @@
 # classes
 - Core
-	- [ramBaseApp](RAM API Reference: ramBaseApp)
+	- [ramBaseApp](RAM API Reference &raquo; ramBaseApp)
 	- ramActor, ramRigidBody, ramNodeArray
 	- ramNode
 	- ramActorManager
