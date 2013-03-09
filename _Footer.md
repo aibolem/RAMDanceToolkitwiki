@@ -1,3 +1,1 @@
-## Footer
-
-This API Reference (RAMDanceToolkit 1.0.0) is created on 2013-03-09
+This Wiki page and API References (RAMDanceToolkit 1.0.0) is created on 2013-03-09
