@@ -5,7 +5,7 @@ The toolkit itself is built using a project file in libs/. This toolkit is used 
 [[/Images/ram-1.png]]
 
 
-## Links
+# Links
 
 ### [Introduction to RAMDanceToolkit application (vimeo)](#) 
 Screencast concerning how to use RAMDanceToolkit application by Kyle McDonald
@@ -21,7 +21,7 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 
 
-## Structure
+# Structure
 （ここに testApp<<ofBaseApp と testApp<<ramBaseApp<<ofBaseApp の図）
 
 
@@ -57,7 +57,7 @@ Whole documentation of "Reactor for Awareness in Motion"
 	NodeIdentifier + NodeFinder
 
 
-## Downloads 
+# Downloads 
 
 ### Latest version (x.x.x)
 
@@ -68,7 +68,7 @@ Whole documentation of "Reactor for Awareness in Motion"
 Download links are available on [YCAM InterLab server](#).
 
 
-## Licenses
+# Licenses
 RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle Mcdonald is licensed under the Apache License, Version2.0
 
     Copyright 2012-2013 YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle Mcdonald

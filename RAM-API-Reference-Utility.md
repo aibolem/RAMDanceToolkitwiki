@@ -2,7 +2,7 @@
 # Utility
 
 
-## ramNodeFinder
+# ramNodeFinder
 
 ramNodeFinder searches node(s) from nodearrays managed by ramActorManager.  
 If you want to manipulate not ramNodeArray but specific nodes, it is more easier than using for-loop. Proberbly ramNodeFinder is used not in drawActor(), drawRigid() but draw().
@@ -65,7 +65,7 @@ Returns all nodes which matches to target joint id.
 
 
 
-## ramNodeIdentifer
+# ramNodeIdentifer
 
 A tiny class to identify node.  
 Generally it's used for ramNodeFinder.
@@ -148,7 +148,7 @@ Puts name and id to stream.
 
 
 
-## ramCameraSettings
+# ramCameraSettings
 
 ramCameraSettings stores some settings used for control ofCamera.  
 
@@ -177,7 +177,7 @@ Sample XML format is in _RAMDanceToolkit/resources/Settings/cam.moving.xml_
 
 #### ramCameraSettings(ofxXmlSettings& setting)
 
-Loads settings from XML.
+Loads one setting from XML
 
 ---
 
@@ -185,14 +185,18 @@ Loads settings from XML.
 
 Loads settings from XML.
 
+---
 
 
-## ramTSVCoder
+# ramTSVCoder
 
-## ramNodeArrayBuffer
+#### bool load(const string filePath)
 
+Returns true if load `const string filePath` succeeded.
 
+---
 
-## ramCompoundContainer
+#### bool save(const ramSession &src)
 
-## ramFading
+Returns true if save `const ramSession &src` as tsv file.
+

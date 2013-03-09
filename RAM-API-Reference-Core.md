@@ -1,7 +1,7 @@
 
 # Core
 
-## ramBaseApp
+# ramBaseApp
 
 ramBaseApp passes recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
 
@@ -138,7 +138,7 @@ Floor is not drawn if `bool v` is false.
 
 <br><br><br><br><br><br><br><br>
 
-## ramActor, ramRigidBody, ramNodeArray
+# ramActor, ramRigidBody, ramNodeArray
 
 ramActor always has 23 nodes these has a parent‐child relationship. 
 ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
@@ -332,7 +332,7 @@ The last update client time is updated when RAMDanceToolkit recieved new OSC dat
 
 
 
-## ramNode
+# ramNode
 
 ramNode is used as a joint of ramActor and ramRigidBody which is inherited from [ofNode](http://www.openframeworks.cc/documentation/3d/ofNode.html). See also [ofxNodeArray::Node](https://github.com/YCAMInterlab/ofxNodeArray) .
 
@@ -540,7 +540,7 @@ Returns the copy of self which is limited using `float length`.
 
 
 
-## ramActorManager
+# ramActorManager
 
 RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
 There are some shortcuts you can use anywhere to access the actors.
