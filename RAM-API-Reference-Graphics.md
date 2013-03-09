@@ -7,52 +7,52 @@ RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_
 
 ---
 
-#### void ramBox(const ramNode& o, float size)
+##### void ramBox(const ramNode& o, float size)
 
 Same to ofBox but has collision detection.  
 Example of collision detection is available on _SoundCube.h_ scene in RAMDanceToolkit.
 
 ---
 
-#### void ramSphere(const ramNode& o, float radius)
+##### void ramSphere(const ramNode& o, float radius)
 
 Same to ofSphere but has collision detection.  
 Example of collision detection is available on _SoundCube.h_ scene in RAMDanceToolkit.
 
 ---
 
-#### void ramSphere(const ramNode& o, float radius)
+##### void ramSphere(const ramNode& o, float radius)
 
 Same to ofSphere but has collision detection.
 
 ---
 
-#### void ramDrawBasicActor(const ramActor& actor)
+##### void ramDrawBasicActor(const ramActor& actor)
 
 Draws ramActor using simple shape.
 
 ---
 
-#### void ramDrawBasicRigid(const ramRigidBody& rigid)
+##### void ramDrawBasicRigid(const ramRigidBody& rigid)
 
 Draws ramRigidBody using simple shape.
 
 ----
 
-#### void ramDrawNodes(const ramNodeArray& nodeArray)
+##### void ramDrawNodes(const ramNodeArray& nodeArray)
 
 Draws ramNodeArray using simple shape.  
 Use this method When you need to check is the ramNodeArray ramActor or ramRigidBody.
 
 ----
 
-#### void ramDrawNodeCorresponds(const ramNodeArray &a, const ramNodeArray &b)
+##### void ramDrawNodeCorresponds(const ramNodeArray &a, const ramNodeArray &b)
 
 Draws lines between correspond nodes. Two ramNodeArrays must have same number of nodes.
 
 ----
 
-#### void ramStripe(...)
+##### void ramStripe(...)
 
 Draws plane using passed ramNode.  
 `vector&lt;ramNode&gt;` or many `ramNode` can be passed as argument:
@@ -77,31 +77,31 @@ To draw shadow on the floor, wrap your code to draw something using ramBeginShad
 
 ---
 
-#### void ramBeginShadow()
+##### void ramBeginShadow()
 
 Starts drawing shadow.
 
 ---
 
-#### void ramBeginShadow()
+##### void ramBeginShadow()
 
 Ends drawing shadow.
 
 ---
 
-#### void ramSetShadowAlpha(float alpha)
+##### void ramSetShadowAlpha(float alpha)
 
 Sets shadow alpha.
 
 ---
 
-#### void ramSetShadowAlpha(float alpha)
+##### void ramSetShadowAlpha(float alpha)
 
 Sets shadow alpha.
 
 ---
 
-#### void ramEnableShadow(bool v = true)
+##### void ramEnableShadow(bool v = true)
 
 Sets shadow alpha.
 

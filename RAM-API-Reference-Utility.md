@@ -9,7 +9,7 @@ If you want to manipulate not ramNodeArray but specific nodes, it is more easier
 
 ---
 
-#### ramNodeFinder()
+##### ramNodeFinder()
 
 Constructor.
 
@@ -19,7 +19,7 @@ Constructor.
 
 ---
 
-#### ramNodeFinder(const ramNodeIdentifer& copy)
+##### ramNodeFinder(const ramNodeIdentifer& copy)
 
 Constructor.
 	
@@ -28,32 +28,32 @@ Constructor.
 
 ---
 
-#### void setTargetName(string name_)
+##### void setTargetName(string name_)
 
 Sets target name.
 
 ---
 
-#### void setJointID(int index_)
+##### void setJointID(int index_)
 
 Sets target joint id.
 
 ---
 
-#### bool ramNodeFinder::findOne(ramNode &node)
+##### bool ramNodeFinder::findOne(ramNode &node)
 
 Returns true if ramActorManager has ramNodeArray whose name is same to ramNodeFinder::name, and the ramNodeArray has node which has id same to ramNodeFinder::index. 
 If it's true, search result node is set to `ramNode &node`.
 
 ---
 
-#### vector<ramNode> findAll()
+##### vector<ramNode> findAll()
 
 Returns all nodes which matches to target name and target joint id.
 
 ---
 
-#### vector<ramNode> findByID()
+##### vector<ramNode> findByID()
 
 Returns all nodes which matches to target joint id.
 
@@ -72,73 +72,73 @@ Generally it's used for ramNodeFinder.
 
 ---
 
-#### ramNodeIdentifer()
+##### ramNodeIdentifer()
 
 Constructor.
 
 ---
 
-#### ramNodeIdentifer(int index)
+##### ramNodeIdentifer(int index)
 
 Constructor.
 
 ---
 
-#### ramNodeIdentifer(const string &name)
+##### ramNodeIdentifer(const string &name)
 
 Constructor.
 
 ---
 
-#### ramNodeIdentifer(const string &name, int index)
+##### ramNodeIdentifer(const string &name, int index)
 
 Constructor.
 
 ---
 
-#### ramNodeIdentifer(const ramNodeIdentifer& copy)
+##### ramNodeIdentifer(const ramNodeIdentifer& copy)
 
 Constructor.
 
 ---
 
-#### ramNodeIdentifer& operator=(const ramNodeIdentifer& copy)
+##### ramNodeIdentifer& operator=(const ramNodeIdentifer& copy)
 
 Name and id are copied from right hand side.
 
 ---
 
-#### void set(const string &name, int index)
+##### void set(const string &name, int index)
 
 Sets target name and target id.
 
 ---
 
-#### void set(const string &name)
+##### void set(const string &name)
 
 Sets target name.
 
 ---
 
-#### void set(int index)
+##### void set(int index)
 
 Sets target id.
 
 ---
 
-#### void clear()
+##### void clear()
 
 Clears target name and target id.
 
 ---
 
-#### bool isValid() const
+##### bool isValid() const
 
 Checks target name and target id are set.
 
 ---
 
-#### friend ostream& operator<<(ostream &os, const ramNodeIdentifer& o)
+##### friend ostream& operator<<(ostream &os, const ramNodeIdentifer& o)
 
 Puts name and id to stream.
 
@@ -175,13 +175,13 @@ Sample XML format is in _RAMDanceToolkit/resources/Settings/cam.moving.xml_
 ---
 
 
-#### ramCameraSettings(ofxXmlSettings& setting)
+##### ramCameraSettings(ofxXmlSettings& setting)
 
 Loads one setting from XML
 
 ---
 
-#### static vector<ramCameraSettings> loadSettings(ofxXmlSettings& setting)
+##### static vector<ramCameraSettings> loadSettings(ofxXmlSettings& setting)
 
 Loads settings from XML.
 
@@ -190,13 +190,13 @@ Loads settings from XML.
 
 # ramTSVCoder
 
-#### bool load(const string filePath)
+##### bool load(const string filePath)
 
 Returns true if load `const string filePath` succeeded.
 
 ---
 
-#### bool save(const ramSession &src)
+##### bool save(const ramSession &src)
 
 Returns true if save `const ramSession &src` as tsv file.
 
