@@ -3,7 +3,20 @@
 
 RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_.
 
-# ramGraphics
+
+### table of contents
+
+- [ramGraphics](#wiki-ramGraphics)
+- [ramSimpleShadow](#wiki-ramNodeArray)
+- [ramColor](#wiki-ramNode)
+- [ramGraphView](#wiki-ramActorManager)
+- [ramNodeLine](#wiki-ramNodeLine)
+
+
+<br>
+
+
+<h1 id="wiki-ramGraphics">ramGraphics</h1>
 
 ---
 
@@ -55,7 +68,7 @@ Draws lines between correspond nodes. Two ramNodeArrays must have same number of
 ##### void ramStripe(...)
 
 Draws plane using passed ramNode.  
-`vector&lt;ramNode&gt;` or many `ramNode` can be passed as argument:
+`vector<ramNode>` or many `ramNode` can be passed as argument:
 	
 	// vector
 	vector<ramNode> nodes;
@@ -73,7 +86,7 @@ Draws plane using passed ramNode.
 <br>
 
 
-# ramSimpleShadow
+<h1 id="wiki-ramSimpleShadow">ramSimpleShadow</h1>
 
 To draw shadow on the floor, wrap your code to draw something using ramBeginShadow(), ramEndShadow().
 
@@ -114,7 +127,8 @@ Sets shadow alpha.
 <br>
 
 
-# ramColor
+<h1 id="wiki-ramColor">ramColor</h1>
+
 
 `ramColor::RED_NORMAL`,
 `ramColor::RED_DEEP`,
@@ -147,13 +161,14 @@ are available as preset.
 <br>
 
 
-# ramGraphView
+<h1 id="wiki-ramGraphView">ramGraphView</h1>
+
 
 ---
 
 <br>
 
 
-# ramNodeLine
+<h1 id="wiki-ramNodeLine">ramNodeLine</h1>
 
 

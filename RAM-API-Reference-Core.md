@@ -1,7 +1,15 @@
 # Core
 
-## TOC
+### table of contents
+
 - [ramBaseApp](#wiki-ramBaseApp)
+- [ramActor, ramRigidBody, ramNodeArray](#wiki-ramNodeArray)
+- [ramNode](#wiki-ramNode)
+- [ramActorManager](#wiki-ramActorManager)
+
+
+<br>
+
 
 <h1 id="wiki-ramBaseApp">ramBaseApp</h1>
 
@@ -140,7 +148,7 @@ Floor is not drawn if `bool v` is false.
 
 <br>
 
-# ramActor, ramRigidBody, ramNodeArray
+<h1 id="wiki-ramNodeArray">ramActor, ramRigidBody, ramNodeArray</h1>
 
 ramActor always has 23 nodes these has a parent‐child relationship. 
 ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
@@ -336,7 +344,7 @@ The last update client time is updated when RAMDanceToolkit recieved new OSC dat
 <br>
 
 
-# ramNode
+<h1 id="wiki-ramNode">ramNode</h1>
 
 ramNode is used as a joint of ramActor and ramRigidBody which is inherited from [ofNode](http://www.openframeworks.cc/documentation/3d/ofNode.html). See also [ofxNodeArray::Node](https://github.com/YCAMInterlab/ofxNodeArray) .
 
@@ -539,7 +547,7 @@ Returns the copy of self which is limited using `float length`.
 <br>
 
 
-# ramActorManager
+<h1 id="wiki-ramActorManager">ramActorManager</h1>
 
 RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
 There are some shortcuts you can use anywhere to access the actors.

@@ -4,6 +4,12 @@
 - [日本語](RAMDanceToolkit-日本語)
 
 
+## Movies on Vimeo
+
+- [Introduction to RAMDanceToolkit application](#)
+- [Getting started with RAMDanceToolkit for developer](#)
+
+
 ## RAM API Reference
 
 - [Core](RAM-API-Reference-Core)
@@ -13,12 +19,6 @@
 - [Recognizer](RAM-API-Reference-Recognizer)
 - [UI](RAM-API-Reference-UI)
 - [Utility](RAM-API-Reference-Utility)
-
-
-## Movies on Vimeo
-
-- [Introduction to RAMDanceToolkit application](#)
-- [Getting started with RAMDanceToolkit for developer](#)
 
 
 ## RAMDanceToolkit Scenes
