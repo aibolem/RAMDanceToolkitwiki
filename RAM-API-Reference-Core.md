@@ -134,11 +134,11 @@ And ramBaseApp provides some more functions.
 Floor is not drawn if `bool v` is false.
 
 
-<hr style="margin-bottom:50px">
+--
 
 
 
-## ramActor, ramRigidBody, ramNodeArray
+<h2 style="margin-top:50px;">ramActor, ramRigidBody, ramNodeArray</h2>
 
 ramActor always has 23 nodes these has a parent‐child relationship. 
 ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
