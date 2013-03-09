@@ -4,8 +4,28 @@
 - [日本語]()
 
 
+## RAM API Reference
+
+- [Core]()
+- [Graphics]()
+- [Events]()
+- [Filter]()
+- [Recognizer]()
+- [UI]()
+- [Utility]()
+
+
+## Movies on Vimeo
+
+- [Introduction to RAMDanceToolkit application]()
+- [Getting started with RAMDanceToolkit for developer]()
+
+
 ## RAMDanceToolkit Scenes
 
+- [How to create scene]()
+- [Preset scenes]()
+<!--
 - [Abacus]()
 - [BasicActor]()
 - [BigBox]()
@@ -29,21 +49,7 @@
 - [Stamp]()
 - [ThreePoints]()
 - [UpsideDown]()
-
-## RAM API Reference
-
-- [Core]()
-- [Graphics]()
-- [Events]()
-- [Filter]()
-- [Recognizer]()
-- [UI]()
-- [Utility]()
-
-## Movies on Vimeo
-
-- [Introduction to RAMDanceToolkit application]()
-- [Getting started with RAMDanceToolkit for developer]()
+-->
 
 ## Project information base
 
