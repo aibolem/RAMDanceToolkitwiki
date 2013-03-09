@@ -59,7 +59,7 @@ Returns all nodes which matches to target joint id.
 
 ---
 
-<br><br>
+<br>
 
 
 
@@ -143,7 +143,7 @@ Puts name and id to stream.
 ---
 
 
-<br><br>
+<br>
 
 
 # ramCameraSettings
@@ -186,7 +186,7 @@ Loads settings from XML.
 ---
 
 
-<br><br>
+<br>
 
 
 # ramTSVCoder

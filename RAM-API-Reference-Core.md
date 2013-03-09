@@ -135,7 +135,7 @@ Floor is not drawn if `bool v` is false.
 
 ---
 
-<br><br>
+<br>
 
 # ramActor, ramRigidBody, ramNodeArray
 
@@ -330,7 +330,7 @@ The last update client time is updated when RAMDanceToolkit recieved new OSC dat
 ---
 
 
-<br><br>
+<br>
 
 
 # ramNode
@@ -533,7 +533,7 @@ Returns the copy of self which is limited using `float length`.
 
 
 
-<br><br>
+<br>
 
 
 # ramActorManager

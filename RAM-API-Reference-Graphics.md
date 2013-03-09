@@ -70,7 +70,7 @@ Draws plane using passed ramNode.
 
 ---
 
-<br><br>
+<br>
 
 
 # ramSimpleShadow
@@ -111,34 +111,28 @@ Sets shadow alpha.
 
 ---
 
-<br><br>
+<br>
 
 
 # ramColor
 
-
 `ramColor::RED_NORMAL`,
 `ramColor::RED_DEEP`,
 `ramColor::RED_LIGHT`,
-
 `ramColor::GREEN_NORMAL`,
 `ramColor::GREEN_DEEP`,
 `ramColor::GREEN_LIGHT`,
-
 `ramColor::BLUE_NORMAL`,
 `ramColor::BLUE_DEEP`,
 `ramColor::BLUE_LIGHT`,
-
 `ramColor::YELLOW_NORMAL`,
 `ramColor::YELLOW_DEEP`,
 `ramColor::YELLOW_LIGHT`,
-
 `ramColor::BLACK`,
 `ramColor::DARK_GRAY`,
 `ramColor::GRAY`,
 `ramColor::LIGHT_GRAY`,
 `ramColor::WHITE`,
-
 `ramColor::DARK_GRAY_ALPHA`,
 `ramColor::GRAY_ALPHA`,
 `ramColor::LIGHT_GRAY_ALPHA`,
@@ -150,14 +144,14 @@ are available as preset.
 
 ---
 
-<br><br>
+<br>
 
 
 # ramGraphView
 
 ---
 
-<br><br>
+<br>
 
 
 # ramNodeLine
