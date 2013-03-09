@@ -1,3 +1,4 @@
+（要伊藤さん、竹下さんからのRAM概要説明と差し替え）
 RAMDanceTooklkit is the primary source/application for the "Reactor for Awareness in Motion" Joint Research Project with Yoko Ando at Yamaguchi Center for Arts and Media. The other source is the Motioner application for accessing data from the custom inertial motion sensor system.
 
 The toolkit itself is built using a project file in libs/. This toolkit is used by applications in apps/ such as RAMDanceToolkit which demonstrates a number of scenes built with the toolkit. addons/ contains submodules that refer to addons which are not shipped with openFrameworks.
@@ -25,7 +26,20 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 [[/Images/Home/inherited.png]]
 
-rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明rambaseappの役割説明　rambaseappの役割説明
+testApp is inherited from ofBaseApp regularly, but all of testApp in RAMDanceToolkit projects are inherited from *ramBaseApp* which is inherited from ofBaseApp. The regular methods in testApp can be used as your usual hacking. ramBaseApp provides additional methods and events to testApp to manipulate the data sent from MOTIONER or other motion capture system. 
+
+RAMDanceToolkit starts running from writing one line code in your testApp::setup() like:
+
+	void testApp::setup()
+	{
+		// do something…
+		
+		ramInitialize(10000); // osc port
+	}
+	
+ 
+ 
+
 
 
 [[/Images/Home/structure.png]]
