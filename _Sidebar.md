@@ -11,7 +11,7 @@
 
 
 ## RAM API Reference
-
+- [Structure](RAM-API-Reference-Structure)
 - [Core](RAM-API-Reference-Core)
 - [Graphics](RAM-API-Reference-Graphics)
 - [Events](RAM-API-Reference-Events)
