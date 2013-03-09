@@ -156,10 +156,14 @@ text here
 
 And ramBaseApp provides some more functions.
 
+---
 
 #### void ramBaseApp::setDrawFloorAuto(bool v = true)
 
 Floor is not drawn if `bool v` is false.
+
+---
+
 
 
 
@@ -319,26 +323,39 @@ Returns ramNodeArray which has synthesized global position.
 
 ---
 
-#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+#### ramNodeArray& ramNodeArray::lerp(const ramNodeArray &base, float t)
 
-
-
----
-
-#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
-
-
+Returns the reference to self which is lerped using `float t`.
 
 ---
 
-#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+#### ramNodeArray ramNodeArray::getLerpd(const SuperClass &base, float t)
 
-
+Returns the copy of self which is lerped using `float t`.
 
 ---
 
-#### bool ramNodeArray::xxxxxxxxxxxxxxxxx
+#### ramNodeArray& ramNodeArray::normalize(const ramNodeArray &base, float length)
 
+Returns the reference to self which is normalized using `float length`.
+
+---
+
+#### ramNodeArray ramNodeArray::getNormalized(const SuperClass &base, float length)
+
+Returns the copy of self which is normalized using `float length`.
+
+---
+
+#### ramNodeArray& ramNodeArray::limited(const ramNodeArray &base, float length)
+
+Returns the reference to self which is limited using `float length`.
+
+---
+
+#### ramNodeArray ramNodeArray::getLimited(const SuperClass &base, float length)
+
+Returns the copy of self which is limited using `float length`.
 
 ---
 
@@ -352,3 +369,10 @@ The last update client time is updated when RAMDanceToolkit recieved new OSC dat
 
 
 ## ramActorManager
+
+
+
+
+
+
+
