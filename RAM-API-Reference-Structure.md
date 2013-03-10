@@ -60,29 +60,25 @@ The data for ramRigidBody will come into:
  
 [[/Images/Home/structure.png]]
 
-This image shows an abstract sequence of signal processing flow.  
+This image shows the idea of an abstract sequence of signal processing flow in RAMDanceToolkit.  
 
 1. Recieive motion data from MOTIONER or other sencer
-2. In update phase, 
-3. In draw phase, 
-4. Output visuals to screen, projector, or 
-
-We call this sequence as `Scene`.  
-
-
-### Filter
-	- フィルタの概念:
-### Recognizer
-	- レコグナイザの概念: 
-### Events
-	- イベントの概念
-### Visualizer
-	- ヴィジュアライザの概念:
+2. Update phase:
+	- Converting motion data using `Filter`
+	- Data analysis using `Recognizer`
+	- Triggering `Event` 
+	- Update `Object` interact with dancer
+	- Bypass 
+3. Draw phase
+ 	- `Vizualize` using the result of update
+ 	- Draw `Object`
+4. Output visuals to screen, projector, or other expression environment. This expression is expected to feedback to dancers as the ideas of next movement.
 
 
+We call this sequence as `Scene` consists `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
 
+The Most simple way to implement a `scene` is writing code in your testApp. Such as using `ramBaseScene` and `ramSceneManager` is easy to manage many scenes in one project.
 
-
-
+`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one. See also [How to create scene](How to create scene), and the other RAM API References.
 
 
