@@ -81,30 +81,35 @@ We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `
 ### Filter example
 
 +180 degree rotation is added to the actor data.
+
 [[/Images/API-Structure/pic-filter.png]]
 
 
 ### Recognizer example
 
 Circle tracking.
+
 [[/Images/API-Structure/pic-recognizer.png]]
 
 
 ### Events
 
 Triggering when actor touches some objects.
+
 [[/Images/API-Structure/pic-event.png]]
 
 
 ### Visualizer
 
 Visualizing the relation between nodes as line. 
+
 [[/Images/API-Structure/pic-visualizer.png]]
 
 
 ### Object
 
 Chain putted on a joint.
+
 [[/Images/API-Structure/pic-object.png]]
 
 
