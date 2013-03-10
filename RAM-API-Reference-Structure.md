@@ -1,7 +1,7 @@
 
 ## ramBaseApp
 
-[[/Images/Home/inheritence.png]]
+[[/Images/API-Structure/fig-inheritence.png]]
 
 Regularly testApp is inherited from ofBaseApp but all of testApp in RAMDanceToolkit projects are inherited from `ramBaseApp` which is inherited from ofBaseApp. The regular methods in testApp can be used as your usual hacking. ramBaseApp provides additional methods and events to testApp to manipulate the data sent from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or other motion capture system. 
 
@@ -58,7 +58,7 @@ The data for ramRigidBody will come into:
 ## Scene
  
  
-[[/Images/Home/structure.png]]
+[[/Images/API-Structure/fig-structure.png]]
 
 This image shows the idea of an abstract sequence of signal processing flow in RAMDanceToolkit.  
 
@@ -75,7 +75,23 @@ This image shows the idea of an abstract sequence of signal processing flow in R
 4. Output visuals to screen, projector, or other expression environment. This expression is expected to feedback to dancers as the ideas of next movement.
 
 
-We call this sequence as `Scene` consists `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
+We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
+
+
+### Filter
+[[/Images/API-Structure/pic-filter.png]]
+
+### Recognizer
+[[/Images/API-Structure/pic-recognizer.png]]
+
+### Events
+[[/Images/API-Structure/pic-event.png]]
+
+### Visualizer
+[[/Images/API-Structure/pic-visualizer.png]]
+
+### Object
+[[/Images/API-Structure/pic-object.png]]
 
 The Most simple way to implement a `scene` is writing code in your testApp. Such as using `ramBaseScene` and `ramSceneManager` is easy to manage many scenes in one project.
 
