@@ -204,10 +204,3 @@ Loads settings from XML.
 ##### bool load(const string filePath)
 
 Returns true if load `const string filePath` succeeded.
-
----
-
-##### bool save(const ramSession &src)
-
-Returns true if save `const ramSession &src` as tsv file.
-
