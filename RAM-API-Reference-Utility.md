@@ -2,7 +2,7 @@
 
 ### Summary
 
-test test test test test test test test test test test test test 
+This page shows some useful class e.g. pick node by clicking, save/load motion data programatically, and store camera settings.
 
 ### table of content
 - [ramNodeFinder](#wiki-ramNodeFinder)
@@ -15,7 +15,7 @@ test test test test test test test test test test test test test
 <h1 id="wiki-ramNodeFinder">ramNodeFinder</h1>
 
 ramNodeFinder searches node(s) from nodearrays managed by ramActorManager.  
-If you want to manipulate not ramNodeArray but specific nodes, it is more easier than using for-loop. Proberbly ramNodeFinder is used not in drawActor(), drawRigid() but draw().
+If you want to manipulate not ramNodeArray but specific nodes, it is more easier than using for-loop. Proberbly ramNodeFinder is used not in drawActor(), drawRigid() but in draw().
 
 ---
 

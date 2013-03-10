@@ -98,7 +98,7 @@ Triggering when actor touches some objects.
 
 ### Visualizer
 
-Visualizing the relation between nodes as line.
+Visualizing the relation between nodes as line. 
 [[/Images/API-Structure/pic-visualizer.png]]
 
 
