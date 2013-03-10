@@ -17,7 +17,6 @@
 - [Events](RAM-API-Reference-Events)
 - [Filter](RAM-API-Reference-Filter)
 - [Recognizer](RAM-API-Reference-Recognizer)
-- [UI](RAM-API-Reference-UI)
 - [Utility](RAM-API-Reference-Utility)
 
 
