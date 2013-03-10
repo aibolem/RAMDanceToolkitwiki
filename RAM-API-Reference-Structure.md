@@ -78,20 +78,35 @@ This image shows the idea of an abstract sequence of signal processing flow in R
 We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
 
 
-### Filter
+### Filter example
+
 [[/Images/API-Structure/pic-filter.png]]
 
-### Recognizer
++180 degree rotation is added to the actor data.
+
+### Recognizer example
+
 [[/Images/API-Structure/pic-recognizer.png]]
 
+Circle tracking.
+
 ### Events
+
 [[/Images/API-Structure/pic-event.png]]
 
+Triggering when actor touches some objects.
+
 ### Visualizer
+
 [[/Images/API-Structure/pic-visualizer.png]]
 
+Visualizing the relation between nodes as line.
+
 ### Object
+
 [[/Images/API-Structure/pic-object.png]]
+
+Chain putted on a joint.
 
 The Most simple way to implement a `scene` is writing code in your testApp. Such as using `ramBaseScene` and `ramSceneManager` is easy to manage many scenes in one project.
 
