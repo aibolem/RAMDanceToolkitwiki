@@ -15,8 +15,8 @@
 - [Core](RAM-API-Reference-Core)
 - [Graphics](RAM-API-Reference-Graphics)
 - [Events](RAM-API-Reference-Events)
-- [Filter](RAM-API-Reference-Filter)
-- [Recognizer](RAM-API-Reference-Recognizer)
+- [Filters](RAM-API-Reference-Filters)
+- [Recognizers](RAM-API-Reference-Recognizers)
 - [Utility](RAM-API-Reference-Utility)
 
 
