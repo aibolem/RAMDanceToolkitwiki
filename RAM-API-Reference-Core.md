@@ -2,7 +2,7 @@
 
 ### Summary
 
-test test test test test test test test test test test test test test test test 
+This page shows basic structure of RAMDanceToolkit. After reading this page, you will know how to use the data sent from sensors as actor, rigid body and its nodes.
 
 ### table of contents
 

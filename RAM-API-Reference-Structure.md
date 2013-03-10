@@ -80,33 +80,33 @@ We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `
 
 ### Filter example
 
++180 degree rotation is added to the actor data.
 [[/Images/API-Structure/pic-filter.png]]
 
-+180 degree rotation is added to the actor data.
 
 ### Recognizer example
 
+Circle tracking.
 [[/Images/API-Structure/pic-recognizer.png]]
 
-Circle tracking.
 
 ### Events
 
+Triggering when actor touches some objects.
 [[/Images/API-Structure/pic-event.png]]
 
-Triggering when actor touches some objects.
 
 ### Visualizer
 
+Visualizing the relation between nodes as line.
 [[/Images/API-Structure/pic-visualizer.png]]
 
-Visualizing the relation between nodes as line.
 
 ### Object
 
+Chain putted on a joint.
 [[/Images/API-Structure/pic-object.png]]
 
-Chain putted on a joint.
 
 The Most simple way to implement a `scene` is writing code in your testApp. Such as using `ramBaseScene` and `ramSceneManager` is easy to manage many scenes in one project.
 
