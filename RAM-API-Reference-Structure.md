@@ -80,7 +80,7 @@ We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `
 
 ### Filter example
 
-+180 degree rotation is added to the actor data.
+Addeding +180 degree rotation to the actor data.
 
 [[/Images/API-Structure/pic-filter.png]]
 

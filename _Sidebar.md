@@ -18,8 +18,8 @@
 - [Filters](RAM-API-Reference-Filters)
 - [Recognizers](RAM-API-Reference-Recognizers)
 - [Physics](RAM-API-Reference-Physics)
+- [UI](RAM-API-Reference-Utility)
 - [Utility](RAM-API-Reference-Utility)
-- [Global Shortcuts](RAM-API-Reference-Global-Shortcuts)
 
 
 ## RAMDanceToolkit Scenes
