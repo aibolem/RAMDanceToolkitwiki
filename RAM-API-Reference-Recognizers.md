@@ -3,10 +3,15 @@
 
 ### Summary
 
-This page shows preset recognizers.
+This page shows some preset recognizers.
 
 ### table of contents
-- ....
+
+- [Introduction to ramBaseRecognizer](Introduction to ramBaseRecognizer)
+- [ramGeometry](ramGeometry)
+- [ramMovementAnalyser](ramMovementAnalyser)
+- [ramTimerdMovementAnalyser](ramTimerdMovementAnalyser)
+- [ramBalancer](ramBalancer)
 
 
 # Introduction to ramBaseRecognizer
