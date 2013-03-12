@@ -551,56 +551,109 @@ Returns the copy of self which is limited using `float length`.
 <h1 id="wiki-ramActorManager">ramActorManager</h1>
 
 RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
-There are some shortcuts you can use anywhere to access the actors.
+There are some shortcuts you can use in testApp and scene which inherits from ramBaseScene to access the actors.
 
 ---
 
 ##### ramActorManager& getActorManager()
 
-Returns reference to ramActorManager.
+`Shortcut` Returns reference to ramActorManager.
 
 ---
 
 ##### ramNodeArray& getNodeArray(string name)
 
-Returns reference to ramNodeArray whose name is same to `string name`.
+`Shortcut` Returns reference to ramNodeArray whose name is same to `string name`.
 
 ---
 
 ##### ramNodeArray& getNodeArray(int index)
 
-Returns reference to ramNodeArray whose index is same to `int index`.  
+`Shortcut` Returns reference to ramNodeArray whose index is same to `int index`.  
 For example, the index of first actor RAMDanceToolkit recieved is `0`.
 
 ---
 
 ##### ramNodeArray& hasNodeArray(string name)
 
-Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
+`Shortcut` Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
 
 ---
 
 ##### ramNodeArray& hasNodeArray(string name)
 
-Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
+`Shortcut` Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
 
 ---
 
 ##### size_t getNumNodeArray()
 
-Returns number of the ramNodeArray RAMDanceToolkit is recieving at the time.
+`Shortcut` Returns number of the ramNodeArray RAMDanceToolkit is recieving at the time.
 
 ---
 
 ##### vector<string>& getNodeArrayNames()
 
-Returns all names of ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+`Shortcut` Returns all names of ramNodeArray RAMDanceToolkit is recieving at the time as vector.
 
 ---
 
 ##### vector<ramNodeArray> getAllNodeArrays()
 
-Returns all ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+`Shortcut` Returns all ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+
+
+---
+
+##### ramNodeIdentifer& ramActorManager::getLastSelectedNodeIdentifer()
+
+xxxxxxxxxxxxxxxxx
+
+
+---
+
+##### ramNode* ramActorManager::getLastSelectedNode();
+
+
+---
+
+##### ramActorManager::getLastSelectedNodeArray();
+
+
+---
+
+##### ramActorManager::clearSelected();
+
+
+---
+
+##### ramActorManager::bool hasBus(const string& bus_name)
+
+
+---
+
+##### void ramActorManager::setBus(const string& bus_name, const ramNodeArray &arr) 
+
+
+---
+
+##### const ramNodeArray& ramActorManager::getBus(const string& bus_name)
+
+
+---
+
+##### map<string, ramNodeArray>& ramActorManager::getAllBus()
+
+
+---
+
+##### inline size_t ramActorManager::getNumBus()
+
+
+---
+
+##### inline size_t ramActorManager::eraseFromBus(const string& bus_name)
+
 
 
 
