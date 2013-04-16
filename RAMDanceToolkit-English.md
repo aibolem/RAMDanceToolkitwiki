@@ -1,7 +1,5 @@
 （要伊藤さん、竹下さんからのRAM概要説明と差し替え）  
-RAMDanceTooklkit is the primary source/application for the "Reactor for Awareness in Motion" Joint Research Project with Yoko Ando at Yamaguchi Center for Arts and Media. The other source is the Motioner application for accessing data from the custom inertial motion sensor system.
-
-The toolkit itself is built using a project file in libs/. This toolkit is used by applications in apps/ such as RAMDanceToolkit which demonstrates a number of scenes built with the toolkit. addons/ contains submodules that refer to addons which are not shipped with openFrameworks.
+RAM Dance Toolkit is a C++ creative coding toolkit to create environments for dance. This toolkit contains a GUI and functions to access, recognize, and process motion data to support creation of various kinds of feedback to dancers using code in an easy way. Toolkit uses openFrameworks, a software development toolkit for artists, which means users can use functions from both RAM Dance Toolkit and openFrameworks. RAM Dance Toolkit will also be published as application for Windows and Mac. As an application, users also can choreograph or rehearse with previously programmed environmental conditions, which we call “scenes”.
 
 [[/Images/Home/ram.png]]
 
