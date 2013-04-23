@@ -151,8 +151,8 @@ Floor is not drawn if `bool v` is false.
 
 <h1 id="wiki-ramNodeArray">ramActor, ramRigidBody, ramNodeArray</h1>
 
-ramActor always has 23 nodes these has a parent‐child relationship. 
-ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and fixed number of nodes.
+ramActor always has 23 nodes these nodes have a parent‐child relationship. 
+ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and a fixed number of nodes.
 
 ### Joints of ramActor
 
@@ -336,8 +336,8 @@ Returns the copy of self which is limited using `float length`.
 
 ##### float ramNodeArray::getTimestamp()
 
-Returns the last update client time of the ramNodeArray.
-The last update client time is updated when RAMDanceToolkit recieved new OSC data of the node array.
+Returns the last updated client time of the ramNodeArray.
+The last updated client time is updated when RAMDanceToolkit received new OSC data of the node array.
 
 ---
 
@@ -366,7 +366,7 @@ Returns true if ramNode has parent node.
 ##### ofVec3 ramNode::operator ofVec3f()
 
 Returns its global position.  
-It can be used as shortcut of _ofNode::getGlobalPosition()_ so here is a sample code to draw shapes using oF methods.
+It can be used as shortcut, ofNode::getGlobalPosition(). So, here is a sample code to draw shapes using oF methods.
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -456,7 +456,7 @@ Alias to _transformGL()_ .
 ##### void ramNode::endTransform()
 
 Alias to _restoreTransformGL()_ .  
-The sample code putted at ramNode::operator ofVec3f() didn't use the orientation so here is the another sample to use orientation of ramNode.
+The sample code put at ramNode::operator ofVec3f() didn't use the orientation so here is the another sample to use orientation of ramNode.
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -551,7 +551,7 @@ Returns the copy of self which is limited using `float length`.
 <h1 id="wiki-ramActorManager">ramActorManager</h1>
 
 RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
-There are some shortcuts you can use in testApp and scene which inherits from ramBaseScene to access the actors.
+Here are some shortcuts you can use in testApp and scene which inherits from ramBaseScene to access the actors.
 
 ---
 
