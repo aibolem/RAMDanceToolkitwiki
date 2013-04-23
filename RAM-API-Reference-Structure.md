@@ -1,4 +1,3 @@
-
 ## ramBaseApp
 
 [[/Images/API-Structure/fig-inheritence.png]]
@@ -62,7 +61,7 @@ The data for ramRigidBody will come into:
 
 This image shows the idea of an abstract sequence of signal processing flow in RAMDanceToolkit.  
 
-1. Recieive motion data from MOTIONER or other sencer
+1. Recieive motion data from MOTIONER or other sensor
 2. Update phase:
 	- Converting motion data using `Filter`
 	- Data analysis using `Recognizer`
@@ -80,7 +79,7 @@ We call this sequence as `Scene` consists of `Filter`, `Recognizer`, `Events`, `
 
 ### Filter example
 
-Addeding +180 degree rotation to the actor data.
+Adding +180 degree rotation to the actor data.
 
 [[/Images/API-Structure/pic-filter.png]]
 
@@ -108,7 +107,7 @@ Visualizing the relation between nodes as line.
 
 ### Object
 
-Chain putted on a joint.
+Chain put on a joint.
 
 [[/Images/API-Structure/pic-object.png]]
 
