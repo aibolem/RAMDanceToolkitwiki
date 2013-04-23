@@ -1,4 +1,3 @@
-
 # Graphics
 
 ### Summary
@@ -54,13 +53,13 @@ Draws ramRigidBody using simple shape.
 ##### void ramDrawNodes(const ramNodeArray& nodeArray)
 
 Draws ramNodeArray using simple shape.  
-Use this method When you need to check is the ramNodeArray ramActor or ramRigidBody.
+Use this method when you need to check whether it is the ramNodeArray, ramActor or ramRigidBody.
 
 ----
 
 ##### void ramDrawNodeCorresponds(const ramNodeArray &a, const ramNodeArray &b)
 
-Draws lines between correspond nodes. Two ramNodeArrays must have same number of nodes.
+Draws lines between the correspond nodes. Two ramNodeArrays must have same number of nodes.
 
 ----
 
@@ -93,31 +92,31 @@ To draw shadow on the floor, wrap your code to draw something using ramBeginShad
 
 ##### void ramBeginShadow()
 
-Starts drawing shadow.
+Start drawing shadow.
 
 ---
 
 ##### void ramBeginShadow()
 
-Ends drawing shadow.
+End drawing shadow.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Sets shadow alpha.
+Set shadow alpha.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Sets shadow alpha.
+Set shadow alpha.
 
 ---
 
 ##### void ramEnableShadow(bool v = true)
 
-Sets shadow alpha.
+Set shadow alpha.
 
 
 
