@@ -17,7 +17,7 @@ This page shows some preset recognizers.
 # Introduction to ramBaseRecognizer
 
 In RAMDanceToolkit 1.0.0, ramRecognizer is an experimental class.
-There are many case of analysis result which will be returned so currently this class doesn't have regular format. Please post an issue or send pull request if you have an ideas concerning this class. 
+There are many cases of analysis result which will be returned, so currently this class doesn't have a regular format. Please post an issue or send pull request if you have an idea concerning this class. 
 
 Current ramBaseRecognizer is empty:
 
