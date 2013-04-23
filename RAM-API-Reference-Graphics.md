@@ -92,31 +92,31 @@ To draw shadow on the floor, wrap your code to draw something using ramBeginShad
 
 ##### void ramBeginShadow()
 
-Start drawing shadow.
+Starts drawing shadow.
 
 ---
 
 ##### void ramBeginShadow()
 
-End drawing shadow.
+Ends drawing shadow.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Set shadow alpha.
+Sets shadow alpha.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Set shadow alpha.
+Sets shadow alpha.
 
 ---
 
 ##### void ramEnableShadow(bool v = true)
 
-Set shadow alpha.
+Sets shadow alpha.
 
 
 
