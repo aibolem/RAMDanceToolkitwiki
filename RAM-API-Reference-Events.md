@@ -1,4 +1,3 @@
-
 # Events
 
 
@@ -31,7 +30,7 @@ Here is a minimum example of new filter class "MyFilter".
 		}
 	};
 
-When you call update() implemented in ramBaseFilter, boolean which is returned by tick() is returned to callee. Cached calue will returned if you call update() many time in same frame.
+When you call update() implemented in ramBaseFilter, boolean which is returned by tick() is returned to a caller. Cached value will be returned if you call update() many time in same frame.
 
 	// testApp.h
 	MyEvent event;
