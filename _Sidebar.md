@@ -3,6 +3,9 @@
 - [English](Overview)
 - [日本語](Overview_Jp)
 
+**Getting started**
+
+- [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
 
 **Movies on Vimeo**
 
@@ -11,7 +14,6 @@
 
 
 **Introduction**
-- [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
 - [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit)
 - [How to create scene](How-to-create-Scene)
 - [Preset scenes](Preset-scenes)

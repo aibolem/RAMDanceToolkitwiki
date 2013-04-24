@@ -65,8 +65,7 @@ Run this shell script after cloning the repo.
 #### tasks of submodules.sh
 
 This script simply checkout the submodules, and apply ofxUI.patch at ofxUI directory.  
-ofxUI requires `GUI/NewMedia Fett.ttf` font file which is placed at `bin/data` so we have to duplicate the font to every project.  
-After applying this patch, the path to font file will be changed to `{RAM_ROOT}/resources/Fonts/FreeUniversal-Regular.ttf`.
+ofxUI requires `GUI/NewMedia Fett.ttf` font file which is placed at `bin/data` so we have to duplicate the font to every project. After applying this patch, the path to font file will be changed to `{RAM_ROOT}/resources/Fonts/FreeUniversal-Regular.ttf`.
 
 
 ### 2. download resources
