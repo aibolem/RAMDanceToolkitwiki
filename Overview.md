@@ -21,10 +21,16 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 ## Downloads 
 
-### Latest version (x.x.x)
+You can download latest version (v1.0.0) RAMDanceToolkit app and source code from the links below.
 
-- Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
-- Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+### Application
+
+- [for Mac OS](#) (10.7+, xxxxMB)
+- [for Windows](#) (7+, xxxMB)
+
+### Source code
+
+- [RAM_Release_v1_0_0](#) (Mac OS 10.7+, Windows 7+, xxxMB)
 
 <!--
 ### Other versions
@@ -35,7 +41,7 @@ Download links are available on [YCAM InterLab server](#).
 
 
 ## Licenses
-RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald is licensed under the Apache License, Version2.0
+RAMDanceToolkit by YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald is licensed under the [Apache License, Version2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
     Copyright 2012-2013 YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald
 
