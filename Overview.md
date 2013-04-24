@@ -5,9 +5,6 @@
 
 
 
-
-
-
 ## Links
 
 ### [Introduction to RAMDanceToolkit application (vimeo)](#) 
