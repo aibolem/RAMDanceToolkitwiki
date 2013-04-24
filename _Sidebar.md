@@ -12,7 +12,7 @@
 
 **Introduction**
 - [How to start RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
-- [Structure](Structure of RAMDanceToolkit)
+- [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit)
 - [How to create scene](How-to-create-Scene)
 - [Preset scenes](Preset_scenes)
 
