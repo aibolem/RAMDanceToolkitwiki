@@ -12,12 +12,12 @@
 
 **Introduction**
 - [How to start RAMDanceToolkit](How_to_start_RAMDanceToolkit)
+- [Structure](Structure)
 - [How to create scene](How_to_create_scene)
 - [Preset scenes](Preset_scenes)
 
 
 **RAM API Reference**
-- [Structure](RAM-API-Reference-Structure)
 - [Core](RAM-API-Reference-Core)
 - [Graphics](RAM-API-Reference-Graphics)
 - [Events](RAM-API-Reference-Events)
@@ -53,7 +53,7 @@
 - [UpsideDown]()
 -->
 
-## Project information base
+**Project information base**
 
 - [RAMDanceToolkit - YCAM InterLab](http://interlab.ycam.jp/en/)
 
