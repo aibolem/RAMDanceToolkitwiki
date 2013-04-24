@@ -1,7 +1,7 @@
 ## Top Page
 
-- [English](RAMDanceToolkit-English)
-- [日本語](RAMDanceToolkit-日本語)
+- [English](Overview)
+- [日本語](Overview_Jp)
 
 
 ## Movies on Vimeo
