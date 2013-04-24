@@ -26,9 +26,10 @@ Whole documentation of "Reactor for Awareness in Motion"
 - Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
 - Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
 
+<!--
 ### Other versions
 Download links are available on [YCAM InterLab server](#).
-
+-->
 
 
 
