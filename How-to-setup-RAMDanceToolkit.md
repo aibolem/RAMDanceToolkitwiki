@@ -43,5 +43,38 @@ RAMDanceToolkit core library.
 
 ### resources
 
-Fonts, Images, Default Setting files, MotionData, Sound files.  
+Shared resources which are load from each application. You can use `ramToRecourcePath(...)` in your code to get the path to directory.
+
 As noted at Compiled Application section, recorded motion data is in the `MotionData`. 
+
+
+## Clone RAMDanceTookit repository
+
+If you clone the RAM repo, you should do two tasks before writing code.
+
+### 1. Submodules checkout and applying patch to modify ofxUI
+
+This repo doesn't include the addons in `RAMDanceToolkit/addons` which are managed as submodules.
+
+Run this shell script after cloning the repo.
+
+	$ cd {RAM_ROOT}
+	$ ./submodules.sh
+
+
+#### tasks of submodules.sh
+
+This script simply checkout the submodules, and apply ofxUI.patch at ofxUI directory.  
+ofxUI requires `GUI/NewMedia Fett.ttf` font file which is placed at `bin/data` so we have to duplicate the font to every project.  
+After applying this patch, the path to font file will be changed to `{RAM_ROOT}/resources/Fonts/FreeUniversal-Regular.ttf`.
+
+
+### 2. download resources
+
+This repo doesn't include some big size files e.g. Sounds, MotionData so you have to download it manually.
+
+- [RAM-Sound_MotionData_v1_0_0.zip](#)
+
+After download, add `Sounds` and `MotionData` directories into `{RAM_ROOT}/resources`.
+
+[[/Images/Introduction/fig-setup-4.png]]
