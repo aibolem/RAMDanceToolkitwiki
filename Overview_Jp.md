@@ -1,5 +1,4 @@
-（日本語文町）
-RAM Dance Toolkit is a C++ creative coding toolkit to create environments for dance. This toolkit contains a GUI and functions to access, recognize, and process motion data to support creation of various kinds of feedback to dancers using code in an easy way. Toolkit uses openFrameworks, a software development toolkit for artists, which means users can use functions from both RAM Dance Toolkit and openFrameworks. RAM Dance Toolkit will also be published as application for Windows and Mac. As an application, users also can choreograph or rehearse with previously programmed environmental conditions, which we call “scenes”.
+RAM Dance Tookitはクリエイティブコーディングでダンスのための環境を作り出すC++のツールキットです。GUIと、ダンサーのモーションデータにアクセス、解析・利用するための機能を備え、プログラミングを使ってダンサーに対する様々なフィードバックをシンプルな手順で作り出す事ができます。このツールキットはアーティストのためのソフトウェア開発環境であるopenFrameworksをベースとして開発されており、ユーザーは両方の機能を使用する事ができます。また、RAM Dance Toolkitはプログラミングを必要としないアプリケーションの形でも公開します。アプリケーションを使って、YCAMで開発された既存の環境条件（「シーン」と呼びます）を使って振付やトレーニングをおこなうことが出来ます。
 
 [[/Images/Home/ram.png]]
 
