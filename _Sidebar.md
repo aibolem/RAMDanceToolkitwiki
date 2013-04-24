@@ -1,4 +1,4 @@
-**Top Page**
+**Overview**
 
 - [English](Overview)
 - [日本語](Overview_Jp)
@@ -11,9 +11,9 @@
 
 
 **Introduction**
-- [How to start RAMDanceToolkit](How_to_start_RAMDanceToolkit)
-- [Structure](Structure)
-- [How to create scene](How_to_create_scene)
+- [How to start RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
+- [Structure](Structure of RAMDanceToolkit)
+- [How to create scene](How-to-create-Scene)
 - [Preset scenes](Preset_scenes)
 
 
@@ -56,5 +56,3 @@
 **Project information base**
 
 - [RAMDanceToolkit - YCAM InterLab](http://interlab.ycam.jp/en/)
-
-[Edit sidebar](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/_Sidebar/_edit)
