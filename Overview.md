@@ -21,10 +21,16 @@ Whole documentation of "Reactor for Awareness in Motion"
 
 ## Downloads 
 
-### Latest version (x.x.x)
+You can download latest version (v1.0.0) RAMDanceToolkit app and source code from the links below.
 
-- Mac OS X 10.7+ [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
-- Windows 7 [source code zip](#) (xxxxMB) [compiled application](#) (xxxMB)
+### Application
+
+- [for Mac OS](#) (10.7+, xxxxMB)
+- [for Windows](#) (7+, xxxMB)
+
+### Source code
+
+- [RAM_Release_v1_0_0](#) (Mac OS 10.7+, Windows 7+, xxxMB)
 
 <!--
 ### Other versions
