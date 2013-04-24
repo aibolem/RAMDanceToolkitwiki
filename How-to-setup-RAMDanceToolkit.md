@@ -72,7 +72,7 @@ ofxUI requires `GUI/NewMedia Fett.ttf` font file which is placed at `bin/data` s
 
 This repo doesn't include some big size files e.g. Sounds, MotionData so you have to download it manually.
 
-- [RAM-Sound_MotionData_v1_0_0.zip](#)
+- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip)
 
 After download, add `Sounds` and `MotionData` directories into `{RAM_ROOT}/resources`.
 
