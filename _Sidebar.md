@@ -15,8 +15,8 @@
 
 **Introduction**
 - [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit)
-- [How to create scene](How-to-create-Scene)
 - [Preset scenes](Preset-scenes)
+- [How to create scene](How-to-create-Scene)
 
 
 **RAM API Reference**

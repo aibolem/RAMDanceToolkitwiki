@@ -114,6 +114,6 @@ Chain put on a joint.
 
 The Most simple way to implement a `scene` is writing code in your testApp. Such as using `ramBaseScene` and `ramSceneManager` is easy to manage many scenes in one project.
 
-`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one. See also [How to create scene](How to create scene), and the other RAM API References.
+`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one. See also [How to create scene](How-to-create-Scene), and the other RAM API References.
 
 
