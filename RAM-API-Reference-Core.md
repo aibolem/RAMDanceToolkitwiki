@@ -607,8 +607,6 @@ For example, the index of first actor RAMDanceToolkit recieved is `0`.
 
 ##### ramNodeIdentifer& ramActorManager::getLastSelectedNodeIdentifer()
 
-xxxxxxxxxxxxxxxxx
-
 
 ---
 
