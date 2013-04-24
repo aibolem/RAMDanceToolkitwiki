@@ -1,4 +1,3 @@
-## How to create own Scene
 
 As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scene using this sample code of empty scene. 
 
