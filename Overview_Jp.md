@@ -27,7 +27,7 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 ### アプリケーション
 
 - [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-osx_v1_0_0.zip) (10.7+, 79.8MB)
-- [for Windows](#) (7+, xxxMB)
+- [for Windows](#) (7+, xxxMB) -- 近日中にダウンロード可能になります
 
 ### ソースコード
 
