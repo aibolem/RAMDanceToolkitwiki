@@ -6,6 +6,7 @@
 **Getting started**
 
 - [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
+- [RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)
 
 **Movies on Vimeo**
 
