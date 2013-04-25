@@ -7,7 +7,7 @@ RAM Dance Tookitはクリエイティブコーディングでダンスのため�
 
 ## リンク
 
-### [Introduction to RAMDanceToolkit application (vimeo)](http://vimeo.com/64703174) 
+### [Introduction to RAM Dance Toolkit application (vimeo)](http://vimeo.com/64703174) 
 Kyle McDonaldによる、 RAMDanceToolkitアプリケーション使用方法の解説ムービー
 
 ### [Introduction to coding with RAM Dance Toolkit (vimeo)](http://vimeo.com/64775855)  
