@@ -7,10 +7,10 @@
 
 ## Links
 
-### [Introduction to RAMDanceToolkit application (vimeo)](#) 
+### [Introduction to RAMDanceToolkit application (vimeo)](http://vimeo.com/64703174) 
 Screencast concerning how to use RAMDanceToolkit application by Kyle McDonald
 
-### [Getting started with RAMDanceToolkit for developer (vimeo)](#)  
+### [Introduction to coding with RAM Dance Toolkit (vimeo)](http://vimeo.com/64775855)  
 Screencast concerning how to develop using RAMDanceToolkit API by Kyle McDonald
 
 ### [RAMDanceToolkit - YCAM InterLab](#)   
