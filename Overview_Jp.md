@@ -33,8 +33,6 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 
 - [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 92.1MB)
 
-<!-- (Mac OS 10.7+, Windows 7+, 121MB) -->
-
 <!--
 ### Other versions
 Download links are available on [YCAM InterLab server](#).
