@@ -19,8 +19,11 @@ Note that you can playback four motion data at the same time. If you are sending
 
 ## Source code zip
 
-If you are a developer, you can modify RAMDanceTookit source code which is placed at `RAMDanceToolkit/apps/RAMDanceToolkit`. See also RAM API Reference on this wiki.
+Put the downloaded files into openFrameworks directory.
 
+[[/Images/Introduction/fig-setup-of.png]]
+
+If you are a developer, you can modify RAMDanceTookit source code which is placed at `RAMDanceToolkit/apps/RAMDanceToolkit`. See also RAM API Reference on this wiki.
 
 ### addons 
 
@@ -49,6 +52,10 @@ As noted at Compiled Application section, recorded motion data is in the `Motion
 
 
 ## Clone RAMDanceTookit repository
+
+Clone RAM repository at openFrameworks directory.
+
+[[/Images/Introduction/fig-setup-of.png]]
 
 If you clone the RAM repo, you should do two tasks before writing code.
 
