@@ -54,6 +54,6 @@
 - [UpsideDown]()
 -->
 
-**Project web site**　　
-Reactor for Awareness in Motion (RAM) - YCAM InterLab　　
+**Project web site**<br>
+Reactor for Awareness in Motion (RAM) - YCAM InterLab<br>
 **[English](http://interlab.ycam.jp/en/projects/ram)** | **[日本語](http://interlab.ycam.jp/projects/ram)**
