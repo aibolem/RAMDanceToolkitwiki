@@ -1,45 +1,54 @@
-## Downloads
+## ダウンロード
 
-To start using RAMDanceToolkit, you can download [compiled application, whole source code zip](Overview#downloads), or clone [RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit).
+[アプリケーション、またはソースコード一式のzip](Overview#downloads)をダウンロード出来ます。
+または、[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneしてください。
 
-## Compiled Application
+## アプリケーション
 
 Unzip the downloaded file and launch your RAMDanceToolkit app.  
+ダウンロードしたzipファイルを解凍し、RAMDanceToolkitアプリケーションを起動してください。
 
 [[/Images/Introduction/fig-setup-1.png]]
 
-The recorded motion data `Ando_1` appears only at the first time launching of RAMDanceToolkit. The other motion datas `Ando`, `Cyril`, `Richi` are placed in `RAMDanceTookit/resources/MotionData`.  To start playback, click "Load file" button on Actors panel or drag and drop the motion data file to the application.
+初回起動時のみ、`Ando_1`というダンサーがステージに現れます。
+次回からの起動は、`RAMDanceTookit/resources/MotionData`ディレクトリにある `Ando`, `Cyril`, `Richi`のデータを"Load File"ボタンから読み込み・またはファイルをアプリケーションへドラッグ&ドロップする事でモーションデータの再生が始まります。
 
 [[/Images/Introduction/fig-setup-3.png]]
 
-Note that you can playback four motion data at the same time. If you are sending one ramActor OSC message from MOTIONER or other motion capture system to RAMDanceToolkit, you can playback three motion data.
+一度に再生出来るプレイバックデータの最大数は4人までです。
+（もしMOTIONERやその他のモーションキャプチャーシステムから一人分のOSCメッセージを受け取って再生をしている場合、プレイバックできる最大数は3人までです。）
 
 [[/Images/Introduction/fig-setup-2.png]]
 
 
-## Source code zip
+## ソースコード一式のzip
 
 If you are a developer, you can modify RAMDanceTookit source code which is placed at `RAMDanceToolkit/apps/RAMDanceToolkit`. See also RAM API Reference on this wiki.
+
+ソースコード一式をダウンロードして、本Wiki内のRAM API Referenceを参考にRAMDanceToolkitを編集する事が出来ます。
+RAMDanceTookitアプリケーションのソースコードは、`RAMDanceToolkit/apps/RAMDanceToolkit`にあります。
 
 
 ### addons 
 
-ofxAddons which are load from core libs.  
-If you want to add other addons, we recommend to add it to `{OF_ROOT}/addons`.
+RAMコアライブラリから読まれるofxAddonsが入っています。
+もし別のaddonsを追加したい場合は、このディレクトリではなく `{OF_ROOT}/addons` に追加する事をお勧めします。
 
 ### apps
 
 RAMDanceToolkit and OpenNIOSC.
 You can use OpenNIOSC instead of MOTIONER or other sensors as simple mocap test if you have Microsoft Kinect.
+RAMDanceToolkit、OpenNIOSCが入っています。
+もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。
 
 ### examples
 
-Sample codes to understand API.
+RAM APIに慣れる為のサンプルコードがあります。
 
 
 ### libs
 
-RAMDanceToolkit core library.
+RAMDanceToolkit core libraryが入っています。.
 
 ### resources
 
