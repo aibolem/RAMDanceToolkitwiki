@@ -26,11 +26,11 @@ You can download latest version (v1.0.0) RAMDanceToolkit app and source code fro
 ### Application
 
 - [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-osx_v1_0_0.zip) (10.7+, 79.8MB)
-- for Windows (7+, xxxMB) -- We will upload soon!
+- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-win_v1_0_0) (7+, 86.1MB)
 
 ### Source code
 
-- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, 121MB)
+- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 92.1MB)
 
 <!-- (Mac OS 10.7+, Windows 7+, 121MB) -->
 
