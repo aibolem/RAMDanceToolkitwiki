@@ -56,5 +56,4 @@
 
 **Project web site**
 
-- [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/en/projects/ram) (English)
-- [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/projects/ram) (日本語)
+Reactor for Awareness in Motion (RAM) - YCAM InterLab [English](http://interlab.ycam.jp/en/projects/ram) (English) | [日本語](http://interlab.ycam.jp/projects/ram) (日本語)
