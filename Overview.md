@@ -35,7 +35,7 @@ You can download latest version (v1.0.0) RAMDanceToolkit app and source code fro
 
 <!--
 ### Other versions
-Download links are available on [YCAM InterLab server](#).
+Download links are available on [YCAM InterLab server]().
 -->
 
 

@@ -5,13 +5,13 @@
 
 **Getting started**
 
-- [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
-- [RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)
+- English: [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
+- 日本語: [RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)
 
 **Movies on Vimeo**
 
-- [Introduction to RAMDanceToolkit application](#)
-- [Getting started with RAMDanceToolkit for developer](#)
+- [Introduction to RAMDanceToolkit application](http://vimeo.com/64703174)
+- [Getting started with RAMDanceToolkit for developer](http://vimeo.com/64775855)
 
 
 **Introduction**
@@ -56,4 +56,5 @@
 
 **Project information base**
 
-- [RAMDanceToolkit - YCAM InterLab](http://interlab.ycam.jp/en/)
+- English: [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/en/projects/ram)
+- 日本語: [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/projects/ram)

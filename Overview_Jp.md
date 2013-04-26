@@ -35,7 +35,7 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 
 <!--
 ### Other versions
-Download links are available on [YCAM InterLab server](#).
+Download links are available on [YCAM InterLab server]().
 -->
 
 
