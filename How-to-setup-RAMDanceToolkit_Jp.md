@@ -23,6 +23,11 @@
 ## ソースコード一式のzip
 
 ソースコード一式をダウンロードして、本Wiki内のRAM API Referenceを参考にRAMDanceToolkitを編集する事が出来ます。
+ダウンロードしたファイルは、openFrameworksディレクトリの直下に置いてください。
+
+[[/Images/Introduction/fig-setup-of.png]]
+
+
 RAMDanceTookitアプリケーションのソースコードは、`RAMDanceToolkit/apps/RAMDanceToolkit`にあります。
 
 
@@ -52,6 +57,10 @@ RAMDanceToolkit core libraryが入っています。
 
 
 ## RAMDanceTookit repositoryをCloneする
+
+openFrameworksディレクトリの直下にcloneしてください。
+
+[[/Images/Introduction/fig-setup-of.png]]
 
 RAMリポジトリをcloneする場合、コードを書き始める前に2つやる事があります。
 
