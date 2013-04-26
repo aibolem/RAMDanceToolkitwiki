@@ -8,6 +8,11 @@ Unzip the downloaded file and launch your RAMDanceToolkit app.
 
 [[/Images/Introduction/fig-setup-1.png]]
 
+### MotionData playback
+
+You can test RAMDanceToolkit without MOTIONER or other sensors using recorded motion data playback.
+**note: In RAMDanceToolkit version 1.0.0, motion data playback is available only for Mac OS.**
+
 The recorded motion data `Ando_1` appears only at the first time launching of RAMDanceToolkit. The other motion datas `Ando`, `Cyril`, `Richi` are placed in `RAMDanceTookit/resources/MotionData`.  To start playback, click "Load file" button on Actors panel or drag and drop the motion data file to the application.
 
 [[/Images/Introduction/fig-setup-3.png]]
