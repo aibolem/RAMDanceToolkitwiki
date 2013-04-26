@@ -34,8 +34,8 @@ You can download latest version (v1.0.0) RAMDanceToolkit app and source code fro
 
 ### Sound, MotionData
 
-For users who cloned RAMDanceToolkit repository, please download the Sounds and MotionData files from the link below since　our repo doesn't include some big size files.
-For more details, please read [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page。
+For users who cloned RAMDanceToolkit repository, please download the Sounds and MotionData files from the link below since our repo doesn't include some big size files.
+For more details, please read [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page.
 
 - [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
 
