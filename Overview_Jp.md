@@ -33,6 +33,15 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 
 - [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 92.1MB)
 
+
+### サウンドファイル, モーションデータ
+
+※RAMDanceToolkitのリポジトリをcloneした場合に必要なファイルです。
+上記のアプリケーション・ソースコードのzipファイルに含まれていますので、ダウンロードする必要はありません。
+詳しくは、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。
+
+- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip)
+
 <!--
 ### Other versions
 Download links are available on [YCAM InterLab server]().

@@ -49,7 +49,6 @@ RAMDanceToolkit、OpenNIOSCが入っています。
 
 RAM APIに慣れる為のサンプルコードがあります。
 
-
 ### libs
 
 RAMDanceToolkit core libraryが入っています。
@@ -86,9 +85,9 @@ ofxUI.hはデフォルトの状態で、`GUI/NewMedia Fett.ttf`というパス�
 
 このリポジトリは、サウンドファイル、モーションデータのファイル等の大きいサイズのディレクトリを含んでいません。
 以下のサウンドファイル、モーションデータをダウンロードする必要があります。
-- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip)
 
-After download, add `Sounds` and `MotionData` directories into `{RAM_ROOT}/resources`.
+- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
+
 ダウンロード・解凍後、`Sounds` `MotionData` ディレクトリを `{RAM_ROOT}/resources`に追加してください。
 
 [[/Images/Introduction/fig-setup-4.png]]
