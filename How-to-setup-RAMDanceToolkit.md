@@ -19,7 +19,7 @@ Note that you can playback four motion data at the same time. If you are sending
 
 ## Source code zip
 
-Put the downloaded files into your openFrameworks directory.
+Put the downloaded files into your openFrameworks (version 0.7.4+) directory.
 
 [[/Images/Introduction/fig-setup-of.png]]
 
@@ -53,7 +53,7 @@ As noted at Compiled Application section, recorded motion data is in the `Motion
 
 ## Clone RAMDanceTookit repository
 
-Clone RAM repository at your openFrameworks directory.
+Clone RAM repository at your openFrameworks (version 0.7.4+) directory.
 
 [[/Images/Introduction/fig-setup-of.png]]
 
