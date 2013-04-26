@@ -5,7 +5,6 @@
 
 ## アプリケーション
 
-Unzip the downloaded file and launch your RAMDanceToolkit app.  
 ダウンロードしたzipファイルを解凍し、RAMDanceToolkitアプリケーションを起動してください。
 
 [[/Images/Introduction/fig-setup-1.png]]
@@ -23,8 +22,6 @@ Unzip the downloaded file and launch your RAMDanceToolkit app.
 
 ## ソースコード一式のzip
 
-If you are a developer, you can modify RAMDanceTookit source code which is placed at `RAMDanceToolkit/apps/RAMDanceToolkit`. See also RAM API Reference on this wiki.
-
 ソースコード一式をダウンロードして、本Wiki内のRAM API Referenceを参考にRAMDanceToolkitを編集する事が出来ます。
 RAMDanceTookitアプリケーションのソースコードは、`RAMDanceToolkit/apps/RAMDanceToolkit`にあります。
 
@@ -36,8 +33,6 @@ RAMコアライブラリから読まれるofxAddonsが入っています。
 
 ### apps
 
-RAMDanceToolkit and OpenNIOSC.
-You can use OpenNIOSC instead of MOTIONER or other sensors as simple mocap test if you have Microsoft Kinect.
 RAMDanceToolkit、OpenNIOSCが入っています。
 もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。
 
@@ -48,41 +43,39 @@ RAM APIに慣れる為のサンプルコードがあります。
 
 ### libs
 
-RAMDanceToolkit core libraryが入っています。.
+RAMDanceToolkit core libraryが入っています。
 
 ### resources
 
-Shared resources which are load from each application. You can use `ramToRecourcePath(...)` in your code to get the path to directory.
+画像やフォント等、全てのアプリケーションから読まれる共有リソースが入っています。 各アプリケーションからは、`ramToRecourcePath(...)`でこのディレクトリへの相対パスを作る事が出来ます。
+前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。
 
-As noted at Compiled Application section, recorded motion data is in the `MotionData`. 
 
+## RAMDanceTookit repositoryをCloneする
 
-## Clone RAMDanceTookit repository
+RAMリポジトリをcloneする場合、コードを書き始める前に2つやる事があります。
 
-If you clone the RAM repo, you should do two tasks before writing code.
+### 1. Submodules checkout, ofxUI編集パッチのapply
 
-### 1. Submodules checkout and applying patch to modify ofxUI
-
-This repo doesn't include the addons in `RAMDanceToolkit/addons` which are managed as submodules.
-
-Run this shell script after cloning the repo.
+このリポジトリ内のaddonsは、submoduleとして管理されています。
+RAMルートディレクトリにある `submodules.sh`を実行して、addonsの入手とパッチの実行を行います。
 
 	$ cd {RAM_ROOT}
 	$ ./submodules.sh
 
+#### submodules.sh
 
-#### tasks of submodules.sh
-
-This script simply checkout the submodules, and apply ofxUI.patch at ofxUI directory.  
-ofxUI requires `GUI/NewMedia Fett.ttf` font file which is placed at `bin/data` so we have to duplicate the font to every project. After applying this patch, the path to font file will be changed to `{RAM_ROOT}/resources/Fonts/FreeUniversal-Regular.ttf`.
+このスクリプトは、submoduleとして管理をしているaddonsの入手、ofxUI.patchの実行を行います。
+ofxUI.hはデフォルトの状態で、`GUI/NewMedia Fett.ttf`というパスのフォントを読みにきます。このままだと全てのアプリケーション配下にある `bin/data`ディレクトリにフォントを複製しなければならないので、ofxUIがRAMDanceToolkit内のresourcesディレクトリ内のFontを読みに行く様に編集を行っています。
 
 
-### 2. download resources
+### 2. 追加resourcesのダウンロード
 
-This repo doesn't include some big size files e.g. Sounds, MotionData so you have to download it manually.
-
+このリポジトリは、サウンドファイル、モーションデータのファイル等の大きいサイズのディレクトリを含んでいません。
+以下のサウンドファイル、モーションデータをダウンロードする必要があります。
 - [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip)
 
 After download, add `Sounds` and `MotionData` directories into `{RAM_ROOT}/resources`.
+ダウンロード・解凍後、`Sounds` `MotionData` ディレクトリを `{RAM_ROOT}/resources`に追加してください。
 
 [[/Images/Introduction/fig-setup-4.png]]
