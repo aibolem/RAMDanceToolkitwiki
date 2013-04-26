@@ -1,12 +1,10 @@
 **Overview**
 
-- [English](Overview)
-- [日本語](Overview_Jp)
+[English](Overview) | [日本語](Overview_Jp)
 
-**Getting started**
+**How to setup RAMDanceToolkit**
 
-- English: [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit)
-- 日本語: [RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)
+[English](How-to-setup-RAMDanceToolkit) | [日本語](How-to-setup-RAMDanceToolkit_Jp)
 
 **Movies on Vimeo**
 
@@ -54,7 +52,6 @@
 - [UpsideDown]()
 -->
 
-**Project information base**
+**Project web site: Reactor for Awareness in Motion (RAM) - YCAM InterLab**
 
-- English: [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/en/projects/ram)
-- 日本語: [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/projects/ram)
+[English](http://interlab.ycam.jp/en/projects/ram) | [日本語](http://interlab.ycam.jp/projects/ram)
