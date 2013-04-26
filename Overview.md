@@ -34,8 +34,6 @@ You can download latest version (v1.0.0) RAMDanceToolkit app and source code fro
 
 ### Sound, MotionData
 
-※RAMDanceToolkitのリポジトリをcloneした場合に必要なファイルです。
-
 For users who cloned RAMDanceToolkit repository, please download the Sounds and MotionData files from the link below since　our repo doesn't include some big size files.
 For more details, please read [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page。
 

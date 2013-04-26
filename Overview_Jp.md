@@ -36,7 +36,7 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 
 ### サウンドファイル, モーションデータ
 
-※RAMDanceToolkitのリポジトリをcloneした場合に必要なファイルです。
+RAMDanceToolkitのリポジトリをcloneした場合に必要なファイルです。
 上記のアプリケーション・ソースコードのzipファイルに含まれていますので、ダウンロードする必要はありません。
 詳しくは、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。
 
