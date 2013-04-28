@@ -14,7 +14,7 @@ Kyle McDonaldによる、 RAMDanceToolkitアプリケーション使用方法の
 Kyle McDonaldによる、 RAMDanceToolkit APIの使い方・開発の流れについての解説ムービー
 
 ### [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/projects/ram/) 
-YCAM InterLab "Reactor for Awareness in Motion" プロジェクト web site
+YCAM InterLab "Reactor for Awareness in Motion" プロジェクトウェブサイト
 
 
 
