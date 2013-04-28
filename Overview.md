@@ -22,22 +22,33 @@ Whole documentation of "Reactor for Awareness in Motion"
 ## Downloads 
 
 You can download latest version (v1.0.0) RAMDanceToolkit app and source code from the links below.
+Please see also [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page.
 
-### Application
+### RAMDanceToolkit Application
 
 - [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_osx_v1_0_0.zip) (10.7+, 79.8MB)
 - [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_win_v1_0_0.zip) (7+, 86.1MB)
 
+### Motion data OSC Server
+
+An application which send osc messages instead of MOTIONER or other sensors.
+The following link includs MotionData xml files. This application starts sending OSC message when you drag and drop xml files onto app screen.
+It will help your testing RAMDanceToolkit.
+
+- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 34.1MB)
+- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
+
 ### Source code
 
-- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 92.1MB)
+This zip includes all source code and motion data it can be used for developing your own project.
+
+- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
 
 ### Sound, MotionData
 
 For users who cloned RAMDanceToolkit repository, please download the Sounds and MotionData files from the link below since our repo doesn't include some big size files.
-For more details, please read [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page.
 
-- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
+- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (104.7MB)
 
 <!--
 ### Other versions

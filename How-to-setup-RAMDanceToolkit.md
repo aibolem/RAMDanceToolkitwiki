@@ -22,6 +22,14 @@ Note that you can playback four motion data at the same time. If you are sending
 [[/Images/Introduction/fig-setup-2.png]]
 
 
+## Motion data OSC Server
+
+[[/Images/Introduction/fig-setup-osc1.png]]
+
+An application which send osc messages instead of MOTIONER or other sensors.
+The following link includs MotionData xml files. This application starts sending OSC message when you drag and drop xml files onto app screen.
+It will help your testing RAMDanceToolkit.
+
 ## Source code zip
 
 Put the downloaded files into your openFrameworks (version 0.7.4+) directory.

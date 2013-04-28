@@ -22,32 +22,40 @@ YCAM InterLab "Reactor for Awareness in Motion" プロジェクトウェブサ�
 ## ダウンロード 
 
 RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコードを以下のリンクからダウンロードする事が出来ます。
-使用方法に関しては、上記リンク先の動画や、本wiki内のドキュメンテーションを参考にしてください。
+使用方法に関しては、上記リンク先の動画や、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。
 
-### アプリケーション
+### RAMDanceToolkit アプリケーション
 
 - [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_osx_v1_0_0.zip) (10.7+, 79.8MB)
 - [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_win_v1_0_0.zip) (7+, 86.1MB)
 
+### モーションデータ OSCサーバー
+
+MOTIONER等のモーションキャプチャーシステムから送られてくるOSCメッセージと同じものをを送信する為のアプリケーションです。
+同梱のモーションデータxmlファイルをアプリケーションにドラッグアンドドロップをすると再生が始まります。
+RAMDanceToolkitのテスト用にお使いください。
+
+- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 34.1MB)
+- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
+
 ### ソースコード
 
-- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 92.1MB)
+RAMDanceToolkit, OSCサーバーやその他ソースコード、 モーションデータ等の全てが入っています。
+ご自身のプロジェクトの開発にお使いください。
 
+- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
 
 ### サウンドファイル, モーションデータ
 
 RAMDanceToolkitのリポジトリをcloneした場合に必要なファイルです。
 上記のアプリケーション・ソースコードのzipファイルに含まれていますので、ダウンロードする必要はありません。
-詳しくは、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。
 
-- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip)
+- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (104.7MB)
 
 <!--
 ### Other versions
 Download links are available on [YCAM InterLab server]().
 -->
-
-
 
 
 

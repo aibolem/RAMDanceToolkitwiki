@@ -1,7 +1,7 @@
 ## ダウンロード
 
-[アプリケーション、またはソースコード一式のzip](Overview#downloads)をダウンロード出来ます。
-または、[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneしてください。
+[アプリケーション、モーションデータOSCサーバー、ソースコード一式のzip](Overview#downloads)をダウンロード出来ます。
+または、[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneする事が出来ます。。
 
 ## アプリケーション
 
@@ -10,7 +10,7 @@
 [[/Images/Introduction/fig-setup-1.png]]
 
 ### モーションデータのプレイバック
-MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。
+MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。　　
 **※RAMDanceToolkit バージョン1.0.0 では、Mac OSのみこの機能に対応しています。**
 
 初回起動時のみ、`Ando_1`というダンサーがステージに現れます。
@@ -22,6 +22,14 @@ MOTIONER等からのモーションデータをOSCで受け取らずに、レコ
 （もしMOTIONERやその他のモーションキャプチャーシステムから一人分のOSCメッセージを受け取って再生をしている場合、プレイバックできる最大数は3人までです。）
 
 [[/Images/Introduction/fig-setup-2.png]]
+
+
+## モーションデータ OSCサーバー
+
+[[/Images/Introduction/fig-setup-osc1.png]]
+
+同梱の`MotionData-OSCServer`ディレクトリ内のxmlファイルをドラッグアンドドロップすると、アプリケーション内で指定したIP, portへMOTIONERから送られてくるOSC messageと同じmessageを送信し始めます。
+MOTIONER等が手元に無い場合のRAMDanceToolkitのテストに役立ちます。
 
 
 ## ソースコード一式のzip
