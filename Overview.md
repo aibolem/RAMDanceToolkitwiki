@@ -32,7 +32,7 @@ Please see also [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) pag
 ### Motion data OSC Server
 
 An application which send osc messages instead of MOTIONER or other sensors.
-The following link includs MotionData xml files. This application starts sending OSC message when you drag and drop xml files onto app screen.
+The following link includes　RAMOSCServer and MotionData xml files. This application starts sending OSC message when you drag and drop xml files onto app screen.
 It will help your testing RAMDanceToolkit.
 
 - [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 34.1MB)
