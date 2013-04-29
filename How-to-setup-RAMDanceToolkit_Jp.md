@@ -51,7 +51,8 @@ RAMコアライブラリから読まれるofxAddonsが入っています。
 ### apps
 
 RAMDanceToolkit、OpenNIOSCが入っています。
-もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。Windowsの場合は.slnファイルをVisualC++で、OSXの場合は.xcodeprojファイルをXCodeで開いて使用します。
+もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。Windowsの場合は.slnファイルをVisualC++で、OSXの場合は.xcodeprojファイルをXCodeで開いて使用します。Windowsを使用する場合、
+openFrameworksフォルダ/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln
 
 ### examples
 
