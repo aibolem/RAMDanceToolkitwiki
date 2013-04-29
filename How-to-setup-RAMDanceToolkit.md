@@ -52,7 +52,7 @@ and build it using debug and release build settings before compiling RAM Dance T
 
 ### examples
 
-Sample codes to understand API. To check which file you need to use projects, please read `apps` above.
+Sample codes to understand API. To check which file you need to use projects, please read [[apps|https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/How-to-setup-RAMDanceToolkit#apps]] above.
 
 
 ### libs
