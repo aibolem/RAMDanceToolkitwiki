@@ -48,7 +48,7 @@ If you want to add other addons, we recommend to add it to `{OF_ROOT}/addons`.
 RAMDanceToolkit and OpenNIOSC.
 You can use OpenNIOSC instead of MOTIONER or other sensors as simple mocap test if you have Microsoft Kinect. Open .sln file for Windows VisualC++, .xcodeproj file for OSX XCode to edit and use. If you are using newly downloaded openFrameworks, you need to open<br />
 `openFrameworks Folder/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln`
-and build it using debug and release build settings before compile RAM Dance Toolkit projects.
+and build it using debug and release build settings before compiling RAM Dance Toolkit projects.
 
 ### examples
 
