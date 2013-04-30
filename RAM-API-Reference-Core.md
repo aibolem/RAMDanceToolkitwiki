@@ -158,7 +158,7 @@ ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relat
 
 [[/Images/API-Structure/fig-Joint_names_osc.png]]
 
-Both of these classes are inherited from ramNodeArray which provides some calculation methods to control positions. See also [ofxNodeArary](https://github.com/YCAMInterlab/ofxNodeArray) inherited by ramNodeArray.
+Both of these classes are inherited from ramNodeArray which provides some calculation methods to control positions. See also [ofxNodeArray](https://github.com/YCAMInterlab/ofxNodeArray) inherited by ramNodeArray.
 
 
 ---
