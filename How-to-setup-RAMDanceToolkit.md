@@ -78,7 +78,9 @@ If you clone the RAM repo, you should do two tasks before writing code.
 
 This repo doesn't include the addons in `RAMDanceToolkit/addons` which are managed as submodules.
 
-Run this shell script after cloning the repo.
+Run this shell script after cloning the repo.  
+*[git](http://git-scm.com/downloads)have to be installed beforehand。
+
 
 	$ cd {RAM_ROOT}
 	$ ./submodules.sh
