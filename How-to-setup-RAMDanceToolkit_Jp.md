@@ -75,12 +75,13 @@ openFrameworks (version 0.7.4+) ディレクトリの直下にcloneしてくだ�
 
 [[/Images/Introduction/fig-setup-of.png]]
 
-RAMリポジトリをcloneする場合、コードを書き始める前に2つやる事があります。
+RAMリポジトリをcloneする場合、コードを書き始める前に2つする事があります。
 
 ### 1. Submodules checkout, ofxUI編集パッチのapply
 
 このリポジトリ内のaddonsは、submoduleとして管理されています。
 RAMルートディレクトリにある `submodules.sh`を実行して、addonsの入手とパッチの実行を行います。
+*事前に[git](http://git-scm.com/downloads)をインストールしてある必要があります。
 
 	$ cd {RAM_ROOT}
 	$ ./submodules.sh
