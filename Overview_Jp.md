@@ -26,8 +26,8 @@ RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコー�
 
 ### RAMDanceToolkit アプリケーション
 
-- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_osx_v1_0_0.zip) (10.7+, 79.8MB)
-- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_win_v1_0_0.zip) (7+, 86.1MB)
+- [RAM-app_osx_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/app/RAM-app_osx_v1_0_1.zip) (Mac OS 10.7+, 79.8MB)
+- [RAM-app_win_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/app/RAM-app_win_v1_0_0.zip) (Windows 7+, 86.1MB)
 
 ### モーションデータ OSCサーバー
 
@@ -35,15 +35,15 @@ MOTIONER等のモーションキャプチャーシステムから送られてく
 同梱のモーションデータxmlファイルをアプリケーションにドラッグアンドドロップをすると再生が始まります。
 RAMDanceToolkitのテスト用にお使いください。
 
-- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 34.1MB)
-- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
+- [RAM-OSCServer_mac-v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_1.zip) (Mac OS 10.7+, 34.1MB)
+- [RAM-OSCServer_win-v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
 
 ### ソースコード
 
 RAMDanceToolkit, OSCサーバーやその他ソースコード、 モーションデータ等の全てが入っています。
 ご自身のプロジェクトの開発にお使いください。
 
-- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
+- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
 
 ### サウンドファイル, モーションデータ
 

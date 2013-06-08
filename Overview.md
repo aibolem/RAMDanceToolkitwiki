@@ -26,8 +26,8 @@ Please see also [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) pag
 
 ### RAMDanceToolkit Application
 
-- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_osx_v1_0_0.zip) (10.7+, 79.8MB)
-- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-app_win_v1_0_0.zip) (7+, 86.1MB)
+- [RAM-app_osx_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/app/RAM-app_osx_v1_0_1.zip) (Mac OS 10.7+, 79.8MB)
+- [RAM-app_win_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/app/RAM-app_win_v1_0_0.zip) (Windows 7+, 86.1MB)
 
 ### Motion data OSC Server
 
@@ -35,14 +35,14 @@ An application which send osc messages instead of MOTIONER or other sensors.
 The following link includes　RAMOSCServer and MotionData xml files. This application starts sending OSC message when you drag and drop xml files onto app screen.
 It will help your testing RAMDanceToolkit.
 
-- [for Mac OS](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 34.1MB)
-- [for Windows](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
+- [RAM-OSCServer_mac-v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_mac-v1_0_1.zip) (Mac OS 10.7+, 34.1MB)
+- [RAM-OSCServer_win-v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/osc_server/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 46.1MB)
 
 ### Source code
 
 This zip includes all source code and motion data it can be used for developing your own project.
 
-- [RAM_Release_v1_0_0](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/v1.0.0/RAM-release-v1_0_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
+- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
 
 ### Sound, MotionData
 
