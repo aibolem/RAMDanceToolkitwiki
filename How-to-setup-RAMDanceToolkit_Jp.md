@@ -1,7 +1,7 @@
 ## ダウンロード
 
 [アプリケーション、モーションデータOSCサーバー、ソースコード一式のzip](Overview#downloads)をダウンロード出来ます。
-または、[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneする事が出来ます。。
+または、[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneする事が出来ます。
 
 ## アプリケーション
 
@@ -51,11 +51,13 @@ RAMコアライブラリから読まれるofxAddonsが入っています。
 ### apps
 
 RAMDanceToolkit、OpenNIOSCが入っています。
-もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。
+もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。Windowsの場合は.slnファイルをVisualC++で、OSXの場合は.xcodeprojファイルをXCodeで開いて使用します。Windowsで新規にダウンロードしたopenFrameworksを使用する場合、<br />
+'openFrameworksフォルダ/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln' <br />
+をVisualC++で開き、あらかじめdebugとreleaseの設定でビルドしておく必要があります。
 
 ### examples
 
-RAM APIに慣れる為のサンプルコードがあります。
+RAM APIに慣れる為のサンプルコードがあります。使用するファイル、注意点は上記appsフォルダについて書かれたものをご参照ください。
 
 ### libs
 
@@ -73,12 +75,13 @@ openFrameworks (version 0.7.4+) ディレクトリの直下にcloneしてくだ�
 
 [[/Images/Introduction/fig-setup-of.png]]
 
-RAMリポジトリをcloneする場合、コードを書き始める前に2つやる事があります。
+RAMリポジトリをcloneする場合、コードを書き始める前に2つする事があります。
 
 ### 1. Submodules checkout, ofxUI編集パッチのapply
 
 このリポジトリ内のaddonsは、submoduleとして管理されています。
-RAMルートディレクトリにある `submodules.sh`を実行して、addonsの入手とパッチの実行を行います。
+RAMルートディレクトリにある `submodules.sh`を実行して、addonsの入手とパッチの実行を行います。  
+*事前に[git](http://git-scm.com/downloads)がインストールされている必要があります。
 
 	$ cd {RAM_ROOT}
 	$ ./submodules.sh
