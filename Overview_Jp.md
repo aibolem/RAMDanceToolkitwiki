@@ -43,7 +43,7 @@ RAMDanceToolkitのテスト用にお使いください。
 RAMDanceToolkit, OSCサーバーやその他ソースコード、 モーションデータ等の全てが入っています。
 ご自身のプロジェクトの開発にお使いください。
 
-- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
+- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 117.6MB)
 
 ### サウンドファイル, モーションデータ
 

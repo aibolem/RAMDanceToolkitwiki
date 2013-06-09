@@ -42,7 +42,7 @@ It will help your testing RAMDanceToolkit.
 
 This zip includes all source code and motion data it can be used for developing your own project.
 
-- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 135.1MB)
+- [RAM_Release_v1_0_1.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/source_zip/RAM-release-v1_0_1.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 117.6MB)
 
 ### Sound, MotionData
 
