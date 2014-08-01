@@ -32,6 +32,7 @@
 
 ### compiled app
 - [RAM-app_osx_v1_0_1.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.1/RAM-app_osx_v1_0_1.zip) (Mac OS 10.7+, 76.1MB)
+- (no update for windows)
 
 ### change log
 
