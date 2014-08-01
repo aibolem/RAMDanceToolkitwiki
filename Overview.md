@@ -22,11 +22,11 @@ Whole documentation of "Reactor for Awareness in Motion"
 ## Downloads 
 
 You can download latest version (v1.0.0) RAMDanceToolkit app and source code from the links below.
-Please see also [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page. Older releases of RAMDanceToolkit are archived [here](other_releases).
+Please see also [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page. Older releases of RAMDanceToolkit and change log are archived [here](Other_Releases).
 
 ### RAMDanceToolkit Application
 
-You can download the compiled application from here.
+You can download the compiled application from here. 
 
 - [RAM-app_osx_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_osx_v1_1_0.zip) (Mac OS 10.7+, 106.1MB)
 - [RAM-app_win_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_win_v1_1_0.zip) (Windows 7+, 136.7MB)
@@ -52,10 +52,7 @@ For users who cloned RAMDanceToolkit repository, please download the Sounds and 
 
 - [RAM-Sound_MotionData_v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-Sound_MotionData_v1_0_0.zip) (99.9MB)
 
-<!--
-### Other versions
-Download links are available on [YCAM InterLab server]().
--->
+
 
 
 

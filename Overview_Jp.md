@@ -22,7 +22,7 @@ YCAM InterLab "Reactor for Awareness in Motion" プロジェクトウェブサ�
 ## ダウンロード 
 
 RAMDanceToolkitアプリケーション最新版（v1.0.0）、ソースコードを以下のリンクからダウンロードする事が出来ます。
-使用方法に関しては、上記リンク先の動画や、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。過去のリリースに関しては、[other releases](other_releases)をご覧下さい。
+使用方法に関しては、上記リンク先の動画や、[RAMDanceToolkitのセットアップ](How-to-setup-RAMDanceToolkit_Jp)をご覧下さい。過去のリリースとchange logに関しては、[Other eleases](Other_Releases)をご覧下さい。
 
 ### RAMDanceToolkit アプリケーション
 
