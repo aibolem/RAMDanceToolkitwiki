@@ -97,7 +97,7 @@ ofxUI.hはデフォルトの状態で、`GUI/NewMedia Fett.ttf`というパス�
 このリポジトリは、サウンドファイル、モーションデータのファイル等の大きいサイズのディレクトリを含んでいません。
 以下のサウンドファイル、モーションデータをダウンロードする必要があります。
 
-- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
+- [RAM-Sound_MotionData_v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
 
 ダウンロード・解凍後、`Sounds` `MotionData` ディレクトリを `{RAM_ROOT}/resources`に追加してください。
 
