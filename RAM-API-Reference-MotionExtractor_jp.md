@@ -62,6 +62,8 @@ GUI上で追加したポートをプログラムと連携させるためには�
 	ofFill();
 	ofSetLineWidth(1.0);
 
+[[/Images/API-motionExtractor/pic-triangle.png]]
+
 **ramMotionExtractor::getPositionAtメソッド**では、選択したノードの位置座標が取得できます。
 ノードがどこにも選択されていない場合、原点(0,0,0)が値として返されます。
 
