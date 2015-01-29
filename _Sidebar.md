@@ -26,7 +26,8 @@
 - [Filters](RAM-API-Reference-Filters)
 - [Recognizers](RAM-API-Reference-Recognizers)
 - [Utility](RAM-API-Reference-Utility)
-
+- [MotionExtract](RAM-API-Reference-MotionExtractor)
+- [MotionExtract(JP)](RAM-API-Reference-MotionExtractor_jp)
 
 <!--
 - [Abacus]()
