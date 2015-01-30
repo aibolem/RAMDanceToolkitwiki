@@ -2,7 +2,7 @@
 
 ramMotionExtractor supports your selecting actor's node.
 
-##実装
+##Implement
 In implement, you should have instance in your scene class, and call **3 methods**.
 
 The following is an extract from **example-ramMotionExtractor**.
@@ -72,19 +72,19 @@ When no port choosed, it will return point(0,0,0).
 
 other getters(for taking port's information)is the following:
 
-	int				getNumPort();　/* 選択されているノードの総数 */
-	bool			getIsExist(int port); /*指定のポートが選択されているかどうか*/
+	int				getNumPort();
+	bool			getIsExist(int port);
 
-	ramNode			getNodeAt(int port); /*指定したポートのramNodeデータ*/
-	string			getActorNameAt(int port);/*指定したポートを持つアクターの名前*/
-	string			getJointNameAt(int port);/*指定したポートの関節の名前*/
-	int				getJointIdAt(int port);/*指定したポートのジョイントID*/
+	ramNode			getNodeAt(int port);
+	string			getActorNameAt(int port);
+	string			getJointNameAt(int port);
+	int				getJointIdAt(int port);
 
-	ofVec3f			getPositionAt(int port,bool fixPosition = false);/*指定したポートのグローバル座標*/
-	ofQuaternion	getRotationAt(int port);/*指定したポートの回転角度*/
+	ofVec3f			getPositionAt(int port,bool fixPosition = false);
+	ofQuaternion	getRotationAt(int port);
 
-	ofVec3f			getVelocityAt(int port);/*指定したポートの速度ベクトル*/
-	float			getVelocitySpeedAt(int port);/*指定したポートの速度ベクトルの長さ*/
-	ofQuaternion	getRotateVelocityAt(int port);/*指定したポートの回転速度*/
-	float			getDistanceAt(int port_A, int port_B);/*指定した2ポート間の距離*/
-	float			getAreaAt(int port_A, int port_B, int port_C);/*指定した3ポートが作る三角形の面積*/
+	ofVec3f			getVelocityAt(int port);
+	float			getVelocitySpeedAt(int port);
+	ofQuaternion	getRotateVelocityAt(int port);
+	float			getDistanceAt(int port_A, int port_B);
+	float			getAreaAt(int port_A, int port_B, int port_C);
