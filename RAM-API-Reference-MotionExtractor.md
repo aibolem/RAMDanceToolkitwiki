@@ -1,11 +1,11 @@
 #ramMotionExtractor
 
-ramMotionExtractor supports your selecting actor's node.
+ramMotionExtractor allows you to select an actor's nodes.
 
-##Implement
-In implement, you should have instance in your scene class, and call **3 methods**.
+##Implementation
+To implement the ramMotionExtractor, you need an motionExtractor instance in your scene class. From there, you need to call **3 methods**.
 
-The following is an extract from **example-ramMotionExtractor**.
+The following is an sample from **example-ramMotionExtractor**.
 ~~~
 void ramMotionExtractorExampleScene::setupControlPanel(){
 	
@@ -33,26 +33,26 @@ void ramMotionExtractorExampleScene::draw(){
 }
 ~~~
 
-##Using
-When you run some scenes implemented ramMotionExtractor,you have GUI for motionExtractor right side of console panel.
+##Use
+
+When you use the ramMotionExtractor, it has its own GUI on the right side of the console panel 
 
 ![preview image](Images/API-motionExtractor/pic-preview.png)
 
 ###Push port
-You select a node,then red circle appears on node you selected. So you should push **PushPort** button and register node to motionExtractor. By succeed register, white wire cube appears.It is called "Port".
-　
-###Remove ports
-When you want to remove port you add, click node you added and push **PopPort** button and you can remove port selected.
+When you select a node, a red circle will appear on the node you selected. If you select **PushPort** on the GUI, this will register the node to the motionExtractor. If this is sucessful, a white wire cube will appear. This is called a "port".
 
-If you want to clear all ports, Push clear button and clear all ports.
+###Remove ports
+If you want to remove a port that you added, simply select the node by clicking it and select **PopPort** from the GUI. This will remove the selected port.
+
+If you want to clear all ports, select **Clear** from the GUI. This will clear all ports.
 
 ###Save and Load
-You can save & load port select data by save/load button.
-On default, the data will be saved as **motionExt_SceneName.xml**, but you can call **ramMotionExtractor::Save(string file** & **ramMotionExtractor::Load(string file)** method so you can save as optional file names.
+You can save and load port selection data by the save and load buttons, respectively.
+As a default, the data will be saved with the file name **motionExt_SceneName.xml**, but you can call the  **ramMotionExtractor::Save(string file** & **ramMotionExtractor::Load(string file)** method and save the file with a custom file name.
 
-
-##Connect to scenes
-you can use selected port in program, with the following code:
+##Connecting to the scenes
+You can use the selected ports in a program by using the following code:
 ###Example:draw triangle by selected 3 points
 
 	ofVec3f vec_a = motionExtractor.getPositionAt(0);
@@ -68,9 +68,9 @@ you can use selected port in program, with the following code:
 [[/Images/API-motionExtractor/pic-triangle.png]]
 
 **ramMotionExtractor::getPositionAt Method** returns global position you selected.
-When no port choosed, it will return point(0,0,0).
+If no port is chosen, it will return point(0,0,0).
 
-other getters(for taking port's information)is the following:
+Other getter methods for getting informatiom from a port are as follows:
 
 	int				getNumPort();
 	bool			getIsExist(int port);
@@ -89,9 +89,10 @@ other getters(for taking port's information)is the following:
 	float			getDistanceAt(int port_A, int port_B);
 	float			getAreaAt(int port_A, int port_B, int port_C);
 
-##Edit with OSC
-motionExtractor can be edited by OSC Messages.
-the following is protocol details:
+##Editing with OSC
+motionExtractor can be edited via OSC messages.
+
+The following are protocol details:
 
 **/ram/MEX/push i, i**：Push port at actor(i-0), node(i-1)
 
