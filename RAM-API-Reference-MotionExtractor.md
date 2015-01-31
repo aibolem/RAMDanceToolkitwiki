@@ -88,3 +88,17 @@ other getters(for taking port's information)is the following:
 	ofQuaternion	getRotateVelocityAt(int port);
 	float			getDistanceAt(int port_A, int port_B);
 	float			getAreaAt(int port_A, int port_B, int port_C);
+
+##Edit with OSC
+motionExtractor can be edited by OSC Messages.
+the following is protocol details:
+
+**/ram/MEX/push i, i**：Push port at actor(i-0), node(i-1)
+
+**/ram/MEX/pop i, i**：Pop port at actor(i-0), node(i-1)
+
+**/ram/MEX/clear**：Clear all ports.
+
+**/ram/MEX/save s**：Save motionExtractor data with filename(s)
+
+**/ram/MEX/load s**：Load motionExtractor data from filename(s)

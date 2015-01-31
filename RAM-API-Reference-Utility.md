@@ -205,6 +205,37 @@ Loads settings from XML.
 
 Returns true if load `const string filePath` succeeded.
 
+#ramCommunicationManager
+ramCommunicationManager is communication tools with other applications on OSC.
+
+you can check how to details on examples/example-communicationManager
+
+###Setup
+	//communicationManager setup
+	ramCommunicationManager::instance().addSender("localhost", 8000);
+
+###Send for another app
+	//Send from communicationManager
+	ramCommunicationManager::instance().sendCC("rightHand", handPos, 3);
+	
+###Receive and use it
+	//Receive from communicationManager
+
+	//[Send format]
+	//Port    : same as the port passed to ramInitialize( ... )
+	//Address : /ram/communicate/cc
+	//Args    : string(Instrument name), float(cc value), float(cc value), ...
+
+	float scale = 10 + ramCommunicationManager::instance().getCC("someInst", 0) * 50.0;
+
+	ofEnableDepthTest();
+	ramEnableShadow();
+	ramBeginCamera();
+
+	ofDrawBox(0, 100, 0, scale);
+
+	ramEndCamera();
+
 #ramOscReceiveTag
 ramOscReceiveTag is OSC receiver class for each scenes.
 ###Setup
