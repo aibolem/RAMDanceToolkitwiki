@@ -33,21 +33,21 @@ void ramMotionExtractorExampleScene::draw(){
 }
 ~~~
 
-##Use
+##Usage
 
 When you use the ramMotionExtractor, it has its own GUI on the right side of the console panel 
 
 ![preview image](Images/API-motionExtractor/pic-preview.png)
 
-###Push port
+###Pushing a port
 When you select a node, a red circle will appear on the node you selected. If you select **PushPort** on the GUI, this will register the node to the motionExtractor. If this is sucessful, a white wire cube will appear. This is called a "port".
 
-###Remove ports
+###Removing a port
 If you want to remove a port that you added, simply select the node by clicking it and select **PopPort** from the GUI. This will remove the selected port.
 
 If you want to clear all ports, select **Clear** from the GUI. This will clear all ports.
 
-###Save and Load
+###Saving and Loading
 You can save and load port selection data by the save and load buttons, respectively.
 As a default, the data will be saved with the file name **motionExt_SceneName.xml**, but you can call the  **ramMotionExtractor::Save(string file** & **ramMotionExtractor::Load(string file)** method and save the file with a custom file name.
 
@@ -67,7 +67,7 @@ You can use the selected ports in a program by using the following code:
 
 [[/Images/API-motionExtractor/pic-triangle.png]]
 
-**ramMotionExtractor::getPositionAt Method** returns global position you selected.
+The **ramMotionExtractor::getPositionAt** method returns global position you selected.
 If no port is chosen, it will return point(0,0,0).
 
 Other getter methods for getting informatiom from a port are as follows:
