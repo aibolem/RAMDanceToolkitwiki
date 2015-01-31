@@ -2,7 +2,7 @@
 
 ### Summary
 
-This page shows some useful classes, including selecting a node, programatically saving/loading motion data, as well as storing caring settings.
+This page shows some useful classes, including selecting a node, programatically saving/loading motion data, as well as storing camera settings.
 
 ### Table of Contents
 - [ramNodeFinder](#wiki-ramNodeFinder)
