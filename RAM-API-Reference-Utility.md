@@ -2,9 +2,9 @@
 
 ### Summary
 
-This page shows some useful class e.g. pick node by clicking, save/load motion data by code, and store camera settings.
+This page shows some useful classes, including selecting a node, programatically saving/loading motion data, as well as storing caring settings.
 
-### table of content
+### Table of Contents
 - [ramNodeFinder](#wiki-ramNodeFinder)
 - [ramNodeIdentifer](#wiki-ramNodeIdentifer)
 - [ramCameraSettings](#wiki-ramCameraSettings)
@@ -14,8 +14,9 @@ This page shows some useful class e.g. pick node by clicking, save/load motion d
 
 <h1 id="wiki-ramNodeFinder">ramNodeFinder</h1>
 
-ramNodeFinder searches node(s) from nodearrays managed by ramActorManager.  
-If you want to manipulate not ramNodeArray but specific nodes, it is more easier than using for-loop. Probably ramNodeFinder is used not in drawActor(), drawRigid() but in draw().
+ramNodeFinder searches for a node or multiple notes from an array of nodes managed by ramActorManager.
+If you want to manupulate specific nodes, this is much easier than a for-loop. 
+ramNodeFinder should be used in your draw() loop, and not in drawActor() or drawRigid()
 
 ---
 
@@ -52,20 +53,20 @@ Sets target joint id.
 
 ##### bool ramNodeFinder::findOne(ramNode &node)
 
-Returns true if ramActorManager has ramNodeArray whose name is same to ramNodeFinder::name, and the ramNodeArray has node which has id same to ramNodeFinder::index. 
-If it's true, search result node is set to `ramNode &node`.
+Returns true if ramActorManager has ramNodeArray whose name is the same as ramNodeFinder::name, and the ramNodeArray has a node which has the same id as ramNodeFinder::index. 
+If this is true, the search result node is set to `ramNode &node`.
 
 ---
 
 ##### vector<ramNode> findAll()
 
-Return all nodes which matches to target name and target joint id.
+Return all nodes which matches the target name and target joint id.
 
 ---
 
 ##### vector<ramNode> findByID()
 
-Return all nodes which matches to target joint id.
+Return all nodes which matches the target joint id.
 
 ---
 
@@ -75,8 +76,8 @@ Return all nodes which matches to target joint id.
 
 <h1 id="wiki-ramNodeIdentifer">ramNodeIdentifer</h1>
 
-A tiny class to identify node.  
-Generally it's used for ramNodeFinder.
+A tiny class for identifying a node.  
+Generally it is used with ramNodeFinder.
 
 ---
 
@@ -142,13 +143,13 @@ Clears target name and target id.
 
 ##### bool isValid() const
 
-Checks target name and target id are set.
+Checks to see if target name and target id are set.
 
 ---
 
 ##### friend ostream& operator<<(ostream &os, const ramNodeIdentifer& o)
 
-Puts name and id to stream.
+Puts name and id into stream.
 
 ---
 
@@ -158,7 +159,7 @@ Puts name and id to stream.
 
 <h1 id="wiki-ramCameraSettings">ramCameraSettings</h1>
 
-ramCameraSettings stores some settings used for control ofCamera.  
+ramCameraSettings stores some settings used for controlling ofCamera.  
 
 `string name`,
 `ofVec3f pos`,
@@ -177,7 +178,7 @@ ramCameraSettings stores some settings used for control ofCamera.
 `float moving_speed`,
 `float moving_deg`,
 
-Sample XML format is in _RAMDanceToolkit/resources/Settings/cam.moving.xml_
+A sample XML format is available here: _RAMDanceToolkit/resources/Settings/cam.moving.xml_
 
 
 ---
@@ -191,7 +192,7 @@ Loads one setting from XML
 
 ##### static vector<ramCameraSettings> loadSettings(ofxXmlSettings& setting)
 
-Loads settings from XML.
+Loads all settings from XML.
 
 ---
 
@@ -203,22 +204,22 @@ Loads settings from XML.
 
 ##### bool load(const string filePath)
 
-Returns true if load `const string filePath` succeeded.
+Returns true if loading `const string filePath` is successful.
 
 #ramCommunicationManager
-ramCommunicationManager is communication tools with other applications on OSC.
+ramCommunicationManager is communication tools with other applications via OSC.
 
-you can check how to details on examples/example-communicationManager
+An example is available at examples/example-communicationManager
 
 ###Setup
 	//communicationManager setup
 	ramCommunicationManager::instance().addSender("localhost", 8000);
 
-###Send for another app
+###Send OSC to another app
 	//Send from communicationManager
 	ramCommunicationManager::instance().sendCC("rightHand", handPos, 3);
 	
-###Receive and use it
+###Receive OSC from another app and use it
 	//Receive from communicationManager
 
 	//[Send format]
