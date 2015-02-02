@@ -79,7 +79,7 @@ The above image shows the general flow of the RAMDanceToolkit.
 
 We call this sequence a `Scene`, consisting of one or more of the following:
  
-`Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
+`Filter`, `Recognizer`, `Events`, `Visualize`, and `Object`   
 
 
 ### Filter example
