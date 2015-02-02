@@ -75,28 +75,29 @@ The above image shows the general flow of the RAMDanceToolkit.
 3. Draw phase
  	- Uses a `Vizualizer` with the results of the update phase
  	- Draws an `Object`
-4. Outputs visuals to screen, projector, or other expressive environment (physical interfacem, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
+4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
 
-We call this sequence a `Scene`, consisting of one or more of the following: `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
+We call this sequence a `Scene`, consisting of one or more of the following: 
+`Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
 
 
 ### Filter example
 
-Adding +180 degree rotation to the actor data.
+Adding +180 degree rotation to the actor data
 
 [[/Images/API-Structure/pic-filter.png]]
 
 
 ### Recognizer example
 
-Circle tracking.
+Circle tracking
 
 [[/Images/API-Structure/pic-recognizer.png]]
 
 
 ### Events
 
-Triggering when actor touches some objects.
+Triggering when actor touches some objects
 
 [[/Images/API-Structure/pic-event.png]]
 
