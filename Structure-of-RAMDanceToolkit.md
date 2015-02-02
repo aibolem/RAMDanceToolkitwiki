@@ -113,12 +113,12 @@ Visualizing the relation between nodes as a line.
 
 ### Object
 
-Putting a visual "chain" put on a joint.
+Putting a visual "chain" on a joint.
 
 [[/Images/API-Structure/pic-object.png]]
 
 
-The easiest way to implement a `scene` is by writing code in your testApp. Using the `ramBaseScene` and `ramSceneManager` is the recommended way to manage many scenes in one project.
+The easiest way to implement a `scene` is by creating your own! Using the `ramBaseScene` and `ramSceneManager` is the recommended way to manage many scenes in one project.
 
 `ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
 
