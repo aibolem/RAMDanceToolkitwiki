@@ -26,7 +26,7 @@ Skeleton data is sent as a series of nodes in a single OSC message.
 
 The structure of each OSC message is:
 
-**Key**: s: string | i: int f: float**
+**Key**: s: string,  i: int,  f: float
 
 1. `s`: the actor name.
 2. `i`: the number of nodes in the message.
