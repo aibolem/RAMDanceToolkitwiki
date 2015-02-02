@@ -4,7 +4,7 @@ You can download the RAMDanceToolkit in three different ways:
 
 1) [Compiled application](Overview#downloads)
 
-2) Source code via zip file
+2) [Source code via zip file](Overview#downloads)
 
 3) [Cloned Github repository](https://github.com/YCAMInterlab/RAMDanceToolkit)
 
@@ -30,35 +30,43 @@ The follow is a description of the directories found in the source code:
 
 ### Addons 
 
-These are ofxAddons which are loaded from core libs. If you want to add other addons, we recommend adding it to `{OF_ROOT}/addons`.
+This directory contains ofxAddons which are loaded from core libs. If you want to add other addons, we recommend adding it to `{OF_ROOT}/addons`.
 
 ### Apps
 
-This directory includes RAMDanceToolkit and OpenNIOSC. You can use OpenNIOSC instead of MOTIONER or other sensors for a simple mocap test if you have a Microsoft Kinect. Open the .sln file for Windows VisualC++ or the .xcodeproj file for OS X XCode to edit and use. If you are using a newly downloaded version of openFrameworks, you need to open<br />
+This directory contains RAMDanceToolkit and OpenNIOSC. You can use OpenNIOSC instead of MOTIONER or other sensors for a simple mocap test if you have a Microsoft Kinect. Open the .sln file for Windows VisualC++ or the .xcodeproj file for OS X XCode to edit and use. If you are using a newly downloaded version of openFrameworks, you need to open<br />
 `openFrameworks Folder/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln`<br />
 and build it using debug and release build settings before compiling RAM Dance Toolkit projects.
 
 ### Examples
 
-Sample projects for understing the RAMDanceToolkit API. To check which files you need to usefor each project, please read the "[[apps|https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/How-to-setup-RAMDanceToolkit#apps]]" above.
+This directory contains sample projects for understing the RAMDanceToolkit API. To check which files you need to usefor each project, please read the "[[apps|https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/How-to-setup-RAMDanceToolkit#apps]]" above.
 
 ### Libs
 
-This is the RAMDanceToolkit core library.
+This directory contains the RAMDanceToolkit core library.
 
 ### Resources
 
-These are shared resources which are loaded for each application. You can use `ramToRecourcePath(...)` in your code to get the path to this directory.
+This directory contains resources which are loaded for each application. You can use `ramToRecourcePath(...)` in your code to get the path to this directory.
 
 This directory also contains recorded motion data, which is described in more detail below.
 
-## Cloneing the RAMDanceTookit repository
+## Cloning the RAMDanceTookit repository
+
+**[git](http://git-scm.com/downloads) has to be installed beforehand.**
 
 Clone the RAM repository into your top-level openFrameworks (version 0.7.4+) directory.
+	
+	$ cd {OF_ROOT}
+	$ git clone https://github.com/YCAMInterlab/RAMDanceToolkit
+
+**RAMDanceToolkit does NOT go into your {OF_ROOT}/app directory**
+**It goes into your top-level {OF_ROOT} directory. See image below**
 
 [[/Images/Introduction/fig-setup-of.png]]
 
-After you clonse the RAMDanceToolkit, you need to do the following to steps:
+After you clone the RAMDanceToolkit, you need to do the following to steps:
 
 ### 1. Run the submodules script to download additional addons and patch ofxUI
 
@@ -66,14 +74,11 @@ This repo doesn't include any addons in `RAMDanceToolkit/addons`. They are inste
 
 Run this shell script after cloning the repo.
   
-**[git](http://git-scm.com/downloads) has to be installed beforehand.**
-
-
 	$ cd {RAM_ROOT}
 	$ ./submodules.sh
 
 
-#### tasks of submodules.sh
+#### What does submodules.sh do?
 
 This script simply checks out the submodules, and applies the ofxUI.patch on the ofxUI directory. ofxUI requires the `GUI/NewMedia Fett.ttf` font file which is located at `bin/data`, so we  duplicate the font to every project. After applying this patch, the path to font file will be changed to `{RAM_ROOT}/resources/Fonts/FreeUniversal-Regular.ttf`.
 
