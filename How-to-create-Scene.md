@@ -1,4 +1,4 @@
-As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scene using this sample code of empty scene. 
+As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scenei. The following EmptyScene sample code shows you how:
 
 	class EmptyScene : public ramBaseScene
 	{
@@ -31,19 +31,19 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 
 		void drawActor(const ramActor& actor)
 		{
-		    // To be called as many as number of recieving OSC data of ramActor.  
+		    // To be called for as many number of recieving OSC data of ramActor objects.
 		    // Each of the actor is passed as the argument `const ramActor &actor`.
 		}
 
 		void drawRigid(const ramRigidBody &rigid)
 		{
-		    // To be called as many as number of recieving OSC data of ramRigidBody.  
+		    // To be called for as many number of recieving OSC data of ramRigidBod objects.  
 		    // Each of the actor is passed as the argument `const ramRigidBody &rigid`.
 		}
 	
 		void onActorSetup(const ramActor &actor)
 		{
-		    // To be called when ramActorManager start to recieve OSC data of new ramActor.  
+		    // To be called when ramActorManager starts to recieve the OSC data of a new ramActor.  
 		    // The new actor is passed as the argument `const ramActor &actor`.
 		}
 
@@ -55,7 +55,7 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 
 		void onRigidSetup(const ramRigidBody &rigid)
 		{
-		    // To be called when ramActorManager start to recieve OSC data of new ramRigidBody.  
+		    // To be called when ramActorManager starts to recieve OSC data of a new ramRigidBody.  
 		    // The new rigidbody is passed as the argument `const ramRigidBody &rigid`.
 		}
 
@@ -67,22 +67,22 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 	};
 
 
-`{RAM_ROOT}/examples/example-emptyScene` is a simple example to understand how to create own scene.
+`{RAM_ROOT}/examples/example-emptyScene` provides a simple example of how to create own scene.
 
 [[Images/Introduction/fig-scene-1.png]]
 
 
 ### Defining your scene name
 
-getName() is used as display text and key for managing scenes.
-Make sure that the scene key is not overlapped among the other scenes in your project.
+getName() is used to display text and key for managing scenes.
+Make sure that the scene key is not duplicated among the other scenes in your project.
 
 	string getName() const { return "My new scene"; }
 
 
 ### Initializing GUI
 
-You can add GUI parts to the panel writing some code in setupControlPanel().
+You can add GUI parts to the panel by writing some code in setupControlPanel().
 ofxUICanvas is used as scene panel.
 
 		void setupControlPanel()
@@ -90,13 +90,13 @@ ofxUICanvas is used as scene panel.
 			// getting scene panel 
 			ofxUICanvas* panel = ramGetGUI().getCurrentUIContext();
 			
-			// do something with panel...
+			// do something with the panel...
 		}
 
 
 ### Writing your scene code
 
-Here is a sample code of displaying simple text on stage.
+Here is a sample code for displaying simple text on stage.
 
 	void draw()
 	{
@@ -107,7 +107,7 @@ Here is a sample code of displaying simple text on stage.
 		ramEndCamera();
 	}
 
-You can write your OF code in setup(), update(), draw(), and other methods which works same to ramBaseApp which is explained on [RAM API Reference Core](RAM-API-Reference-Core)!
+You can write your openFrameworks code in setup(), update(), draw(), as well as other methods which works with ramBaseApp. Thse are explained in [RAM API Reference Core](RAM-API-Reference-Core)!
 
 
 <hr>
