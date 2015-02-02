@@ -34,8 +34,10 @@ This directory contains ofxAddons which are loaded from core libs. If you want t
 
 ### Apps
 
-This directory contains RAMDanceToolkit and OpenNIOSC. You can use OpenNIOSC instead of MOTIONER or other sensors for a simple mocap test if you have a Microsoft Kinect. Open the .sln file for Windows VisualC++ or the .xcodeproj file for OS X XCode to edit and use. If you are using a newly downloaded version of openFrameworks, you need to open<br />
-`openFrameworks Folder/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln`<br />
+This directory contains RAMDanceToolkit and OpenNIOSC. You can use OpenNIOSC instead of MOTIONER or other sensors for a simple mocap test if you have a Microsoft Kinect. Open the .sln file for Windows VisualC++ or the .xcodeproj file for OS X XCode to edit and use. If you are using a newly downloaded version of openFrameworks, you need to open:
+
+`openFrameworks Folder/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln'
+
 and build it using debug and release build settings before compiling RAM Dance Toolkit projects.
 
 ### Examples
