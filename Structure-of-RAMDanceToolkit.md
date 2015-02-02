@@ -77,7 +77,8 @@ The above image shows the general flow of the RAMDanceToolkit.
  	- Draws an `Object`
 4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
 
-We call this sequence a `Scene`, consisting of one or more of the following: 
+We call this sequence a `Scene`, consisting of one or more of the following:
+ 
 `Filter`, `Recognizer`, `Events`, `Visualize`, `Object`.   
 
 
