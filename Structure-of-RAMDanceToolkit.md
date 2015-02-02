@@ -2,7 +2,7 @@
 
 [[/Images/API-Structure/fig-inheritence.png]]
 
-In a normal openFrameworks application, your `testApp` is inherited from `ofBaseApp`. However, with the RAMDanceToolkit, your `testApp` inherits from `ramBaseApp`, which itself is inherited from `ofBaseApp`. The image above illustrates this relationship.
+In a normal openFrameworks application, your `testApp` is inherited from `ofBaseApp`. However, with the RAMDanceToolkit, your `testApp` inherits from `ramBaseApp`, which itself is inherits from `ofBaseApp`. The image above illustrates this relationship.
 
 Because of this, you can still do all of your normal openFrameworks coding within your `testApp`. In addition, the `ramBaseApp` from which `testApp` inherits provides you with additional methods and events to manipulate the data sent in from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or another motion capture system. 
 
@@ -26,10 +26,15 @@ Skeleton data is sent as a series of nodes in a single OSC message.
 
 The structure of each OSC message is:
 
+**
 Key:
+
 s: string
+
 i: int
+
 f: float
+**
 
 1. `s`: the actor name.
 2. `i`: the number of nodes in the message.
