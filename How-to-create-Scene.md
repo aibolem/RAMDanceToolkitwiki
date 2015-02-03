@@ -1,4 +1,4 @@
-As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scenei. The following EmptyScene sample code shows you how:
+As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scene. The following EmptyScene sample code shows you how:
 
 	class EmptyScene : public ramBaseScene
 	{
