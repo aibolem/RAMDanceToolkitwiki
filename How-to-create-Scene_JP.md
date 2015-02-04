@@ -89,7 +89,7 @@ getName()はシーン管理用に、シーン名を登録するためのメソ�
 ### GUIの初期化
 
 setupControlPanel()でGUIのパーツを加える事ができます。
-シーンごとのGUIパネルとしてofxUICanvasを使う事が出来ます。詳細は[ofxUI](https://github.com/rezaali/ofxUI)か、RAMDanceToolkit内の他のExampleを参照してください。
+シーンごとのGUIパネルとしてofxUICanvasを使う事が出来ます。詳細は[ofxUIのサイト](https://github.com/rezaali/ofxUI)か、RAMDanceToolkit内の他のExampleを参照してください。
 
 		void setupControlPanel()
 		{
