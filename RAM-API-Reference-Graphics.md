@@ -22,7 +22,7 @@ The RAMDanceToolkit has a number of global methods for drawing shapes, as define
 
 This method works in much the same way as ofBox, with additional support for collision detection.
 
-An example of how collision detection works is available in the _SoundCube.h_ scene in the RAMDanceToolkit.
+An example of how collision detection works is available in the [_SoundCube.h_](https://github.com/YCAMInterlab/RAMDanceToolkit/blob/master/apps/RAMDanceToolkit/src/scenes/SoundCube/SoundCube.h) scene in the RAMDanceToolkit.
 
 ---
 
@@ -30,7 +30,7 @@ An example of how collision detection works is available in the _SoundCube.h_ sc
 
 This method works in much the same way as ofSphere, with additional support for collision detection.
 
-An example of how collision detection works is available in the _SoundCube.h_ scene in the RAMDanceToolkit.
+An example of how collision detection works is available in the [_SoundCube.h_](https://github.com/YCAMInterlab/RAMDanceToolkit/blob/master/apps/RAMDanceToolkit/src/scenes/SoundCube/SoundCube.h) scene in the RAMDanceToolkit.
 
 ---
 
@@ -62,7 +62,7 @@ This method draws lines between the corresponding nodes. Two ramNodeArrays must 
 ##### void ramStripe(...)
 
 This method draws a plane using a vector of ramNode objects.  
-`vector<ramNode>` or many `ramNode` can be passed as argument:
+`vector<ramNode>` or many `ramNode` objects can be passed as argument:
 	
 	// vector
 	vector<ramNode> nodes;
