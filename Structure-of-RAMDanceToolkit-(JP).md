@@ -6,7 +6,7 @@
 
 このため、`testApp`の中ではopenFrameworksで使えた機能はすべて使う事ができます。さらに、基底クラスの`ramBaseApp`が[MOTIONER](https://github.com/YCAMInterlab/Motioner)をはじめとしたモーションキャプチャからのデータを扱うためのメソッドやイベント機能を備えているため、これらの機能も使う事ができます。
 
-RAMDanceToolkitはtestApp::setup():の中の一行のコードから始めます。
+RAMDanceToolkitはtestApp::setup():の中の1行のコードから始めます。
 
 	void testApp::setup()
 	{
@@ -19,25 +19,27 @@ RAMDanceToolkitはtestApp::setup():の中の一行のコードから始めます
 <br>
 
 
-## OSC data format
+## OSCデータのフォーマット
 	
 
 Skeleton data is sent as a series of nodes in a single OSC message.
+スケルトンのデータは、1つのOSCメッセージの中にノード情報が連続して入っています。
 
 The structure of each OSC message is:
+OSCメッセージの構造は下記のようになっています。
 
 **Key**: s: string,  i: int,  f: float
 
-1. `s`: the actor name.
-2. `i`: the number of nodes in the message.
-3. Array of nodes.
-4. `f`: the message timestamp. The unit is in seconds.
+1. `s`: アクターの名前
+2. `i`: ノードの数
+3. ノード情報の羅列
+4. `f`: タイムスタンプ（単位は秒）
 
-The arguments for each node are:
+一つ一つのノード情報は下記のようになっています:
 
-1. `s`: name of the node.
-2. `fff`: (x, y, z) position of the node.
-3. `ffff`: angle-axis orientation of the node, stored as (angle, x, y, z).
+1. `s`: ノード名
+2. `fff`: ノードの位置 (x, y, z)
+3. `ffff`: ノードの回転情報 (angle, x, y, z)
 
 ### Address
 
