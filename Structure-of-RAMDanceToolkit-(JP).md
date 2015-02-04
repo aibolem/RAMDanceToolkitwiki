@@ -6,6 +6,8 @@
 
 Because of this, you can still do all of your normal openFrameworks coding within your `testApp`. In addition, the `ramBaseApp` from which `testApp` inherits provides you with additional methods and events to manipulate the data sent in from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or another motion capture system. 
 
+このため、`testApp`の中ではopenFrameworksで出来た事はすべて使う事が可能です。
+
 The RAMDanceToolkit kicks off via one line of code in your testApp::setup():
 
 	void testApp::setup()
