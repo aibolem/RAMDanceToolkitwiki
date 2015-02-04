@@ -64,7 +64,7 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 上図はRAMDanceToolkitの一般的なプロセスの流れを表しています。
 
-1. RAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
+1. InputsではRAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
 2. updateでは下記のような処理を行います
 	- `Filter`を用いたモーションデータの変換
 	- `Recognizer`を用いたデータの解析
