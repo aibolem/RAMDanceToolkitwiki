@@ -64,61 +64,57 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 上図はRAMDanceToolkitの一般的なプロセスの流れを表しています。
 
-1. RAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
+1. InputsではRAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
 2. updateでは下記のような処理を行います
-	- `Filter`を用いたモーションデータの変換
-	- `Recognizer`を用いたデータの解析
-	- `Event`のトリガー
-	- `Object`とのインタラクションのアップデート
-	- もしくはバイパス
+	- `Filter`などを用いたモーションデータの変換
+	- `Recognizer`などを用いたデータの解析
+	- インタラクションのアップデート
 3. Drawでは下記のような処理を行います
  	- `Vizualizer`を用いた、updateで更新された結果の表示
  	- `Object`の描画
-4. ディスプレイやプロジェクターに映像を出力する、もしくはサウンドシステムやデバイスなどへの出力をします。ここで出力される内容はダンサーへのフィードバックとして提示するもので、ダンサーの動きに影響を与える事を想定しています。
+4. Outputではディスプレイやプロジェクターに映像を出力する、もしくはサウンドシステムやデバイスなどへの出力をします。ここで出力される内容はダンサーへのフィードバックとして提示するもので、ダンサーの動きに影響を与える事を想定しています。
 
-We call this sequence a `Scene`, consisting of one or more of the following:
+この一連の流れで構成される、ダンサーのための環境の事を`シーン`と呼びます。
  
-`Filter`, `Recognizer`, `Events`, `Visualize`, and `Object`   
 
+### Filter使用例
 
-### Filter example
-
-Adding +180 degree rotation to the actor data
+ダンサーを180度回転させて逆さまにしています
 
 [[/Images/API-Structure/pic-filter.png]]
 
 
-### Recognizer example
+### Recognizer使用例
 
-Circle tracking
+モーションデータの軌跡から楕円のトラッキングをしています
 
 [[/Images/API-Structure/pic-recognizer.png]]
 
 
-### Events
+### Events使用例
 
-Triggering when actor touches some objects
+アクターがオブジェクトに触れるとトリガーされます
 
 [[/Images/API-Structure/pic-event.png]]
 
 
-### Visualizer
+### Visualizer使用例
 
-Visualizing the relation between nodes as a line. 
+複数ノードの関係をラインで描画しています
 
 [[/Images/API-Structure/pic-visualizer.png]]
 
 
-### Object
+### Object使用例
 
-Putting a visual "chain" on a joint.
+ジョイントに鎖を取り付けています。
 
 [[/Images/API-Structure/pic-object.png]]
 
 
-The easiest way to implement a `scene` is by creating your own! Using the `ramBaseScene` and `ramSceneManager` is the recommended way to manage many scenes in one project.
+是非実際にシーンを作成してみてください。ramSceneManagerを使う事で、1つのプロジェクトの中で複数のシーンを簡単に扱う事ができるでしょう。
 
-`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
+`ramBaseFilter`, `ramBaseRecognizer` そして `ramBaseEvents`を使うことで、独自のfilterやrecognizer、eventsなどを作成する事も可能です。より詳細な情報は[How to create scene](How-to-create-Scene)や、RAM API Referenceなども参照してみてください。
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
