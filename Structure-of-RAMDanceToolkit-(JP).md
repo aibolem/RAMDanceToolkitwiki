@@ -66,11 +66,9 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 1. InputsではRAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
 2. updateでは下記のような処理を行います
-	- `Filter`を用いたモーションデータの変換
-	- `Recognizer`を用いたデータの解析
-	- `Event`のトリガー
-	- `Object`とのインタラクションのアップデート
-	- もしくはバイパス
+	- `Filter`などを用いたモーションデータの変換
+	- `Recognizer`などを用いたデータの解析
+	- インタラクションのアップデート
 3. Drawでは下記のような処理を行います
  	- `Vizualizer`を用いた、updateで更新された結果の表示
  	- `Object`の描画
@@ -79,24 +77,23 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 この一連の流れで構成される、ダンサーのための環境の事を`シーン`と呼びます。
  
 
-### Filter example
+### Filter使用例
 
-Adding +180 degree rotation to the actor data
-ダンサーを
+ダンサーを180度回転させて逆さまにしています
 
 [[/Images/API-Structure/pic-filter.png]]
 
 
-### Recognizer example
+### Recognizer使用例
 
-Circle tracking
+楕円形のトラッキング
 
 [[/Images/API-Structure/pic-recognizer.png]]
 
 
-### Events
+### Events使用例
 
-Triggering when actor touches some objects
+アクターがなんらかのオブジェクトに触れるとトリガーされます。
 
 [[/Images/API-Structure/pic-event.png]]
 
