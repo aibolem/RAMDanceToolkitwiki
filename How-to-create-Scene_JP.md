@@ -5,13 +5,13 @@
 
 	public:
 		
-		// The name of your scene. It will be displayed on the GUI.
+		// GUIに表示されるシーン名をここで指定します。
 		string getName() const { return "My scene"; }
 		
 		void setupControlPanel()
 		{
-			// GUI Initializer
-			// to be called after setup()
+			// GUIの設定をここで行います。
+			// setup()の後で実行されます。
 		}
 		
 		void setup()
@@ -31,26 +31,26 @@
 
 		void drawActor(const ramActor& actor)
 		{
-		    // To be called for as many number of recieving OSC data of ramActor objects.
-		    // Each of the actor is passed as the argument `const ramActor &actor`.
+		    // OSCで受信しているramActorの人数の分だけ呼ばれます。
+		    // それぞれのアクターが、`const ramActor &actor`の形で引数として渡されます。
 		}
 
 		void drawRigid(const ramRigidBody &rigid)
 		{
-		    // To be called for as many number of recieving OSC data of ramRigidBod objects.  
-		    // Each of the actor is passed as the argument `const ramRigidBody &rigid`.
+		    // OSCで受信しているramRigidBodyの個数の分だけ呼ばれます。
+		    // それぞれのアクターが、`const ramRigidBody &rigid`の形で引数として渡されます。
 		}
 	
 		void onActorSetup(const ramActor &actor)
 		{
-		    // To be called when ramActorManager starts to recieve the OSC data of a new ramActor.  
-		    // The new actor is passed as the argument `const ramActor &actor`.
+		    // 新しいramActorが入ってきた時に呼ばれます。  
+		    // 新しく入ってきたアクターは、`const ramActor &actor`の形で引数として渡されます。
 		}
 
 		void onActorExit(const ramActor &actor)
 		{
-		    // To be called when `const ramActor &actor` is outdated.  
-		    // 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
+		    // `const ramActor &actor`のデータが更新されなくなった時に呼ばれます。
+		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、デフォルトで1秒が設定されています。
 		}
 
 		void onRigidSetup(const ramRigidBody &rigid)
