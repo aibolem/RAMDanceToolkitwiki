@@ -2,9 +2,9 @@
 
 ### Summary
 
-This page shows basic structure of RAMDanceToolkit. After reading this page, you will know how to use the data sent from sensors as actor, rigid body and its nodes.
+This page shows the basic structure of RAMDanceToolkit. After reading this page, you will have a firm understanding of how RAMDanceToolkit works, including how to use the data sent from external sensors to create, use, and visualize ramActor, ramRigidBody and ramNode objects.
 
-### table of contents
+### Table of Contents
 
 - [ramBaseApp](#wiki-ramBaseApp)
 - [ramActor, ramRigidBody, ramNodeArray](#wiki-ramNodeArray)
@@ -14,9 +14,9 @@ This page shows basic structure of RAMDanceToolkit. After reading this page, you
 
 <h1 id="wiki-ramBaseApp">ramBaseApp</h1>
 
-ramBaseApp passes recieved OSC message (generally listening on port 10000) to ramActorManager automatically for managing data from MOTIONER or other sensors as ramActor and ramRigidBody.
+The ramBaseApp passes OSC messages (received on port 10000 by default) to the ramActorManager. The ramActorManager, described in more detail below, manages data from MOTIONER or another motion sensor, and uses it for ramActor and/or ramRigidBody.
 
-testApp is inherited several functions and events from ramBaseApp to manipulate actors and rigidbodies.  
+Our normal testApp inherits several functions and events from ramBaseApp for manipulating ramActor and ramRigidBody objects.
 
 	//--------------------------------------------------------------
 	void testApp::setup()
@@ -42,15 +42,15 @@ testApp is inherited several functions and events from ramBaseApp to manipulate 
 	//--------------------------------------------------------------
 	void testApp::drawActor(const ramActor &actor)
 	{
-		// To be called as many as number of recieving OSC data of ramActor.  
-		// Each of the actor is passed as the argument `const ramActor &actor`.
+		// To be called for as many number of ramActor objects received as OSC data.  
+		// Each ramActor is passed as the argument `const ramActor &actor`.
 	}
 	
 	//--------------------------------------------------------------
 	void testApp::drawRigid(const ramRigidBody &rigid)
 	{
-		// To be called as many as number of recieving OSC data of ramRigidBody.  
-		// Each of the actor is passed as the argument `const ramRigidBody &rigid`.
+		// To be called for as many number of ramRigidBody objects received as OSC data..  
+		// Each ramRigidBody is passed as the argument `const ramRigidBody &rigid`.
 	}
 	
 	
@@ -59,8 +59,8 @@ testApp is inherited several functions and events from ramBaseApp to manipulate 
 	//--------------------------------------------------------------
 	void testApp::onActorSetup(const ramActor &actor)
 	{
-		// To be called when ramActorManager start to recieve OSC data of new ramActor.  
-		// The new actor is passed as the argument `const ramActor &actor`.
+		// To be called when a ramActorManager starts to recieve OSC data from a new ramActor.  
+		// The new ramActor is passed as the argument `const ramActor &actor`.
 	}
 	
 	//--------------------------------------------------------------
@@ -73,8 +73,8 @@ testApp is inherited several functions and events from ramBaseApp to manipulate 
 	//--------------------------------------------------------------
 	void testApp::onRigidSetup(const ramRigidBody &rigid)
 	{
-		// To be called when ramActorManager start to recieve OSC data of new ramRigidBody.  
-		// The new rigidbody is passed as the argument `const ramRigidBody &rigid`.
+		// To be called when a ramActorManager starts to recieve OSC data of a new ramRigidBody.  
+		// The new ramRigidBody is passed as the argument `const ramRigidBody &rigid`.
 	}
 	
 	//--------------------------------------------------------------
@@ -136,7 +136,7 @@ text here
 -->
 
 
-And ramBaseApp provides some more functions.
+ramBaseApp provides another function for drawing a base floor for the actors to "dance" on.
 
 ---
 
@@ -151,28 +151,28 @@ Floor is not drawn if `bool v` is false.
 
 <h1 id="wiki-ramNodeArray">ramActor, ramRigidBody, ramNodeArray</h1>
 
-ramActor always has 23 nodes these nodes have a parent‐child relationship. 
-ramRigidBody is a simple nodes cluster which doesn't have a parent‐child relationship and a fixed number of nodes.
+A ramActor object always has 23 nodes. These nodes have a parent‐child relationship, as described in the image below. For example, the hand is a child of the wrist, and the wrist is a child of the elbow. Conversely, the knee is the parent of the ankle, and the ankle is parent of the toe.
+ 
+A ramRigidBody object is a simple node cluster which doesn't have a parent‐child relationship or a fixed number of nodes.
 
 ### Joints of ramActor
 
 [[/Images/API-Structure/fig-Joint_names_osc.png]]
 
-Both of these classes are inherited from ramNodeArray which provides some calculation methods to control positions. See also [ofxNodeArray](https://github.com/YCAMInterlab/ofxNodeArray) inherited by ramNodeArray.
-
+Both of these classes inherit from ramNodeArray, which provides some methods for calculating control positions. Please refer to [ofxNodeArray](https://github.com/YCAMInterlab/ofxNodeArray), which ramNodeArray inherits from.
 
 ---
 
 ##### int ramNodeArray::getNumNode()
 
-Returns size of the nodes in ramNodeArray.
+Returns number of the nodes in ramNodeArray.
 
 ---
 
 ##### ramNode& ramNodeArray::getNode(int node_id)
 
 Returns reference to ramNode which corresponds to `node_id`.
-In case of ramActor, using enum Joint defined in _ramActor.h_ is useful to find ramNode what you want to access.
+In the case of ramActor, using enum Joint defined in _ramActor.h_ is useful for finding the ramNode what you want to access.
 
 	enum Joint
 	{
@@ -208,11 +208,11 @@ In case of ramActor, using enum Joint defined in _ramActor.h_ is useful to find 
 	};
 
 
-Therefore the code to access nodes in your testApp.cpp will be like this:
+Therefore the code for accessing nodes in your testApp.cpp might look like this:
 	
 	void testApp::drawActor(const ramActor &actor)
 	{
-		// access to right hand
+		// accessing the right hand
 		ramNode rightHand = actor.getNode(ramActor::JOINT_RIGHT_HAND);
 		
 		// do something with rightHand...
@@ -220,7 +220,7 @@ Therefore the code to access nodes in your testApp.cpp will be like this:
 	
 	void testApp::drawRigid(const ramRigidBody &rigid)
 	{
-		// access to all nodes
+		// accessing all nodes
 		for(int i=0; i<rigid.getNumNode(); i++)
 		{
 			ramNode node = rigid.getNode(i);
@@ -234,19 +234,19 @@ Therefore the code to access nodes in your testApp.cpp will be like this:
 
 ##### bool ramNodeArray::isActor()
 
-Returns true if the ramNodeArray is ramActor.
+Returns true if the ramNodeArray is a ramActor.
 
 ---
 
 ##### bool ramNodeArray::isRigid()
 
-Returns true if the ramNodeArray is ramRigidBody.
+Returns true if the ramNodeArray is a ramRigidBody.
 
 ---
 
 ##### bool ramNodeArray::isTypeOf(ramNodeArrayType t)
 
-Returns true if the ramNodeArray is same type to `ramNodeArrayType t` which is defined in _ramActor.h_.
+Returns true if the ramNodeArray is the same type as `ramNodeArrayType t` which is defined in _ramActor.h_.
 
 	enum ramNodeArrayType
 	{
@@ -258,43 +258,43 @@ Returns true if the ramNodeArray is same type to `ramNodeArrayType t` which is d
 
 ##### string& ramNodeArray::getName()
 
-Return the name of node array e.g. _Yoko_, _Cyril_, _Yasu_ …
+Return the name of the ramNodeArray e.g. _Yoko_, _Cyril_, _Yasu_ …
 
 ---
 
 ##### bool ramNodeArray::operator==(const ramNodeArray &arr)
 
-Return true if the right hand side ramNodeArray is same to left hand side.
+Return true if the right-hand side ramNodeArray is same as the left-hand side ramNodeArray.
 
 ---
 
 ##### bool ramNodeArray::operator!=(const ramNodeArray &arr)
 
-Return true if the right hand side ramNodeArray is not same to left hand side.
+Return true if the right-hand side ramNodeArray is not the same as left-hand side ramNodeArray.
 
 ---
 
 ##### ramNodeArray ramNodeArray::operator+(const ramNodeArray &arr)
 
-Returns ramNodeArray which has synthesized global position.
+Returns a ramNodeArray which has a synthesized global position.
 
 ---
 
 ##### ramNodeArray& ramNodeArray::operator+=(const ramNodeArray &arr)
 
-Returns self which has synthesized global position.
+Returns self which has a synthesized global position.
 
 ---
 
 ##### ramNodeArray ramNodeArray::operator-(const ramNodeArray &arr)
 
-Returns ramNodeArray which has synthesized global position.
+Returns ramNodeArray which has a synthesized global position.
 
 ---
 
 ##### ramNodeArray& ramNodeArray::operator-=(const ramNodeArray &arr)
 
-Returns self which has synthesized global position.
+Returns self which has a synthesized global position.
 
 ---
 
@@ -337,7 +337,7 @@ Returns the copy of self which is limited using `float length`.
 ##### float ramNodeArray::getTimestamp()
 
 Returns the last updated client time of the ramNodeArray.
-The last updated client time is updated when RAMDanceToolkit received new OSC data of the node array.
+The last updated client time is updated when RAMDanceToolkit received new OSC data for the node array.
 
 ---
 
@@ -347,7 +347,7 @@ The last updated client time is updated when RAMDanceToolkit received new OSC da
 
 <h1 id="wiki-ramNode">ramNode</h1>
 
-ramNode is used as a joint of ramActor and ramRigidBody which is inherited from [ofNode](http://www.openframeworks.cc/documentation/3d/ofNode.html). See also [ofxNodeArray::Node](https://github.com/YCAMInterlab/ofxNodeArray) .
+A ramNode is used as a joint for a ramActor and ramRigidBody object. A ramNode inherits from [ofNode](http://www.openframeworks.cc/documentation/3d/ofNode.html). See also [ofxNodeArray::Node](https://github.com/YCAMInterlab/ofxNodeArray) .
 
 ---
 
@@ -359,14 +359,13 @@ Returns its parent node.
 
 ##### bool ramNode::hasParent()
 
-Returns true if ramNode has parent node.
+Returns true if ramNode has a parent node.
 
 ---
 
 ##### ofVec3 ramNode::operator ofVec3f()
 
-Returns its global position.  
-It can be used as shortcut, ofNode::getGlobalPosition(). So, here is a sample code to draw shapes using oF methods.
+Returns its global position. This can be used as a shortcut for ofNode::getGlobalPosition(). The following sample code shows how to draw shapes using oF methods.
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -383,7 +382,7 @@ It can be used as shortcut, ofNode::getGlobalPosition(). So, here is a sample co
 		ofSphere(leftHand, 100);
 	}
 
-Another example to draw ramActor using ofBox and ofLine:
+In the following example, we can draw a ramActor by using ofBox and ofLine:
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -407,31 +406,31 @@ Another example to draw ramActor using ofBox and ofLine:
 
 ##### ofVec3f ramNode::getVelocity()
 
-Returns the distance between previous frame and current frame.
+Returns the velocity between the previous frame and the current frame.
 
 ---
 
 ##### ofVec3f ramNode::getAcceleration()
 
-Returns the acceleration calculated by previous frame and current frame.
+Returns the acceleration calculated from the previous frame and the current frame.
 
 ---
 
 ##### ofQuaternion ramNode::getAngularVelocity()
 
-Returns the acceleration calculated by previous frame and current frame.
+Returns the angular velocity calculated from the previous frame and the current frame.
 
 ---
 
 ##### ofQuaternion ramNode::getAngularVelocity()
 
-Returns the anguler velocity calculated by previous frame and current frame.
+Returns the anguler velocity calculated from the previous frame and the current frame.
 
 ---
 
 ##### ofQuaternion ramNode::getAngularAcceleration()
 
-Returns the anguler acceleration calculated by previous frame and current frame.
+Returns the anguler acceleration calculated from the previous frame and the current frame.
 
 ---
 
@@ -456,7 +455,8 @@ Alias to _transformGL()_ .
 ##### void ramNode::endTransform()
 
 Alias to _restoreTransformGL()_ .  
-The sample code put at ramNode::operator ofVec3f() didn't use the orientation so here is the another sample to use orientation of ramNode.
+
+The following sample code works like the previous sample, but now it uses the orientation of the ramNode via beginTransform() and endTransform().
 
 	void testApp::drawActor(const ramActor &actor)
 	{
@@ -475,37 +475,37 @@ The sample code put at ramNode::operator ofVec3f() didn't use the orientation so
 
 ##### bool ramNode::operator==(const ramNode &arr)
 
-Return true if the right hand side ramNode is same to left hand side.
+Return true if the right-hand side ramNode is the same as the left-hand side ramNode.
 
 ---
-
+	
 ##### bool ramNode::operator!=(const ramNode &arr)
 
-Return true if the right hand side ramNode is not same to left hand side.
+Return true if the right-hand side ramNode is not the same as the left-hand side ramNode.
 
 ---
 
 ##### ramNode ramNode::operator+(const ramNode &arr)
 
-Returns ramNode which has synthesized global position.
+Returns a ramNode with synthesized global position.
 
 ---
 
 ##### ramNode& ramNode::operator+=(const ramNode &arr)
 
-Returns self which has synthesized global position.
+Returns self with synthesized global position.
 
 ---
 
 ##### ramNode ramNode::operator-(const ramNode &arr)
 
-Returns ramNode which has synthesized global position.
+Returns a ramNode with synthesized global position.
 
 ---
 
 ##### ramNode& ramNode::operator-=(const ramNode &arr)
 
-Returns self which has synthesized global position.
+Returns self with synthesized global position.
 
 ---
 
@@ -550,57 +550,53 @@ Returns the copy of self which is limited using `float length`.
 
 <h1 id="wiki-ramActorManager">ramActorManager</h1>
 
-RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody. ramActorManager stores actors and updates these states.  
-Here are some shortcuts you can use in testApp and scene which inherits from ramBaseScene to access the actors.
+As noted in the introduction, the RAMDanceToolkit manages OSC data sent from MOTIONER or other sensor as ramActor or ramRigidBody objects. The ramActorManager stores these objects and updates their states.
+
+The following functions can be used in your testApp, as well as scenes that inherit from ramBaseScene, to access these actors.
+
 
 ---
 
 ##### ramActorManager& getActorManager()
 
-`Shortcut` Returns reference to ramActorManager.
+Returns a reference to ramActorManager.
 
 ---
 
 ##### ramNodeArray& getNodeArray(string name)
 
-`Shortcut` Returns reference to ramNodeArray whose name is same to `string name`.
+Returns a reference to ramNodeArray whose name is the same as `string name`.
 
 ---
 
 ##### ramNodeArray& getNodeArray(int index)
 
-`Shortcut` Returns reference to ramNodeArray whose index is same to `int index`.  
-For example, the index of first actor RAMDanceToolkit recieved is `0`.
+Returns reference to ramNodeArray whose index is the same as `int index`.  
+For example, the index of first actor RAMDanceToolkit recieves is `0`.
 
 ---
 
 ##### ramNodeArray& hasNodeArray(string name)
 
-`Shortcut` Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
-
----
-
-##### ramNodeArray& hasNodeArray(string name)
-
-`Shortcut` Returns true if ramActorManager has ramNodeArray whose name is same to `string name`.
+Returns true if ramActorManager has a ramNodeArray whose name is the same as `string name`.
 
 ---
 
 ##### size_t getNumNodeArray()
 
-`Shortcut` Returns number of the ramNodeArray RAMDanceToolkit is recieving at the time.
+Returns the number of ramNodeArray objects that the RAMDanceToolkit is recieving at the time.
 
 ---
 
 ##### vector<string>& getNodeArrayNames()
 
-`Shortcut` Returns all names of ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+Returns the names of all the ramNodeArray objects that the RAMDanceToolkit is receving at this time.
 
 ---
 
 ##### vector<ramNodeArray> getAllNodeArrays()
 
-`Shortcut` Returns all ramNodeArray RAMDanceToolkit is recieving at the time as vector.
+Returns all ramNodeArray objects that the RAMDanceToolkit is recieving at the time.
 
 
 ---
