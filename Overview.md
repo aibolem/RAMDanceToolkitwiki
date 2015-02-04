@@ -31,18 +31,18 @@ You can download the compiled application from here.
 - [RAM-app_osx_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_osx_v1_1_0.zip) (Mac OS 10.7+, 106.1MB)
 - [RAM-app_win_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_win_v1_1_0.zip) (Windows 7+, 136.7MB)
 
+### Source code
+
+The following zip files includes the entire source code, as well as motion data that can be used for developing your own projects.
+
+- [RAM_Release_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-release-v1_1_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 107.1MB)
+
 ### Motion Data OSC Server
 
 The Motion Data OSC Server sends OSC messages to the RAMDanceToolkit, so you don't have to use MOTIONER or other sensors for testing. The following link includes RAMOSCServer and MotionData XML files. This application will send OSC messages to the RAMDanceToolkit when you drag and drop XML files onto the app screen. This is useful for testing the RAMDanceToolkit.
 
 - [RAM-OSCServer_mac-v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 32.6MB)
 - [RAM-OSCServer_win-v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 39.7MB)
-
-### Source code
-
-The following zip files includes the entire source code, as well as motion data that can be used for developing your own projects.
-
-- [RAM_Release_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-release-v1_1_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 107.1MB)
 
 ### External Resourcse (Sound and MotionData)
 
