@@ -107,7 +107,7 @@ Here is a sample code for displaying simple text on stage.
 		ramEndCamera();
 	}
 
-You can write your openFrameworks code in setup(), update(), draw(), as well as other methods which work with ramBaseApp. Thse are explained in [RAM API Reference Core](RAM-API-Reference-Core)!
+You can write your openFrameworks code in setup(), update(), draw(), as well as other methods which work with ramBaseApp. These methods are explained in [RAM API Reference Core](RAM-API-Reference-Core)!
 
 
 <hr>
