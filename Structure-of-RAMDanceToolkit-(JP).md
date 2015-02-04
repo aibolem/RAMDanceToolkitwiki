@@ -75,6 +75,7 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
  	- `Vizualizer`を用いた、updateで更新された結果の表示
  	- `Object`の描画
 4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
+4. ディスプレイやプロジェクターに映像を出力します。
 
 We call this sequence a `Scene`, consisting of one or more of the following:
  
