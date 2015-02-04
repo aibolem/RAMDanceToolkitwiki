@@ -113,7 +113,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		ramEndCamera();
 	}
 
-ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
+シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
