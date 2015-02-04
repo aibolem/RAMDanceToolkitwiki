@@ -68,9 +68,7 @@ The above image shows the general flow of the RAMDanceToolkit.
 2. Update phase:
 	- Converts motion data using a `Filter`
 	- Analyses data using a `Recognizer`
-	- Triggers an `Event` 
 	- Updates an `Object` interaction with the dancer
-	- Bypasses
 3. Draw phase
  	- Uses a `Vizualizer` with the results of the update phase
  	- Draws an `Object`
