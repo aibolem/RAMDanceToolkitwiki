@@ -3,11 +3,10 @@
 
 ### Summary
 
-This page shows how to use ramFilters.  
-Each of the filters RAMDanceToolkit includes inherits from ramBaseFilter. If you create own filter, we strongly recommend that the filter also inherits ramBaseFilter to integrate with other factor in RAMDanceToolkit.
+This page shows how to use ramFilters. Each of these filters inherits from ramBaseFilter. If you create your own filter, we strongly encourage you to start by inheriting from ramBaseFilter, so that your custom filter integrates nicely with RAMDanceToolkit.
 
 
-### table of contents
+### Table of Contents
 - [Introduction to ramBaseFilter](Introduction to ramBaseFilter)
 - [ramExpansion](ramExpansion)
 - [ramLowPassFilter](ramLowPassFilter)
@@ -22,9 +21,9 @@ Each of the filters RAMDanceToolkit includes inherits from ramBaseFilter. If you
 
 # Introduction to ramBaseFilter
 
-ramBaseFilter is a base class of all filters. This class provides common interface for filtering, and getting result.
+ramBaseFilter is the base class of all filters. This class provides common interfaces for filtering data and getting desired results.
 
-Here is a minimum example of new filter class "MyFilter".
+Here is a simple example of a custom filter class called "MyFilter".
 
 	class MyFilter : public ramBaseFilter
 	{
@@ -35,7 +34,7 @@ Here is a minimum example of new filter class "MyFilter".
 		
 		void setupControlPanel()
 		{
-			// GUI parts implementation here...
+			// GUI implementation goes here...
 		}
 		
 		
@@ -49,12 +48,12 @@ Here is a minimum example of new filter class "MyFilter".
 		const string getName() { return "MyFilter"; }
 	};
 
-For filtering ramNodeArray, `const ramNodeArray& update(const ramNodeArray& src)` should be called because ramBaseFilter create a cache of update result on each frame to keep the result correct. 
+For filtering a ramNodeArray, `const ramNodeArray& update(const ramNodeArray& src)` should be called. ramBaseFilter will create a cache of update results from  each frame and keep track of the result correctly. 
 
-For getting result, you can use the returned value from update(). Or simply call `const ramNodeArray& ramBaseFilter::get(size_t index)` after updating.
+For getting your filtered results, you can use the returned value from update(). Or simply call `const ramNodeArray& ramBaseFilter::get(size_t index)` after updating.
 
 
-Therefore MyFilter is used like:
+So you might end up using MyFilter like this:
 
 	// testApp.h
 	MyFilter filter;

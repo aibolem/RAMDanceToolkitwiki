@@ -3,12 +3,11 @@
 
 ### Summary
 
-This page shows how to use ramEvents.
-These are not Event Object like ofEvent, but has boolean state  which is set true when it fires.
+This page describes how to use ramEvents.
 
+ramEvents are not to be convused with ofEvents, which work different. A ramEvent has a boolean state, which is set to true when it is fired.
 
-
-### table of contents
+### Table of Contents
 - Introduction to ramBaseEvent
 - ramCollisionEvent
 - ramScheduledTimerEvent
@@ -17,8 +16,8 @@ These are not Event Object like ofEvent, but has boolean state  which is set tru
 
 # Introduction to ramBaseEvent
 
-ramBaseEvent is a base class of all RAM events. 
-Here is a minimum example of new filter class "MyFilter".
+ramBaseEvent is a base class for all RAM events. 
+Here is a small example of a new event class called "MyFilter".
 
 	class MyEvent : public ramBaseEvent
 	{
@@ -30,7 +29,7 @@ Here is a minimum example of new filter class "MyFilter".
 		}
 	};
 
-When you call update() implemented in ramBaseFilter, boolean which is returned by tick() is returned to a caller. Cached value will be returned if you call update() many time in same frame.
+When you call update() as implemented in ramBaseFilter, the boolean returned by tick() is returned to a caller. The cached value will be returned if you call update() many times in same frame.
 
 	// testApp.h
 	MyEvent event;
@@ -48,9 +47,9 @@ When you call update() implemented in ramBaseFilter, boolean which is returned b
 
 # ramCollisionEvent
 
-ramCollisionEvent observes collision between `ramPremitive` set to ramCollisionEvent and other objects which also have collision detection e.g. `ramBox`, `ramLine`.
+ramCollisionEvent observes collision between `ramPrimitive` objects that are set to respond to a ramCollisionEvent. Other objects which also have collision detection include `ramBox`, `ramLine` etc.
 
-Three trigger timing can be set to ramCollisionEvent.
+Three trigger timings can be set to a ramCollisionEvent.
 
 	enum ramTriggerTiming
 	{
@@ -70,7 +69,7 @@ ramScheduledTimerEvent changes its state once per interval duration.
 
 # ramRandomTimerEvent
 
-ramRandomTimerEvent changes its state once per interval duration which set randomly between `min` and `max`.
+ramRandomTimerEvent changes its state once per interval duration, which is set randomly between `min` and `max`.
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
