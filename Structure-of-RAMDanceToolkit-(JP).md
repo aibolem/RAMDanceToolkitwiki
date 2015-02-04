@@ -22,10 +22,7 @@ RAMDanceToolkitはtestApp::setup():の中の1行のコードから始めます�
 ## OSCデータのフォーマット
 	
 
-Skeleton data is sent as a series of nodes in a single OSC message.
-スケルトンのデータは、1つのOSCメッセージの中にノード情報が連続して入っています。
-
-The structure of each OSC message is:
+RAMDanceToolkitでは、1つのOSCメッセージの中にノード情報を連続して入れたスケルトンデータを扱います。
 OSCメッセージの構造は下記のようになっています。
 
 **Key**: s: string,  i: int,  f: float
@@ -41,9 +38,10 @@ OSCメッセージの構造は下記のようになっています。
 2. `fff`: ノードの位置 (x, y, z)
 3. `ffff`: ノードの回転情報 (angle, x, y, z)
 
-### Address
+### アドレス
 
 The data for ramActor will come into:
+ramActor
 
     /ram/skeleton  
 
