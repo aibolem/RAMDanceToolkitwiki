@@ -22,7 +22,7 @@ RAMDanceToolkitはtestApp::setup():の中の1行のコードから始めます�
 ## OSCデータのフォーマット
 	
 
-RAMDanceToolkitでは、1つのOSCメッセージの中にノード情報を連続して入れたスケルトンデータを扱います。
+RAMDanceToolkitで扱うスケルトンデータに関してここに説明します。
 OSCメッセージの構造は下記のようになっています。
 
 **Key**: s: string,  i: int,  f: float
@@ -74,8 +74,7 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 3. Drawでは下記のような処理を行います
  	- `Vizualizer`を用いた、updateで更新された結果の表示
  	- `Object`の描画
-4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
-4. ディスプレイやプロジェクターに映像を出力します。
+4. ディスプレイやプロジェクターに映像を出力する、もしくはサウンドシステムやデバイスなどへの出力をします。ここで出力される内容はダンサーへのフィードバックとして提示するもので、ダンサーの動きに影響を与える事を想定しています。
 
 We call this sequence a `Scene`, consisting of one or more of the following:
  
