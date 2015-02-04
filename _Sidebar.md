@@ -16,6 +16,7 @@
 
 **Introduction**
 - [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit)
+- [RAMDanceToolkitのストラクチャ](Structure-of-RAMDanceToolkit_JP)
 - [How to create scene](How-to-create-Scene)
 
 

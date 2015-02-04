@@ -77,6 +77,8 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 この一連の流れで構成される、ダンサーのための環境の事を`シーン`と呼びます。
  
 
+RAMDanceToolkitには`Filter`、`Recognizer`、`Events`、`Visualizer`、`Object`と呼ばれる機能が備わっています。下記に使用例を紹介します。
+
 ### Filter使用例
 
 ダンサーを180度回転させて逆さまにしています
