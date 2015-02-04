@@ -65,21 +65,15 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 上図はRAMDanceToolkitの一般的なプロセスの流れを表しています。
 
 1. RAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
-2. Update phase:
-2. アップデート
-	- Converts motion data using a `Filter`
-	- `Filter`を用いてモーションデータを変換します
-	- Analyses data using a `Recognizer`
-	- `Recognizer`を用いてデータを解析します
-	- Triggers an `Event` 
-	- `Event`をトリガーします
-	- Updates an `Object` interaction with the dancer
-	- `Object`とのインタラクションをアップデートします
-	- Bypasses
-	- バイパスします
-3. Draw phase
- 	- Uses a `Vizualizer` with the results of the update phase
- 	- Draws an `Object`
+2. updateでは下記のような処理を行います
+	- `Filter`を用いたモーションデータの変換
+	- `Recognizer`を用いたデータの解析
+	- `Event`のトリガー
+	- `Object`とのインタラクションのアップデート
+	- もしくはバイパス
+3. Drawでは下記のような処理を行います
+ 	- `Vizualizer`を用いた、updateで更新された結果の表示
+ 	- `Object`の描画
 4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
 
 We call this sequence a `Scene`, consisting of one or more of the following:
