@@ -71,7 +71,7 @@ The above image shows the general flow of the RAMDanceToolkit.
 	- Updates an `Object` interaction with the dancer
 3. Draw phase
  	- Uses a `Vizualizer` with the results of the update phase
- 	- Draws `Object`s
+ 	- Draws `Objects`
 4. Outputs visuals to screen, projector, or other expressive environment (physical interface, sound etc.) This mediated expression is expected to be used by the dances as feedback, generating new ideas for movement.
 
 We call this sequence a `Scene`, consisting of one or more of the following:
