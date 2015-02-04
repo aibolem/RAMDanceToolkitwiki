@@ -1,4 +1,4 @@
-RAM Dance Toolkit is a C++ creative coding toolkit for creating environments for dancers. This toolkit contains a GUI and helpful functions for accessing, recognizing, and processing motion data to support the creation of various environmental conditions called “scenes”. The toolkit also provides realtime feedback for dancers by using code in an easy way. The toolkit uses openFrameworks, a software development toolkit for artists, meaning users can use functions from both RAM Dance Toolkit and openFrameworks. RAM Dance Toolkit will also be published as an application for Windows and Mac. As an application, users also can choreograph or rehearse with previously programmed scenes.
+The [RAMDanceToolkit](http://ram.ycam.jp/en/) is a C++ creative coding toolkit for creating environments for dancers. This toolkit contains a GUI and helpful functions for accessing, recognizing, and processing motion data, supporting the creation of various environments called “scenes”. By using code in an easy way, the toolkit allows you to provide realtime feedback for dancers. The toolkit uses openFrameworks, a software development toolkit for artists. The structure of the RAMDanceToolkit allows you to use functions from both the RAMDanceToolkit and openFrameworks. The RAMDanceToolkit will also be published as an application for Windows and Mac. As an application, users can choreograph or rehearse with previously programmed scenes.
 
 [[/Images/Home/ram.png]]
 
@@ -11,7 +11,7 @@ RAM Dance Toolkit is a C++ creative coding toolkit for creating environments for
 Screencast on how to use the RAMDanceToolkit application by Kyle McDonald
 
 ### [Introduction to coding with RAM Dance Toolkit (vimeo)](http://vimeo.com/64775855)  
-Screencast on how to develop your own customizations using the RAMDanceToolkit API by Kyle McDonald
+Screencast on how to develop with the RAMDanceToolkit API by Kyle McDonald
 
 ### [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/en/projects/ram/)   
 Full documentation of "Reactor for Awareness in Motion"
@@ -40,7 +40,7 @@ The Motion Data OSC Server sends OSC messages to the RAMDanceToolkit, so you don
 
 ### Source code
 
-The following zip files includes all of source codes, as well as motion data that can be used for developing your own projects.
+The following zip files includes the entire source code, as well as motion data that can be used for developing your own projects.
 
 - [RAM_Release_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-release-v1_1_0.zip) (Mac OS 10.7+, Windows7+, OF0.7.4+, 107.1MB)
 
