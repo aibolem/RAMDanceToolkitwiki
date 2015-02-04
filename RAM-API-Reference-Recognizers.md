@@ -3,9 +3,9 @@
 
 ### Summary
 
-This page shows some preset recognizers.
+This page describes a number of recognizers used in RAMDanceToolkit.
 
-### table of contents
+### Table of Contents
 
 - [Introduction to ramBaseRecognizer](Introduction to ramBaseRecognizer)
 - [ramGeometry](ramGeometry)
@@ -16,23 +16,23 @@ This page shows some preset recognizers.
 
 # Introduction to ramBaseRecognizer
 
-In RAMDanceToolkit 1.0.0, ramRecognizer is an experimental class.
-There are many cases of analysis result which will be returned, so currently this class doesn't have a regular format. Please post an issue or send pull request if you have an idea concerning this class. 
+In RAMDanceToolkit 1.0.0, ramBaseRecognizer is an experimental class. There are many kinds of analysis results that might be returned. Because of this, ramBaseRecognizer doesn't have a uniform format. If you have any issues with this class, plesae create a new issue or send a pull request! ramBaseRecognizer is still a work in progress :)
 
-Current ramBaseRecognizer is empty:
+
+The Current ramBaseRecognizer implementation is empty:
 
 	class ramBaseRecognizer : public ramUnit {
 	public:
 	};
 
-See also [Notation scene]() as recognizer example.
+For an examlple of how to use a recognizer, please look at the [Notation scene](https://github.com/YCAMInterlab/RAMDanceToolkit/tree/master/apps/RAMDanceToolkit/src/scenes/Notation)  example.
 
 <br>
 
 # ramGeometry
 
-ramGeometry is used in [Notation scene](), [Three Points scene](), [Four Points scene]() .
-To use these methods, include _ramGeometry.h_ to header file of your scene. 
+ramGeometry is used in the [Notation scene](), [Three Points scene]() and [Four Points scene]().
+To use these methods, include _ramGeometry.h_ in the header file of your scene. 
 
 #### void rotateToNormal(ofVec3f normal);
 
