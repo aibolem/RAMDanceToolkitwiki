@@ -63,6 +63,7 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 [[/Images/API-Structure/fig-structure.png]]
 
 The above image shows the general flow of the RAMDanceToolkit.
+上図はRAMDanceToolkitの
 
 1. RAMDanceToolkit receives motion data from MOTIONER or another kind of sensor
 2. Update phase:
