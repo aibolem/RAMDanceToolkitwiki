@@ -93,12 +93,12 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 ### Events使用例
 
-アクターがなんらかのオブジェクトに触れるとトリガーされます
+アクターがオブジェクトに触れるとトリガーされます
 
 [[/Images/API-Structure/pic-event.png]]
 
 
-### Visualizer
+### Visualizer使用例
 
 Visualizing the relation between nodes as a line. 
 
