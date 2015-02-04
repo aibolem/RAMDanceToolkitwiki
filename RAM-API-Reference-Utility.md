@@ -239,12 +239,14 @@ An example is available at [examples/example-communicationManager](https://githu
 
 #ramOscReceiveTag
 ramOscReceiveTag is an OSC receiver class for each scene.
+
 ###Setup
 	ofxOscReceiveTag receiver;
 	
 	receiver.addAddress("/Signals");
 	ramOscManager::instance().addReceiverTag(&receiver);
-###Receive
+
+###Receiving OSC
 	while (receiver.hasWaitingMessages()){
 		
 		ofxOscMessage m;
