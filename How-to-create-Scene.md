@@ -32,13 +32,13 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 		void drawActor(const ramActor& actor)
 		{
 		    // To be called for as many number of recieving OSC data of ramActor objects.
-		    // Each of the actor is passed as the argument `const ramActor &actor`.
+		    // Each actor is passed as the argument `const ramActor &actor`.
 		}
 
 		void drawRigid(const ramRigidBody &rigid)
 		{
 		    // To be called for as many number of recieving OSC data of ramRigidBod objects.  
-		    // Each of the actor is passed as the argument `const ramRigidBody &rigid`.
+		    // Each actor is passed as the argument `const ramRigidBody &rigid`.
 		}
 	
 		void onActorSetup(const ramActor &actor)
@@ -56,7 +56,7 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 		void onRigidSetup(const ramRigidBody &rigid)
 		{
 		    // To be called when ramActorManager starts to recieve OSC data of a new ramRigidBody.  
-		    // The new rigidbody is passed as the argument `const ramRigidBody &rigid`.
+		    // The new rigidBody is passed as the argument `const ramRigidBody &rigid`.
 		}
 
 		void onRigidExit(const ramRigidBody &rigid)
