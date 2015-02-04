@@ -82,6 +82,7 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 ### Filter example
 
 Adding +180 degree rotation to the actor data
+ダンサーを
 
 [[/Images/API-Structure/pic-filter.png]]
 
