@@ -86,14 +86,14 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 ### Recognizer使用例
 
-楕円形のトラッキング
+モーションデータの軌跡から楕円のトラッキングをしています
 
 [[/Images/API-Structure/pic-recognizer.png]]
 
 
 ### Events使用例
 
-アクターがなんらかのオブジェクトに触れるとトリガーされます。
+アクターがなんらかのオブジェクトに触れるとトリガーされます
 
 [[/Images/API-Structure/pic-event.png]]
 
