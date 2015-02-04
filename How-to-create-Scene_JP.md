@@ -44,7 +44,7 @@
 		void onActorSetup(const ramActor &actor)
 		{
 		    // 新しいramActorが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたアクターは、`const ramActor &actor`の形で引数として渡されます。
+		    // 新しく入ってきたアクターは`const ramActor &actor`の形で引数として渡されます。
 		}
 
 		void onActorExit(const ramActor &actor)
@@ -57,19 +57,20 @@
 		void onRigidSetup(const ramRigidBody &rigid)
 		{
 		    // 新しいramRigidBodyが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたリジッドボディは、`const ramRigidBody &rigid`の形で引数として渡されます。
-
+		    // 新しく入ってきたリジッドボディは、
+		    // `const ramRigidBody &rigid`の形で引数として渡されます。
 		}
 
 		void onRigidExit(const ramRigidBody &rigid)
 		{
-		    // To be called when `const ramRigidBody &rigid` is outdated.  
-		    // 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
+		    // `const ramRigidBody &rigid`のデータが更新されなくなった時に呼ばれます。
+		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
+		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
 		}
 	};
 
 
-また、`{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっています。
+また、`{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっているので、参考にしてください。
 
 [[Images/Introduction/fig-scene-1.png]]
 
