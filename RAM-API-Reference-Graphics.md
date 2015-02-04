@@ -2,9 +2,9 @@
 
 ### Summary
 
-RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_.
+The RAMDanceToolkit has a number of global methods for drawing shapes, as defined in _ramGraphics.h_.
 
-### table of contents
+### Table of Contents
 
 - [ramGraphics](#wiki-ramGraphics)
 - [ramSimpleShadow](#wiki-ramSimpleShadow)
@@ -20,52 +20,48 @@ RAMDanceToolkit has some global method to draw shapes defined at _ramGraphics.h_
 
 ##### void ramBox(const ramNode& o, float size)
 
-Same to ofBox but has collision detection.  
-Example of collision detection is available on _SoundCube.h_ scene in RAMDanceToolkit.
+This method works in much the same way as ofBox, with additional support for collision detection.
+
+An example of how collision detection works is available in the _SoundCube.h_ scene in the RAMDanceToolkit.
 
 ---
 
 ##### void ramSphere(const ramNode& o, float radius)
 
-Same to ofSphere but has collision detection.  
-Example of collision detection is available on _SoundCube.h_ scene in RAMDanceToolkit.
+This method works in much the same way as ofSphere, with additional support for collision detection.
 
----
-
-##### void ramSphere(const ramNode& o, float radius)
-
-Same to ofSphere but has collision detection.
+An example of how collision detection works is available in the _SoundCube.h_ scene in the RAMDanceToolkit.
 
 ---
 
 ##### void ramDrawBasicActor(const ramActor& actor)
 
-Draws ramActor using simple shape.
+This method draws a ramActor object using simple shapes.
 
 ---
 
 ##### void ramDrawBasicRigid(const ramRigidBody& rigid)
 
-Draws ramRigidBody using simple shape.
+This method draws a ramRigidBody object using simple shapes.
 
 ----
 
 ##### void ramDrawNodes(const ramNodeArray& nodeArray)
 
-Draws ramNodeArray using simple shape.  
-Use this method when you need to check whether it is the ramNodeArray, ramActor or ramRigidBody.
+This method draws a ramNodeArray object using simple shapes.
+You can use this method when you need to check whether an object is a ramNodeArray, ramActor or ramRigidBody.
 
 ----
 
 ##### void ramDrawNodeCorresponds(const ramNodeArray &a, const ramNodeArray &b)
 
-Draws lines between the correspond nodes. Two ramNodeArrays must have same number of nodes.
+This method draws lines between the corresponding nodes. Two ramNodeArrays must have same number of nodes.
 
 ----
 
 ##### void ramStripe(...)
 
-Draws plane using passed ramNode.  
+This method draws a plane using a vector of ramNode objects.  
 `vector<ramNode>` or many `ramNode` can be passed as argument:
 	
 	// vector
@@ -86,37 +82,37 @@ Draws plane using passed ramNode.
 
 <h1 id="wiki-ramSimpleShadow">ramSimpleShadow</h1>
 
-To draw shadow on the floor, wrap your code to draw something using ramBeginShadow(), ramEndShadow().
+By wrapping your graphics between ramBeginShadow() and ramEndShadow(), you can draw shadows on the floor.
 
 ---
 
 ##### void ramBeginShadow()
 
-Starts drawing shadow.
+This method starts drawing shadows.
 
 ---
 
 ##### void ramBeginShadow()
 
-Ends drawing shadow.
+This method ends drawing shadows.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Sets shadow alpha.
+This method sets shadow alpha.
 
 ---
 
 ##### void ramSetShadowAlpha(float alpha)
 
-Sets shadow alpha.
+This method sets shadow alpha.
 
 ---
 
 ##### void ramEnableShadow(bool v = true)
 
-Sets shadow alpha.
+This method sets shadow alpha.
 
 
 
@@ -127,6 +123,7 @@ Sets shadow alpha.
 
 <h1 id="wiki-ramColor">ramColor</h1>
 
+The following colors are available:
 
 `ramColor::RED_NORMAL`,
 `ramColor::RED_DEEP`,
@@ -149,8 +146,9 @@ Sets shadow alpha.
 `ramColor::GRAY_ALPHA`,
 `ramColor::LIGHT_GRAY_ALPHA`,
 `ramColor::SHADOW`.
-are available as preset. 
 	
+For example:
+
 	// ramColor::RED_NORMAL returns ofColor::fromHex(0xff6666)
 	ofSerColor( ramColor::RED_NORMAL );
 
