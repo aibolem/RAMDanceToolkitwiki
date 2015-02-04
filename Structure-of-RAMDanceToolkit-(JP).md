@@ -2,9 +2,7 @@
 
 [[/Images/API-Structure/fig-inheritence.png]]
 
-In a normal openFrameworks application, your `testApp` is inherited from `ofBaseApp`. However, with the RAMDanceToolkit, your `testApp` inherits from `ramBaseApp`, which itself is inherits from `ofBaseApp`. The image above illustrates this relationship.
-
-通常のopenFrameworksアプリケーションでは、`testApp`（現在のofApp）は`ofBaseApp`を継承したものですが、RAMDanceToolkitでは、`testApp`は`ofBaseApp`を継承して作られた、`ramBaseApp`を継承しています。上記の図はこの事をしています。
+通常のopenFrameworksアプリケーションでは、`testApp`（現在のofApp）は`ofBaseApp`を継承したものですが、RAMDanceToolkitでは、`testApp`は`ofBaseApp`を継承して作られた`ramBaseApp`を継承しています。上記の図はこの関係を示しています。
 
 Because of this, you can still do all of your normal openFrameworks coding within your `testApp`. In addition, the `ramBaseApp` from which `testApp` inherits provides you with additional methods and events to manipulate the data sent in from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or another motion capture system. 
 
