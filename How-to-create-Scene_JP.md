@@ -50,13 +50,15 @@
 		void onActorExit(const ramActor &actor)
 		{
 		    // `const ramActor &actor`のデータが更新されなくなった時に呼ばれます。
-		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、デフォルトで1秒が設定されています。
+		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
+		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
 		}
 
 		void onRigidSetup(const ramRigidBody &rigid)
 		{
-		    // To be called when ramActorManager starts to recieve OSC data of a new ramRigidBody.  
-		    // The new rigidbody is passed as the argument `const ramRigidBody &rigid`.
+		    // 新しいramRigidBodyが入ってきた時に呼ばれます。  
+		    // 新しく入ってきたリジッドボディは、`const ramRigidBody &rigid`の形で引数として渡されます。
+
 		}
 
 		void onRigidExit(const ramRigidBody &rigid)
