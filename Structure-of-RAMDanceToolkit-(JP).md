@@ -6,7 +6,7 @@
 
 このため、`testApp`の中ではopenFrameworksで使えた機能はすべて使う事ができます。さらに、基底クラスの`ramBaseApp`が[MOTIONER](https://github.com/YCAMInterlab/Motioner)をはじめとしたモーションキャプチャからのデータを扱うためのメソッドやイベント機能を備えているため、これらの機能も使う事ができます。
 
-RAMDanceToolkitはtestApp::setup():の中の一行から始めます。
+RAMDanceToolkitはtestApp::setup():の中の一行のコードから始めます。
 
 	void testApp::setup()
 	{
