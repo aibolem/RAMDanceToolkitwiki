@@ -100,14 +100,14 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 
 ### Visualizer使用例
 
-Visualizing the relation between nodes as a line. 
+複数ノードの関係をラインで描画しています
 
 [[/Images/API-Structure/pic-visualizer.png]]
 
 
-### Object
+### Object使用例
 
-Putting a visual "chain" on a joint.
+ジョイントに鎖を取り付けています。
 
 [[/Images/API-Structure/pic-object.png]]
 
