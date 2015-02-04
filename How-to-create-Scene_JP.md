@@ -1,4 +1,4 @@
-As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit), you can create your own scene. The following EmptyScene sample code shows you how:
+[Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit_JP)にも書かれていますが、自分でシーンを作成する事が出来ます。下記のEmptySceneのコードに書かれているものが基本的なシーンの骨組みになります。
 
 	class EmptyScene : public ramBaseScene
 	{
@@ -67,7 +67,7 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 	};
 
 
-`{RAM_ROOT}/examples/example-emptyScene` provides a simple example of how to create own scene.
+また、`{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっています。
 
 [[Images/Introduction/fig-scene-1.png]]
 
