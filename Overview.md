@@ -10,7 +10,7 @@ The [RAMDanceToolkit](http://ram.ycam.jp/en/) is a C++ creative coding toolkit f
 ### [Introduction to RAM Dance Toolkit application (Vimeo)](http://vimeo.com/64703174) 
 Screencast on how to use the RAMDanceToolkit application by Kyle McDonald
 
-### [Introduction to coding with RAM Dance Toolkit (vimeo)](http://vimeo.com/64775855)  
+### [Introduction to coding with RAM Dance Toolkit (Vimeo)](http://vimeo.com/64775855)  
 Screencast on how to develop with the RAMDanceToolkit API by Kyle McDonald
 
 ### [Reactor for Awareness in Motion (RAM) - YCAM InterLab](http://interlab.ycam.jp/en/projects/ram/)   
