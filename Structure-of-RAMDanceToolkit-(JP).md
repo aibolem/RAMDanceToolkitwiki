@@ -76,11 +76,8 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
  	- `Object`の描画
 4. Outputではディスプレイやプロジェクターに映像を出力する、もしくはサウンドシステムやデバイスなどへの出力をします。ここで出力される内容はダンサーへのフィードバックとして提示するもので、ダンサーの動きに影響を与える事を想定しています。
 
-We call this sequence a `Scene`, consisting of one or more of the following:
-この一連の流れの事を`シーン`と呼びます。
+この一連の流れで構成される、ダンサーのための環境の事を`シーン`と呼びます。
  
-`Filter`, `Recognizer`, `Events`, `Visualize`, and `Object`   
-
 
 ### Filter example
 
