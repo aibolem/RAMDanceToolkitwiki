@@ -4,11 +4,9 @@
 
 通常のopenFrameworksアプリケーションでは、`testApp`（現在のofApp）は`ofBaseApp`を継承したものですが、RAMDanceToolkitでは、`testApp`は`ofBaseApp`を継承して作られた`ramBaseApp`を継承しています。上記の図はこの関係を示しています。
 
-Because of this, you can still do all of your normal openFrameworks coding within your `testApp`. In addition, the `ramBaseApp` from which `testApp` inherits provides you with additional methods and events to manipulate the data sent in from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or another motion capture system. 
+このため、`testApp`の中ではopenFrameworksで使えた機能はすべて使う事ができます。さらに、基底クラスの`ramBaseApp`が[MOTIONER](https://github.com/YCAMInterlab/Motioner)をはじめとしたモーションキャプチャからのデータを扱うためのメソッドやイベント機能を備えているため、これらの機能も使う事ができます。
 
-このため、`testApp`の中ではopenFrameworksで使えた機能はすべて使う事ができます。さらに、基底クラスの`ramBaseApp`が[MOTIONER](https://github.com/YCAMInterlab/Motioner)をはじめとしたモーションキャプチャからのデータを扱うためのメソッドやイベント機能を備えており、これらの機能も使う事ができます。
-
-The RAMDanceToolkit kicks off via one line of code in your testApp::setup():
+RAMDanceToolkitはtestApp::setup():の中の一行から始めます。
 
 	void testApp::setup()
 	{
