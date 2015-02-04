@@ -209,7 +209,7 @@ Returns true if loading `const string filePath` is successful.
 #ramCommunicationManager
 ramCommunicationManager is communication tools with other applications via OSC.
 
-An example is available at examples/example-communicationManager
+An example is available at [examples/example-communicationManager](https://github.com/YCAMInterlab/RAMDanceToolkit/tree/master/examples/example-communicationManager)
 
 ###Setup
 	//communicationManager setup
@@ -238,13 +238,15 @@ An example is available at examples/example-communicationManager
 	ramEndCamera();
 
 #ramOscReceiveTag
-ramOscReceiveTag is OSC receiver class for each scenes.
+ramOscReceiveTag is an OSC receiver class for each scene.
+
 ###Setup
 	ofxOscReceiveTag receiver;
 	
 	receiver.addAddress("/Signals");
 	ramOscManager::instance().addReceiverTag(&receiver);
-###Receive
+
+###Receiving OSC
 	while (receiver.hasWaitingMessages()){
 		
 		ofxOscMessage m;

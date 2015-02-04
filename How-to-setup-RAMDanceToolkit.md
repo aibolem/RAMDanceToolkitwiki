@@ -10,7 +10,7 @@ You can download the RAMDanceToolkit in three different ways:
 
 The following sections will walk you through how to setup installing the RAMDanceToolkit depending on which method you choose.
 
-At the end, we will describe how to get MotionData into the app for testing
+At the end, we will describe how to get MotionData into the app for testing.
 
 ## Compiled Application
 
@@ -21,6 +21,10 @@ Unzip the downloaded file and launch your RAMDanceToolkit app.
 ## Source code zip
 
 Download the source code via zip file and put the downloaded files into your openFrameworks (version 0.7.4+) directory.
+
+**RAMDanceToolkit does NOT go into your {OF_ROOT}/app directory**
+
+**It goes into your top-level {OF_ROOT} directory. See image below**
 
 [[/Images/Introduction/fig-setup-of.png]]
 
@@ -42,7 +46,7 @@ and build it using debug and release build settings before compiling RAM Dance T
 
 ### Examples
 
-This directory contains sample projects for understing the RAMDanceToolkit API. To check which files you need to usefor each project, please read the "[[apps|https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/How-to-setup-RAMDanceToolkit#apps]]" above.
+This directory contains sample projects for understing the RAMDanceToolkit API. 
 
 ### Libs
 
@@ -99,7 +103,7 @@ After downloading this zip file, add `Sounds` and `MotionData` directories into 
 
 You can test the RAMDanceToolkit without MOTIONER or other sensors by playing back recorded motion data.
 
-**note: In RAMDanceToolkit version 1.0.0, motion data playback is available only for Mac OS.**
+**Note: In RAMDanceToolkit version 1.0.0, motion data playback is available only for Mac OS.**
 
 The recorded motion data `Ando_1` appears only at the first time of launching the RAMDanceToolkit. The other motion datas, named `Ando`, `Cyril`, `Richi`, are available in `RAMDanceTookit/resources/MotionData`.  To start playback, click "Load file" button on Actors panel or drag and drop the motion data file into the application.
 

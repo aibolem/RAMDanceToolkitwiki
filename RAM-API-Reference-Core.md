@@ -14,7 +14,7 @@ This page shows the basic structure of RAMDanceToolkit. After reading this page,
 
 <h1 id="wiki-ramBaseApp">ramBaseApp</h1>
 
-The ramBaseApp passes OSC messages (received on port 10000 by default) to the ramActorManager. The ramActorManager, described in more detail below, manages data from MOTIONER or another motion sensor, and uses it for ramActor and/or ramRigidBody.
+The ramBaseApp passes OSC messages (received on port 10000 by default) to the ramActorManager. The ramActorManager, described in more detail below, manages data from MOTIONER or another motion sensor, and uses it for ramActor and/or ramRigidBody objects.
 
 Our normal testApp inherits several functions and events from ramBaseApp for manipulating ramActor and ramRigidBody objects.
 

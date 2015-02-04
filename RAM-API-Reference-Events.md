@@ -5,19 +5,19 @@
 
 This page describes how to use ramEvents.
 
-ramEvents are not to be convused with ofEvents, which work different. A ramEvent has a boolean state, which is set to true when it is fired.
+ramEvents are not to be confused with ofEvents, which work differently. A ramEvent has a boolean state, which is set to true when it is fired.
 
 ### Table of Contents
-- Introduction to ramBaseEvent
-- ramCollisionEvent
-- ramScheduledTimerEvent
-- ramRandomTimerEvent
+- [Introduction to ramBaseEvent](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-Events#introduction-to-rambaseevent)
+- [ramCollisionEvent](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-Events#ramcollisionevent)
+- [ramScheduledTimerEvent](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-Events#ramscheduledtimerevent)
+- [ramRandomTimerEvent](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-Events#ramrandomtimerevent)
 
 
 # Introduction to ramBaseEvent
 
-ramBaseEvent is a base class for all RAM events. 
-Here is a small example of a new event class called "MyFilter".
+ramBaseEvent is a base class for all RAMDanceToolkit events.
+Here is a small example of a new event class called "MyEvent".
 
 	class MyEvent : public ramBaseEvent
 	{
@@ -29,7 +29,7 @@ Here is a small example of a new event class called "MyFilter".
 		}
 	};
 
-When you call update() as implemented in ramBaseFilter, the boolean returned by tick() is returned to a caller. The cached value will be returned if you call update() many times in same frame.
+When you call update() as implemented in ramBaseEvent, the boolean returned by tick() is returned to a caller. The cached value will be returned if you call update() many times in same frame.
 
 	// testApp.h
 	MyEvent event;
