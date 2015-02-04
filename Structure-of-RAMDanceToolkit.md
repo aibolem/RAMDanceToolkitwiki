@@ -2,7 +2,7 @@
 
 [[/Images/API-Structure/fig-inheritence.png]]
 
-In a normal openFrameworks application, your `testApp` is inherited from `ofBaseApp`. However, with the RAMDanceToolkit, your `testApp` inherits from `ramBaseApp`, which itself is inherits from `ofBaseApp`. The image above illustrates this relationship.
+In a normal openFrameworks application, your `testApp` is inherited from `ofBaseApp`. However, with the RAMDanceToolkit, your `testApp` inherits from `ramBaseApp`, which itself inherits from `ofBaseApp`. The image above illustrates this relationship.
 
 Because of this, you can still do all of your normal openFrameworks coding within your `testApp`. In addition, the `ramBaseApp` from which `testApp` inherits provides you with additional methods and events to manipulate the data sent in from [MOTIONER](https://github.com/YCAMInterlab/Motioner) or another motion capture system. 
 
@@ -114,7 +114,7 @@ Putting a visual "chain" on a joint.
 
 The easiest way to implement a `scene` is by creating your own! Using the `ramBaseScene` and `ramSceneManager` is the recommended way to manage many scenes in one project.
 
-`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
+`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
