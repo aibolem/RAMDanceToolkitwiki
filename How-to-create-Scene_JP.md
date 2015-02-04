@@ -88,21 +88,21 @@ getName()はシーン管理用に、シーン名を登録するためのメソ�
 
 ### GUIの初期化
 
-You can add GUI parts to the panel by writing some code in setupControlPanel().
-ofxUICanvas is used as scene panel.
+setupControlPanel()でGUIのパーツを加える事ができます。
+シーンごとのGUIパネルとしてofxUICanvasを使う事が出来ます。
 
 		void setupControlPanel()
 		{
-			// getting scene panel 
+			// シーンごとのパネルを取得します。 
 			ofxUICanvas* panel = ramGetGUI().getCurrentUIContext();
 			
-			// do something with the panel...
+			// パネルの設定をします...
 		}
 
 
-### Writing your scene code
+### シーンのコードを書く
 
-Here is a sample code for displaying simple text on stage.
+ステージ上に簡単なテキストを書くサンプルコードは下記のようになります。
 
 	void draw()
 	{
@@ -113,8 +113,7 @@ Here is a sample code for displaying simple text on stage.
 		ramEndCamera();
 	}
 
-You can write your openFrameworks code in setup(), update(), draw(), as well as other methods which work with ramBaseApp. These methods are explained in [RAM API Reference Core](RAM-API-Reference-Core)!
-
+ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
