@@ -78,15 +78,15 @@
 [[Images/Introduction/fig-scene-1.png]]
 
 
-### Defining your scene name
+### シーンの名前を決める
 
-getName() is used to display text and key for managing scenes.
-Make sure that the scene key is not duplicated among the other scenes in your project.
+getName()はシーン管理用に、シーン名を登録するためのメソッドです。
+シーン名は同じプロジェクト内の他のシーンと重複しないようにしてください。
 
 	string getName() const { return "My new scene"; }
 
 
-### Initializing GUI
+### GUIの初期化
 
 You can add GUI parts to the panel by writing some code in setupControlPanel().
 ofxUICanvas is used as scene panel.
