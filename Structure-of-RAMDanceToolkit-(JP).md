@@ -62,16 +62,21 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
  
 [[/Images/API-Structure/fig-structure.png]]
 
-The above image shows the general flow of the RAMDanceToolkit.
-上図はRAMDanceToolkitの
+上図はRAMDanceToolkitの一般的なプロセスの流れを表しています。
 
-1. RAMDanceToolkit receives motion data from MOTIONER or another kind of sensor
+1. RAMDanceToolkitはMOTIONERなどのセンサーからのデータを受信します。
 2. Update phase:
+2. アップデート
 	- Converts motion data using a `Filter`
+	- `Filter`を用いてモーションデータを変換します
 	- Analyses data using a `Recognizer`
+	- `Recognizer`を用いてデータを解析します
 	- Triggers an `Event` 
+	- `Event`をトリガーします
 	- Updates an `Object` interaction with the dancer
+	- `Object`とのインタラクションをアップデートします
 	- Bypasses
+	- バイパスします
 3. Draw phase
  	- Uses a `Vizualizer` with the results of the update phase
  	- Draws an `Object`
