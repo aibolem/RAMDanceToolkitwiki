@@ -22,6 +22,7 @@ The RAMDanceToolkit kicks off via one line of code in your testApp::setup():
 ## OSC data format
 	
 RAMDanceToolkit can receive Skeleton data as explained below.
+
 The structure of each OSC message is:
 
 **Key**: s: string,  i: int,  f: float
