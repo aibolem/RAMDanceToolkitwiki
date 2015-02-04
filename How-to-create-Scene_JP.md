@@ -32,19 +32,22 @@
 		void drawActor(const ramActor& actor)
 		{
 		    // OSCで受信しているramActorの人数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramActor &actor`の形で引数として渡されます。
+		    // それぞれのアクターが、`const ramActor &actor`の形で
+		    // 引数として渡されます。
 		}
 
 		void drawRigid(const ramRigidBody &rigid)
 		{
 		    // OSCで受信しているramRigidBodyの個数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramRigidBody &rigid`の形で引数として渡されます。
+		    // それぞれのアクターが、`const ramRigidBody &rigid`の形で
+		    // 引数として渡されます。
 		}
 	
 		void onActorSetup(const ramActor &actor)
 		{
 		    // 新しいramActorが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたアクターは`const ramActor &actor`の形で引数として渡されます。
+		    // 新しく入ってきたアクターは`const ramActor &actor`の形で
+		    // 引数として渡されます。
 		}
 
 		void onActorExit(const ramActor &actor)
