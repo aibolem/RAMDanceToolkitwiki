@@ -112,9 +112,11 @@ RAMDanceToolkitで扱えるモーションデータのOSCメッセージは下�
 [[/Images/API-Structure/pic-object.png]]
 
 
-The easiest way to implement a `scene` is by creating your own! Using the `ramBaseScene` and `ramSceneManager` is the recommended way to manage many scenes in one project.
+是非実際にシーンを作成してみてください。ramSceneManagerを使う事で、1つのプロジェクトの中で複数のシーンを簡単に扱う事ができるでしょう。
 
-`ramBaseFilter`, `ramBaseRecognizer` and `ramBaseEvents` are available to create your own one filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
+`ramBaseFilter`, `ramBaseRecognizer` そして `ramBaseEvents` are available to create your own one filters, recognizers, events etc. Please check out [How to create scene](How-to-create-Scene), and the other RAM API References, for more information.
+
+`ramBaseFilter`, `ramBaseRecognizer` そして `ramBaseEvents`を使って、独自のfilterやrecognizer、eventsなどを作成する事も可能です。より詳細な情報は[How to create scene](How-to-create-Scene)や、RAM API Referenceなども参照してみてください。
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
