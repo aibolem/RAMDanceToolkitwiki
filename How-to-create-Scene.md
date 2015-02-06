@@ -83,7 +83,8 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 
 	void onActorSetup(const ramActor &actor)
 	{
-	    // To be called when ramActorManager starts to recieve the OSC data of a new ramActor.  
+	    // To be called when ramActorManager starts to recieve
+	    // the OSC data of a new ramActor.  
 	    // The new actor is passed as the argument `const ramActor &actor`.
 	}
 
@@ -95,7 +96,8 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 
 	void onRigidSetup(const ramRigidBody &rigid)
 	{
-	    // To be called when ramActorManager starts to recieve OSC data of a new ramRigidBody.  
+	    // To be called when ramActorManager starts to recieve  
+	    // OSC data of a new ramRigidBody.
 	    // The new rigidBody is passed as the argument `const ramRigidBody &rigid`.
 	}
 
