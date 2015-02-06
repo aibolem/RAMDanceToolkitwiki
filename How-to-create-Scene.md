@@ -156,7 +156,7 @@ or to use a listener method, you can do like..
 	    // do something...
 	}
 
-and in setupControlPanel(), you can register this listener method as following, so you can have a specific method(onPanelChanged(ofxUIEventArgs &e) here) which is called when GUI is changed.
+and register this listener method as following in setupControlPanel(), so you can have a specific method(onPanelChanged(ofxUIEventArgs &e) here) which is called when GUI is changed.
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
