@@ -126,7 +126,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		    EmptyScene myScene;
 		}
 
-testApp.cppで
+testApp.cppでramInitialize(int port)のあとにramSceneManagerへのシーンの登録を行います。これで、GUIへの登録が完了します。
 
 		void testApp::setup()
 		{
