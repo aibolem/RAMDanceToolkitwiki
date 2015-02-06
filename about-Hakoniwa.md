@@ -25,6 +25,8 @@ RDTK    -----> Arduino -----> Hakoniwa
 machine	<-----         <-----    ↓
         <--------------------- Camera
 
+Change here to an image file.
+
 
 ### Hakoniwa & HakoViz
 
