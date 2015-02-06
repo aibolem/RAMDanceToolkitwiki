@@ -64,14 +64,6 @@ cppファイル
 	    ramEndCamera();
 	}
 	
-	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
-	{
-	    const string name = e.widget->getName();
-	    
-	    // do something...
-	}
-	
-	
 	void EmptyScene::drawActor(const ramActor& actor)
 	{
 	    
