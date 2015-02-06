@@ -138,7 +138,7 @@ testApp.cppでramInitialize(int port)のあとにramSceneManagerへのシーン�
 			ramInitialize(10000);
 		
 			ramSceneManager& sceneManager = ramSceneManager::instance();
-			sceneManager.addScene(myScene.getPtr());
+			sceneManager.addScene(&myScene);
 		}
 
 
