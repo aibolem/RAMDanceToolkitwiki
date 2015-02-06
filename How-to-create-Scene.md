@@ -71,7 +71,8 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 	
 	void drawActor(const ramActor& actor)
 	{
-	    // To be called for as many number of recieving OSC data of ramActor objects.
+	    // To be called for as many number of recieving OSC data
+	    // of ramActor objects.
 	    // Each actor is passed as the argument `const ramActor &actor`.
 	}
 
