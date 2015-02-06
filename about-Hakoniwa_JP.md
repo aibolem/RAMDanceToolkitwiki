@@ -25,21 +25,19 @@
 *画像で差し替え
 
 RDTK    -----> Arduino -----> Hakoniwa
-
 machine	<-----         <-----    ↓
-
         <--------------------- Camera
 
 
 
-### HakoniwaとHakovizに関して
+### HakoniwaとHakoVizに関して
 
-HakoniwaとHakovizのサンプルプロジェクトとしてRAM-root/examples/の中に
+HakoniwaとHakoVizのサンプルプロジェクトとしてRAM-root/examples/の中に
 
 example_Hakoniwa_HakoVis_MagPendulum
 example_Hakoniwa_HakoVis_ServoPendulum
 
-の2つがあり、それぞれの中にはOSX/Windowsの開発環境で使用するプロジェクトと、Arduinoのソースコード、回路図が入っています。
+の2つがあり、それぞれの中にはOSX/Windowsの開発環境で使用するプロジェクトと、Arduinoのソースコード、動作させるための回路図が入っています。
 
 RAMDanceToolkitでは1つの箱庭の連動に対して2つのシーンを想定しています。
 1つめは箱庭をコントロールするためのシーンです。これをHakoniwa（ハコニワ）と呼んでいます。モーションデータを解析し、特定の動作や身体の動きのパラメータを使って箱庭を動作させます。サンプルプロジェクトでは、ここで箱庭を動かす条件が分かりやすくなるようなビジュアルを画面に表示しています。
