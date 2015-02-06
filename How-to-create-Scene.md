@@ -77,7 +77,8 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 
 	void drawRigid(const ramRigidBody &rigid)
 	{
-	    // To be called for as many number of recieving OSC data of ramRigidBod objects.  
+	    // To be called for as many number of recieving OSC data  
+	    // of ramRigidBod objects.
 	    // Each actor is passed as the argument `const ramRigidBody &rigid`.
 	}
 
