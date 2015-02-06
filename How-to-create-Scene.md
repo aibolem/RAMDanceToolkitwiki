@@ -145,6 +145,11 @@ a slider value which is set up in setupControlPanel() can be used as following.
 	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
 
 or to use a listener method, you can do like..
+in .h file, you should have this line as member method(between {} of class).
+
+	    void onPanelChanged(ofxUIEventArgs &e);
+
+in .cpp file, add this implementation for example.
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
@@ -179,7 +184,7 @@ create a scene object of your scene class.
 		    EmptyScene myScene;
 		}
 
-in testApp, register the scene to ramSceneManager after ramInitialize(int port) in setup(). that's it.
+in testApp, register the scene to ramSceneManager after ramInitialize(int port) in setup().
 
 		void testApp::setup()
 		{
@@ -194,6 +199,7 @@ in testApp, register the scene to ramSceneManager after ramInitialize(int port) 
 			sceneManager.addScene(&myScene);
 		}
 
+then, you can see and select your scene on the GUI when you run the app.
 
 
 You can write your openFrameworks code for scenes, as well as other methods which work with ramBaseApp. These methods are explained in [RAM API Reference Core](RAM-API-Reference-Core). and also please check [openFrameworks website](http://www.openframeworks.cc/).
