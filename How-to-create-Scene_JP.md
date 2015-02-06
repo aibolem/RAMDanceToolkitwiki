@@ -114,18 +114,6 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 example-emptyScene参照の紹介
 
 
-### シーンのコードを書く → 冒頭のサンプルに入れる　
-
-ステージ上に簡単なテキストを書くサンプルコードは下記のようになります。
-
-	void draw()
-	{
-		ofSetColor(255);
-		
-		ramBeginCamera();
-		ofDrawBitmapString("Hello, "+getName()+ "!", ofVec3f(0,200,0) );
-		ramEndCamera();
-	}
 
 シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
 
