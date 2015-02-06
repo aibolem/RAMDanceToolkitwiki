@@ -126,8 +126,19 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		    EmptyScene myScene;
 		}
 
-
-
+testApp.cppで
+		void testApp::setup()
+		{
+			ofSetFrameRate(60);
+			ofSetVerticalSync(true);
+		
+			/// ram setup
+			// ------------------
+			ramInitialize(10000);
+		
+			ramSceneManager& sceneManager = ramSceneManager::instance();
+			sceneManager.addScene(myScene.getPtr());
+		}
 
 
 シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
