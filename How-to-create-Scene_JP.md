@@ -136,6 +136,16 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 			
 		}
 
+また
+
+	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
+	{
+	    const string name = e.widget->getName();
+	    
+	    // do something...
+	}
+
+
 
 ### シーンの登録
 シーンをramSceneManagerに登録する事で、GUIへの登録とGUI上でのシーンの操作が出来るようになります。
