@@ -18,7 +18,7 @@
 - [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit)
 - [RAMDanceToolkitのストラクチャ](Structure-of-RAMDanceToolkit_JP)
 - [How to create scene](How-to-create-Scene)
-
+- [シーンの作り方](How-to-create-Scene_JP)
 
 **RAM API Reference**
 - [Core](RAM-API-Reference-Core)
