@@ -66,44 +66,44 @@ cppファイル
 	
 	void EmptyScene::drawActor(const ramActor& actor)
 	{
-		    // OSCで受信しているramActorの人数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramActor &actor`の形で
-		    // 引数として渡されます。
+		// OSCで受信しているramActorの人数の分だけ呼ばれます。
+		// それぞれのアクターが、`const ramActor &actor`の形で
+		// 引数として渡されます。
 	}
 	
 	void EmptyScene::drawRigid(const ramRigidBody &rigid)
 	{
-		    // OSCで受信しているramRigidBodyの個数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramRigidBody &rigid`の形で
-		    // 引数として渡されます。
+		// OSCで受信しているramRigidBodyの個数の分だけ呼ばれます。
+		// それぞれのアクターが、`const ramRigidBody &rigid`の形で
+		// 引数として渡されます。
 	}
 	
 	void EmptyScene::onActorSetup(const ramActor &actor)
 	{
-		    // 新しいramActorが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたアクターは`const ramActor &actor`の形で
-		    // 引数として渡されます。
+		// 新しいramActorが入ってきた時に呼ばれます。  
+		// 新しく入ってきたアクターは`const ramActor &actor`の形で
+		// 引数として渡されます。
 	}
 	
 	void EmptyScene::onActorExit(const ramActor &actor)
 	{
-		    // `const ramActor &actor`のデータが更新されなくなった時に呼ばれます。
-		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
-		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
+		// `const ramActor &actor`のデータが更新されなくなった時に呼ばれます。
+		// ramConstants.hのRAM_OUTDATED_DURATION定数に、
+		// デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
 	}
 	
 	void EmptyScene::onRigidSetup(const ramRigidBody &rigid)
 	{
-		    // 新しいramRigidBodyが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたリジッドボディは、
-		    // `const ramRigidBody &rigid`の形で引数として渡されます。
+		// 新しいramRigidBodyが入ってきた時に呼ばれます。  
+		// 新しく入ってきたリジッドボディは、
+		// `const ramRigidBody &rigid`の形で引数として渡されます。
 	}
 	
 	void EmptyScene::onRigidExit(const ramRigidBody &rigid)
 	{
-		    // `const ramRigidBody &rigid`のデータが更新されなくなった時に呼ばれます。
-		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
-		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
+		// `const ramRigidBody &rigid`のデータが更新されなくなった時に呼ばれます。
+		// ramConstants.hのRAM_OUTDATED_DURATION定数に、
+		// デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
 	}
 	
 
