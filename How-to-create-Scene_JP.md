@@ -169,7 +169,8 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 
 ### シーンの登録
 シーンをramSceneManagerに登録する事で、GUIへの登録とGUI上でのシーンの操作が出来るようになります。
-`{RAM_ROOT}/examples/example-emptyScene`に具体的な方法が実装されています。ここでの実装方法を説明します。
+ここで実装方法を説明します。
+
 まずtestApp.hファイルで作成したシーンのヘッダファイルをincludeします。
 
 		#include "EmptyScene.h"
@@ -198,7 +199,7 @@ testApp.cppでramInitialize(int port)のあとにramSceneManagerへのシーン�
 			sceneManager.addScene(&myScene);
 		}
 
-
+`{RAM_ROOT}/examples/example-emptyScene`プロジェクトで実際に実装されているのでチェックしてみてください。
 
 
 シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。またopenFrameworksに関しては[openFrameworks.cc](http://www.openframeworks.cc/)を参照してください。
