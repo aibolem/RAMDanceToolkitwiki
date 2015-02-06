@@ -146,7 +146,7 @@ a slider value which is set up in setupControlPanel() can be used as following.
 
 or to use a listener method, you can do like below.
 
-in .h file, you should have this line as member method(between {} of class).
+in .h file, add this line to add a member method(between {} of class).
 
 	    void onPanelChanged(ofxUIEventArgs &e);
 
@@ -156,10 +156,8 @@ in .cpp file, add this implementation for example.
 	{
 	    const string name = e.widget->getName();
 	    if (name == "slider") {
-
+		    // do something...
 	    }
-	    
-	    // do something...
 	}
 
 and register this listener method as following in setupControlPanel(), so you can have a specific method(onPanelChanged(ofxUIEventArgs &e) here) which is called when GUI is changed.
