@@ -136,15 +136,23 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 			
 		}
 
-また
+また下記のような関数を用意し、
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
 	    const string name = e.widget->getName();
+	    if (name == "slider") {
+
+	    }
 	    
 	    // do something...
 	}
 
+setupControlPanel()の中で
+
+	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
+
+などとすることで、イベントリスナーを登録することも可能です。
 
 
 ### シーンの登録
