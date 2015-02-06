@@ -26,11 +26,9 @@
 	    void onRigidExit(const ramRigidBody &rigid);
 		
 	private:
-		
-	    void onPanelChanged(ofxUIEventArgs &e);
 	    
 		float mySlider;
-		bool myToggle;
+
 	};
 
 cppファイル
