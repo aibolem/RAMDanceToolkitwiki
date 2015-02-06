@@ -144,11 +144,11 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 
 のように登録した変数を使う事で取得する事が出来ます。また下記のようなメンバー関数を用意し、
 
-.h file
+.hファイル
 
 	    void onPanelChanged(ofxUIEventArgs &e);
 
-.cpp file
+.cppファイル
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
@@ -160,7 +160,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 	    // do something...
 	}
 
-そしてsetupControlPanel()の中で
+それからsetupControlPanel()の中で
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
