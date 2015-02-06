@@ -145,6 +145,7 @@ a slider value which is set up in setupControlPanel() can be used as following.
 	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
 
 or to use a listener method, you can do like..
+
 in .h file, you should have this line as member method(between {} of class).
 
 	    void onPanelChanged(ofxUIEventArgs &e);
