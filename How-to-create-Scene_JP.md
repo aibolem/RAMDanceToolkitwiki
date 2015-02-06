@@ -61,7 +61,8 @@ cppファイル
 	    //ramEndCamera()の間で描画をする必要があります。
 
 	    ramBeginCamera();
-	    ofDrawBitmapString( "Hello, "+getName()+ "!" + " Slider value is " + ofToString(mySlider), ofVec3f(0,200,0) );
+	    ofDrawBitmapString( "Hello, "+getName()+ "!" + " Slider value is " + 
+		ofToString(mySlider), ofVec3f(0,200,0) );
 	    ramEndCamera();
 	}
 	
