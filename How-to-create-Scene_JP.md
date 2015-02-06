@@ -62,6 +62,7 @@
 	    //ramEndCamera()の間で描画をする必要があります。
 
 	    ramBeginCamera();
+		//スライダーの値はsetupControlPanel()で指定した変数で取得できます。
 	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
 	    ramEndCamera();
 	}
