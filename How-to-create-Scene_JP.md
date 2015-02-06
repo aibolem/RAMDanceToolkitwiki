@@ -199,7 +199,7 @@ testApp.cppでramInitialize(int port)のあとにramSceneManagerへのシーン�
 			sceneManager.addScene(&myScene);
 		}
 
-`{RAM_ROOT}/examples/example-emptyScene`プロジェクトで実際に実装されているのでチェックしてみてください。
+`{RAM_ROOT}/examples/example-emptyScene`のプロジェクトで実際に実装されているのでチェックしてみてください。
 
 
 シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。またopenFrameworksに関しては[openFrameworks.cc](http://www.openframeworks.cc/)を参照してください。
