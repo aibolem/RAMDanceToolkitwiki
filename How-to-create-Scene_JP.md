@@ -35,6 +35,8 @@
 
 cppファイル
 
+	#include "EmptyScene.h"
+
 	void EmptyScene::setupControlPanel()
 	{
 		// GUIの設定をここで行います。
