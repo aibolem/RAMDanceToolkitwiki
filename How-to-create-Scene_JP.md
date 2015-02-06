@@ -152,7 +152,7 @@ setupControlPanel()の中で
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
-などとすることで、イベントリスナーを登録することも可能です。
+などとすることで、GUIが変更された時にのみ実行されるイベントリスナーを登録することも可能です。
 
 
 ### シーンの登録
