@@ -83,7 +83,7 @@
 	};
 
 
-また、`{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっているので、参考にしてください。
+`{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっているので、参考にしてみてください。
 
 [[Images/Introduction/fig-scene-1.png]]
 
@@ -111,7 +111,22 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 
 
 ### シーンの登録
-example-emptyScene参照の紹介
+シーンをramSceneManagerに登録する事で、GUIへの登録とGUI上でのシーンの操作が出来るようになります。
+`{RAM_ROOT}/examples/example-emptyScene`に具体的な方法が実装されています。ここでの実装方法を説明します。
+まずtestApp.hファイルで作成したシーンのヘッダファイルをincludeします。
+
+		#include "EmptyScene.h"
+
+またtestAppのメンバオブジェクトとしてシーンを宣言します。
+
+		class testApp : public ramBaseApp
+		{
+		    public:
+		      //省略
+		    EmptyScene myScene;
+		}
+
+
 
 
 
