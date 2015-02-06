@@ -40,9 +40,6 @@ cppファイル
 		// GUIの設定をここで行います。
 		// setup()の後で実行されます。
 	    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
-	    ramGetGUI().addToggle("Toggle", &myToggle);
-	    
-	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 	}
 	
 	void EmptyScene::setup()
@@ -57,8 +54,8 @@ cppファイル
 	
 	void EmptyScene::draw()
 	{
-	    ofColor color( myToggle ? 150 : 50 );
-	    ofSetColor( color );
+		//色を白に指定しています。
+	    ofSetColor(255,255,255);
 	    
 	    ramBeginCamera();
 	    ofDrawBitmapString( "Hello, "+getName()+ "!" + " Slider value is " + ofToString(mySlider), ofVec3f(0,200,0) );
