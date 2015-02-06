@@ -47,9 +47,9 @@ To obserb Hakoniwa, there're mainly 2 ways. one is using Camera, the other is us
 
 data from sensers on hakoniwas go in Arduino and is sent via OSC message to a computer where RAMDanceToolkit is running. Port number can be the same as the number you set in ramInitialize(int port) in setup() in testApp.cpp. and you can use ramOscReceiveTag to get OSC message with registered address in your scene.
 
-for example,
+for example, in .h & .cpp files for a scene,
 
-.h file for a scene
+.h file
 
     ramOscReceiveTag mReceiver;
 
