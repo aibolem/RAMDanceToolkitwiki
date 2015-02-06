@@ -156,21 +156,9 @@ or use a function like below,
 	    // do something...
 	}
 
-and in setupControlPanel(), 
+and in setupControlPanel(), you can register a listener as following, so you can have a specific method which is called when GUI is changed.
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
-
-などとすることで、GUIが変更された時にのみ実行されるイベントリスナーを登録することも可能です。
-you can register a listener
-
-		void setupControlPanel()
-		{
-			// getting scene panel 
-			ofxUICanvas* panel = ramGetGUI().getCurrentUIContext();
-			
-			// do something with the panel...
-		}
-
 
 
 ### Register your scene to SceneManager
