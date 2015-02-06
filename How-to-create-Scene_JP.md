@@ -10,7 +10,7 @@
 	{
 	
 	public:
-			
+		// GUIに表示されるシーン名をここで指定します。
 		string getName() const { return "My scene"; }
 	
 	    void setupControlPanel();
