@@ -1,6 +1,6 @@
 [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit_JP)にも書かれていますが、自分でシーンを作成する事が出来ます。下記のEmptySceneのコードに書かれているものが基本的なシーンの骨組みになります。
 
-ヘッダファイル
+.hファイル
 
 	#pragma once
 
@@ -31,7 +31,7 @@
 
 	};
 
-cppファイル
+.cppファイル
 
 	#include "EmptyScene.h"
 
