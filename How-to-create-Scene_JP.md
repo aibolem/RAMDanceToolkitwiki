@@ -57,6 +57,9 @@ cppファイル
 		//色を白に指定しています。
 	    ofSetColor(255,255,255);
 	    
+	    //RAMDanceToolkitの座標にあわせるにはramBeginCamera()と
+	    //ramEndCamera()の間で描画をする必要があります。
+
 	    ramBeginCamera();
 	    ofDrawBitmapString( "Hello, "+getName()+ "!" + " Slider value is " + ofToString(mySlider), ofVec3f(0,200,0) );
 	    ramEndCamera();
