@@ -1,11 +1,11 @@
 ## about Hakoniwa
 
-Hakoniwa is a kind of small laboratries that react to dancers' movement. This works with the same concept as RAM scenes, but physical. Using motors, fans, electromagnets to create physical phenomenon to react to motion data, and show the reaction to dancers, so dansers can use this feedbacks as a part of their environment.
+Hakoniwa is a kind of small laboratories that react to dancers' movement. This works with the same concept as RAM scenes, but physical. Using motors, fans, electromagnets to create physical phenomenon to react to motion data, and show the reaction to dancers, so dancers can use this feedbacks as a part of their environment.
 
 Examples for Hakoniwas
 
 - ServoPendulum
-Double pendulum is attached on a servo motor. Dancer can control this servo motor's freqency controling distance between chosen 2 nodes.
+Double pendulum is attached on a servo motor. Dancer can control this servo motor's frequency controlling distance between chosen 2 nodes.
 
 * movie link comes
 
@@ -15,7 +15,7 @@ hang magnet on a string from the high place (get higher, move slower), dancer ca
 * movie link comes
 
 - Tornado
-put a watertank and voporizer(in the watertank) and fan(on the ceiling) in a box, and make a tornado. Dancer can control tornado through controlling the fan on the ceiling.
+put a water tank and fog machine(in the water tank) and fan(on the ceiling) in a box, and make a tornado. Dancer can control tornado through controlling the fan on the ceiling.
 
 * movie link comes
 
@@ -38,16 +38,16 @@ Change here to an image file.
 Each has project files for OSX/Windows development, Arduino source code, and a schematic file.
 
 RAMDanceToolkit assume 2 scenes for a hakoniwa.
-first one is for controlling a hakoniwa, which we call Hakoniwa. this scene Analyze motion data and use specific movement of bodies, and control Hakoniwa. in example projects, this scene show a realtime visualization for dancers to understand how their motion can affect hakoniwa.
+first one is for controlling a hakoniwa, which we call Hakoniwa. this scene analyze motion data and use specific movement of bodies, and control hakoniwa. in example projects, this scene show a realtime visualization for dancers to understand how their motion can affect hakoniwa.
 
 Second one is for showing a visualization using data from Hakoniwa via OSC from Arduino/Sensors or Video analysis, which we call HakoViz. HakoViz is not always needed to use Hakoniwa.
 
 
 ### Video analysis and sensors
 
-To obserb Hakoniwa, there're mainly 2 ways. one is using Camera, the other is using other sensers. CameraUnit in `RAM-Root/apps/` is for video analysis to analyze Hakoniwa. Please check `ram-root/apps/CameraUnit/readme.md` for the usage.
+To observe Hakoniwa, there're mainly 2 ways. one is using Camera, the other is using other sensors. CameraUnit in `RAM-Root/apps/` is for video analysis to analyze Hakoniwa. Please check `ram-root/apps/CameraUnit/readme.md` for the usage.
 
-data from sensers on hakoniwas go in Arduino and is sent via OSC message to a computer where RAMDanceToolkit is running. Port number can be the same as the number you set in ramInitialize(int port) in setup() in testApp.cpp. and you can use ramOscReceiveTag to get OSC message with registered address in your scene.
+data from sensors on hakoniwas go in Arduino and is sent via OSC message to a computer where RAMDanceToolkit is running. Port number can be the same as the number you set in ramInitialize(int port) in setup() in testApp.cpp. and you can use ramOscReceiveTag to get OSC message with registered address in your scene.
 
 for example, in .h & .cpp files for a scene,
 
