@@ -37,8 +37,8 @@ cppファイル
 
 	void EmptyScene::setupControlPanel()
 	{
-			// GUIの設定をここで行います。
-			// setup()の後で実行されます。
+		// GUIの設定をここで行います。
+		// setup()の後で実行されます。
 	    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
 	    ramGetGUI().addToggle("Toggle", &myToggle);
 	    
