@@ -39,6 +39,7 @@
 	{
 		// GUIの設定をここで行います。
 		// setup()の後で実行されます。
+		// このシーン用のGUIにスライダーを登録しています。
 	    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
 	}
 	
