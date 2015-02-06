@@ -142,7 +142,13 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		//スライダーの値はsetupControlPanel()で指定した変数で取得できます。
 	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
 
-のように登録した変数を使う事で取得する事が出来ます。また下記のような関数を用意し、
+のように登録した変数を使う事で取得する事が出来ます。また下記のようなメンバー関数を用意し、
+
+.h file
+
+	    void onPanelChanged(ofxUIEventArgs &e);
+
+.cpp file
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
@@ -154,7 +160,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 	    // do something...
 	}
 
-setupControlPanel()の中で
+そしてsetupControlPanel()の中で
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
