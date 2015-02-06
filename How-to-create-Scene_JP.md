@@ -131,12 +131,18 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		void setupControlPanel()
 		{
 			// パネルの設定をします...
-			// シーンのGUIにスライダーを登録しています。
+
+			// このシーン用のGUIにスライダーを登録しています。
 		    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
 			
 		}
 
-また下記のような関数を用意し、
+上のsetupControlPanel()のように登録したスライダーの情報は
+
+		//スライダーの値はsetupControlPanel()で指定した変数で取得できます。
+	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
+
+のように登録した変数を使う事で取得する事が出来ます。また下記のような関数を用意し、
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
