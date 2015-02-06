@@ -160,7 +160,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 	    // do something...
 	}
 
-それからsetupControlPanel()の中で
+さらにsetupControlPanel()の中で
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
