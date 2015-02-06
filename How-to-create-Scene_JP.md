@@ -127,6 +127,7 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 		}
 
 testApp.cppで
+
 		void testApp::setup()
 		{
 			ofSetFrameRate(60);
