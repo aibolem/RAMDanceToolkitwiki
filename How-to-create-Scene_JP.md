@@ -54,7 +54,6 @@ cppファイル
 	
 	void EmptyScene::draw()
 	{
-		//色を白に指定しています。
 	    ofSetColor(255,255,255);
 	    
 	    //RAMDanceToolkitの座標にあわせるにはramBeginCamera()と
