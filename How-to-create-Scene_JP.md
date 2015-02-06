@@ -1,87 +1,106 @@
 [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolkit_JP)にも書かれていますが、自分でシーンを作成する事が出来ます。下記のEmptySceneのコードに書かれているものが基本的なシーンの骨組みになります。
 
+ヘッダファイル
+
+	#pragma once
+
+	#include "ramMain.h"
+	
 	class EmptyScene : public ramBaseScene
 	{
-
-	public:
-		
-		// GUIに表示されるシーン名をここで指定します。
-		string getName() const { return "My scene"; }
-		
-		void setupControlPanel()
-		{
-			// GUIの設定をここで行います。
-			// setup()の後で実行されます。
-		}
-		
-		void setup()
-		{
-
-		}
-
-		void update()
-		{
-
-		}
-
-		void draw()
-		{
-
-		    //色を白に指定しています。
-		    ofSetColor(255,255,255);
-		
-		    //RAMDanceToolkitの座標にあわせるにはramBeginCamera()と
-		    //ramEndCamera()の間で描画をする必要があります。
-
-		    ramBeginCamera();
-		    ofDrawBitmapString("Hello, "+getName()+ "!", ofVec3f(0,200,0) );
-		    ramEndCamera();
-
-		}
-
-		void drawActor(const ramActor& actor)
-		{
-		    // OSCで受信しているramActorの人数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramActor &actor`の形で
-		    // 引数として渡されます。
-		}
-
-		void drawRigid(const ramRigidBody &rigid)
-		{
-		    // OSCで受信しているramRigidBodyの個数の分だけ呼ばれます。
-		    // それぞれのアクターが、`const ramRigidBody &rigid`の形で
-		    // 引数として渡されます。
-		}
 	
-		void onActorSetup(const ramActor &actor)
-		{
-		    // 新しいramActorが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたアクターは`const ramActor &actor`の形で
-		    // 引数として渡されます。
-		}
-
-		void onActorExit(const ramActor &actor)
-		{
-		    // `const ramActor &actor`のデータが更新されなくなった時に呼ばれます。
-		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
-		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
-		}
-
-		void onRigidSetup(const ramRigidBody &rigid)
-		{
-		    // 新しいramRigidBodyが入ってきた時に呼ばれます。  
-		    // 新しく入ってきたリジッドボディは、
-		    // `const ramRigidBody &rigid`の形で引数として渡されます。
-		}
-
-		void onRigidExit(const ramRigidBody &rigid)
-		{
-		    // `const ramRigidBody &rigid`のデータが更新されなくなった時に呼ばれます。
-		    // ramConstants.hのRAM_OUTDATED_DURATION定数に、
-		    // デフォルトのデータ更新のタイムリミットとして1.0秒が設定されています。
-		}
+	public:
+			
+		string getName() const { return "My scene"; }
+	
+	    void setupControlPanel();
+	    void setup();
+	    void update();
+	    void draw();
+	
+	    void drawActor(const ramActor& actor);
+	    void drawRigid(const ramRigidBody &rigid);
+	    void onActorSetup(const ramActor &actor);
+	    void onActorExit(const ramActor &actor);
+	    void onRigidSetup(const ramRigidBody &rigid);
+	    void onRigidExit(const ramRigidBody &rigid);
+		
+	private:
+		
+	    void onPanelChanged(ofxUIEventArgs &e);
+	    
+		float mySlider;
+		bool myToggle;
 	};
 
+cppファイル
+
+	void EmptyScene::setupControlPanel()
+	{
+	    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
+	    ramGetGUI().addToggle("Toggle", &myToggle);
+	    
+	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
+	}
+	
+	void EmptyScene::setup()
+	{
+	    
+	}
+	
+	void EmptyScene::update()
+	{
+	    
+	}
+	
+	void EmptyScene::draw()
+	{
+	    ofColor color( myToggle ? 150 : 50 );
+	    ofSetColor( color );
+	    
+	    ramBeginCamera();
+	    ofDrawBitmapString( "Hello, "+getName()+ "!" + " Slider value is " + ofToString(mySlider), ofVec3f(0,200,0) );
+	    ramEndCamera();
+	}
+	
+	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
+	{
+	    const string name = e.widget->getName();
+	    
+	    // do something...
+	}
+	
+	
+	void EmptyScene::drawActor(const ramActor& actor)
+	{
+	    
+	}
+	
+	void EmptyScene::drawRigid(const ramRigidBody &rigid)
+	{
+	    
+	}
+	
+	void EmptyScene::onActorSetup(const ramActor &actor)
+	{
+	    
+	}
+	
+	void EmptyScene::onActorExit(const ramActor &actor)
+	{
+	    
+	}
+	
+	void EmptyScene::onRigidSetup(const ramRigidBody &rigid)
+	{
+	    
+	}
+	
+	void EmptyScene::onRigidExit(const ramRigidBody &rigid)
+	{
+	    
+	}
+	
 
 `{RAM_ROOT}/examples/example-emptyScene`がシンプルなシーン実装のサンプルプロジェクトになっているので、参考にしてみてください。
 
@@ -140,6 +159,8 @@ testApp.cppでramInitialize(int port)のあとにramSceneManagerへのシーン�
 			ramSceneManager& sceneManager = ramSceneManager::instance();
 			sceneManager.addScene(&myScene);
 		}
+
+
 
 
 シーンを書くコードには、ramBaseAppでサポートされているRAMDanceToolkitの機能のほかに、openFrameworksの機能もすべて使用する事が出来ます。RAMDanceToolkitでサポートされている機能に関しては[RAM API Reference Core](RAM-API-Reference-Core)を参照してください。
