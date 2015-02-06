@@ -130,10 +130,10 @@ setupControlPanel()でGUIのパーツを加える事ができます。
 
 		void setupControlPanel()
 		{
-			// シーンごとのパネルを取得します。 
-			ofxUICanvas* panel = ramGetGUI().getCurrentUIContext();
-			
 			// パネルの設定をします...
+			// シーンのGUIにスライダーを登録しています。
+		    ramGetGUI().addSlider("Slider", 0.0, 10.0, &mySlider);
+			
 		}
 
 
