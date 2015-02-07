@@ -1,6 +1,6 @@
 ## About Hakoniwa
 
-Hakoniwa are small "laboratories" that respond to the movement of dancers. They can be thought of as RAM scenes, but, instead of being virtual or digital, they are physical manifestations of reactive environments. By using motors, fans, electromagnets, hakoniwa embody physical environments that react to motion data. The actions that happen within a hakoniwa are fedback to the dancers, and the dancers can use this information as inspiration for new movement.
+Hakoniwa are small "laboratories" that respond to the movement of dancers. They can be thought of as RAM scenes, but, instead of being virtual or digital, they are physical manifestations of reactive environments. By using motors, fans, electromagnets, Hakoniwa embody physical environments that react to motion data. The actions that happen within a hakoniwa are fed back to the dancers, and the dancers can use this information as inspiration for new movement.
 
 Hakoniwa Examples:
 
