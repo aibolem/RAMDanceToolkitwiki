@@ -1,20 +1,20 @@
 ## About Hakoniwa
 
-Hakoniwa are small "laboratories" that respond to the movement of dancers. They can be thought of as RAM scenes, but, instead of being virtual or digital, they are physical manifestations of reactive environments. By using motors, fans, electromagnets and other hardware, Hakoniwa embody physical environments that react to motion data. The actions that happen within a hakoniwa are fed back to the dancers, and the dancers can use this information as inspiration for new movement.
+Hakoniwa are small "laboratories" that respond to the movement of dancers. They can be thought of as RAM scenes, but, instead of being virtual or digital, they are physical manifestations of reactive environments. By using motors, fans, electromagnets and other hardware, Hakoniwa embody physical environments that react to motion data. The actions that happen within a Hakoniwa are fed back to the dancers, and the dancers can use this information as inspiration for new movement.
 
 Hakoniwa Examples:
 
-- ServoPendulum
-ServoPendulum is a double pendulum attached on a servo motor. A dancer can control this servo motor's frequency by changing the distance between chosen 2 nodes on the dancer's body.
+- ServoPendulum:
+ServoPendulum is a double pendulum attached to a servo motor. A dancer can control this servo motor's frequency by changing the distance between chosen 2 nodes on the dancer's body.
 
 ** movie link to come **
 
-- MagnetPendulum
+- MagnetPendulum:
 MagnetPendulum comprises of a magnet hung on a string above a set of electromagnets. The dancer can control which electromagnets turn on and off, affecting the position and movement of the hanging magnet.
 
 ** movie link to come **
 
-- Tornado
+- Tornado:
 Tornado is made up of a fog machine in a water tank, with a fan in the ceiling. When the fog machine and fan are turned on, it creates a simulated tornado. A dancer can control the creation of the tornado by controlling the fan on the ceiling.
 
 ** movie link to come **
@@ -33,6 +33,7 @@ Change here to an image file.
 You can find two example projects for Hakoniwa and HakoViz in `{RAM_Root}/examples/`:
 
 `example_Hakoniwa_HakoVis_MagPendulum`
+
 `example_Hakoniwa_HakoVis_ServoPendulum`
 
 Each example has project files for OSX/Windows development, as well as the Arduino source code and schematic file for the Hakoniwa.
@@ -49,7 +50,7 @@ There are two main ways to "observe" a Hakoniwa. One is though a video camera. T
 
 You can also use data from sensors attached to a Hakoniwa to produce visualizations. In your Arduino program, send values via OSC to your RAMDanceToolkit application. Use the same port number that you use in your ramInitialize(int port) function in the setup() function of testApp.cpp. You can also use a ramOscReceiveTag to get the specific OSC message with a registered address in your scene.
 
-Dor example, in the .h and .cpp files for a scene,
+For example, in the .h and .cpp files for a scene,
 
 .h file
 
