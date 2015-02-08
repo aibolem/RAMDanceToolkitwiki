@@ -18,6 +18,30 @@ Unzip the downloaded file and launch your RAMDanceToolkit app.
 
 [[/Images/Introduction/fig-setup-1.png]]
 
+## MotionData playback
+
+You can test the RAMDanceToolkit without MOTIONER or other sensors by playing back recorded motion data.
+
+**Note: Currently, motion data playback is available only for Mac OS. please use Motion data OSC Server if you use Windows.**
+
+The recorded motion data `Ando_1` appears only at the first time of launching the RAMDanceToolkit. The other motion datas, named `Ando`, `Cyril`, `Richi`, are available in `RAMDanceTookit/resources/MotionData`.  To start playback, click "Load file" button on Actors panel or drag and drop the motion data file into the application.
+
+[[/Images/Introduction/fig-setup-3.png]]
+
+Note that you can playback only four motion data at the same time. If you are sending one ramActor OSC message from MOTIONER or other motion capture system to the RAMDanceToolkit, you can playback up to three motion data recordings.
+
+[[/Images/Introduction/fig-setup-2.png]]
+
+## Motion data OSC Server
+
+[[/Images/Introduction/fig-setup-osc1.png]]
+
+This application allows you to send OSC messages without using MOTIONER or other sensors.
+
+The Resources zip file found above contain XML files for recorded motion data. This application will start sending OSC message when you drag and drop XML files into the app screen. Hopefully it will be helpful in testing RAMDanceToolkit :)
+
+
+
 ## Source code zip
 
 Download the source code via zip file and put the downloaded files into your openFrameworks (version 0.8.4) folder.
@@ -70,28 +94,6 @@ This repo doesn't include some big size files e.g. Sounds, MotionData so you hav
 After downloading this zip file, add `Sounds` and `MotionData` folders into your `{RAM_ROOT}/resources` folder.
 
 [[/Images/Introduction/fig-setup-4.png]]
-
-## MotionData playback
-
-You can test the RAMDanceToolkit without MOTIONER or other sensors by playing back recorded motion data.
-
-**Note: Currently, motion data playback is available only for Mac OS. please use Motion data OSC Server if you use Windows.**
-
-The recorded motion data `Ando_1` appears only at the first time of launching the RAMDanceToolkit. The other motion datas, named `Ando`, `Cyril`, `Richi`, are available in `RAMDanceTookit/resources/MotionData`.  To start playback, click "Load file" button on Actors panel or drag and drop the motion data file into the application.
-
-[[/Images/Introduction/fig-setup-3.png]]
-
-Note that you can playback only four motion data at the same time. If you are sending one ramActor OSC message from MOTIONER or other motion capture system to the RAMDanceToolkit, you can playback up to three motion data recordings.
-
-[[/Images/Introduction/fig-setup-2.png]]
-
-## Motion data OSC Server
-
-[[/Images/Introduction/fig-setup-osc1.png]]
-
-This application allows you to send OSC messages without using MOTIONER or other sensors.
-
-The Resources zip file found above contain XML files for recorded motion data. This application will start sending OSC message when you drag and drop XML files into the app screen. Hopefully it will be helpful in testing RAMDanceToolkit :)
 
 
 ## Folder structure
