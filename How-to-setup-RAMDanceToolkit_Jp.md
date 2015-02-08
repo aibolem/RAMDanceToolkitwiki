@@ -9,29 +9,6 @@
 
 [[/Images/Introduction/fig-setup-1.png]]
 
-### モーションデータのプレイバック
-MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。
-
-**※現在、Mac OSのみこの機能に対応しています。**
-
-初回起動時のみ、`Ando_1`というダンサーがステージに現れます。
-次回からの起動は、`RAMDanceTookit/resources/MotionData`ディレクトリにある `Ando`, `Cyril`, `Richi`のデータを"Load File"ボタンから読み込み・またはファイルをアプリケーションへドラッグ&ドロップする事でモーションデータの再生が始まります。
-
-[[/Images/Introduction/fig-setup-3.png]]
-
-一度に再生出来るプレイバックデータの最大数は4人までです。
-（もしMOTIONERやその他のモーションキャプチャーシステムから一人分のOSCメッセージを受け取って再生をしている場合、プレイバックできる最大数は3人までです。）
-
-[[/Images/Introduction/fig-setup-2.png]]
-
-
-## モーションデータ OSCサーバー
-
-[[/Images/Introduction/fig-setup-osc1.png]]
-
-同梱の`MotionData-OSCServer`ディレクトリ内のxmlファイルをドラッグアンドドロップすると、アプリケーション内で指定したIP, portへMOTIONERから送られてくるOSC messageと同じmessageを送信し始めます。
-MOTIONER等が手元に無い場合のRAMDanceToolkitのテストに役立ちます。
-
 
 
 ## ソースコード一式のzip
@@ -106,6 +83,30 @@ RAMDanceToolkit core libraryが入っています。
 
 画像やフォント等、全てのアプリケーションから読まれる共有リソースが入っています。 各アプリケーションからは、`ramToRecourcePath(...)`でこのディレクトリへの相対パスを作る事が出来ます。
 前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。RAMDanceToolkitはresourcesフォルダをアプリケーションに近いパスから順番に探しだし、最も近い位置にあるresourcesフォルダを用います。コンパイル済みのアプリケーションを人に渡す際などにはアプリケーションと同じフォルダに、それ以外の場合はダウンロード時の位置に置いておくのが良いでしょう。
+
+
+### モーションデータのプレイバック
+MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。
+
+**※現在、Mac OSのみこの機能に対応しています。**
+
+初回起動時のみ、`Ando_1`というダンサーがステージに現れます。
+次回からの起動は、`RAMDanceTookit/resources/MotionData`ディレクトリにある `Ando`, `Cyril`, `Richi`のデータを"Load File"ボタンから読み込み・またはファイルをアプリケーションへドラッグ&ドロップする事でモーションデータの再生が始まります。
+
+[[/Images/Introduction/fig-setup-3.png]]
+
+一度に再生出来るプレイバックデータの最大数は4人までです。
+（もしMOTIONERやその他のモーションキャプチャーシステムから一人分のOSCメッセージを受け取って再生をしている場合、プレイバックできる最大数は3人までです。）
+
+[[/Images/Introduction/fig-setup-2.png]]
+
+
+## モーションデータ OSCサーバー
+
+[[/Images/Introduction/fig-setup-osc1.png]]
+
+同梱の`MotionData-OSCServer`ディレクトリ内のxmlファイルをドラッグアンドドロップすると、アプリケーション内で指定したIP, portへMOTIONERから送られてくるOSC messageと同じmessageを送信し始めます。
+MOTIONER等が手元に無い場合のRAMDanceToolkitのテストに役立ちます。
 
 
 <hr>
