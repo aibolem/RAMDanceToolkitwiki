@@ -1,6 +1,14 @@
+## v1.2.0
 
+### source code
+[RAM-release-v1.2.0.zip]
 
+### compiled app
+- [RAM-app_osx_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_osx_v1_1_0.zip) (Mac OS 10.7+, 106.1MB)
+- [RAM-app_win_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_win_v1_1_0.zip) (Windows 7+, 136.7MB)
 
+### change log
+blablabla
 
 ## v1.1.0
 
