@@ -103,8 +103,6 @@ This folder contains the RAMDanceToolkit core library.
 
 This folder contains resources which are loaded for each application. You can use `ramToRecourcePath(...)` in your code to get the path to this folder. By design, the RAMDanceToolkit searches for a resources folder that is near your application. By default this will be a few directories above your application, in the RAMDanceToolkit parent folder. If you are creating your own release of the RAMDanceToolkit to share with other people, you can place the resources folder wherever you would like and the application will find it easily.
 
-You can drop in a resources folder closer in the directory tree to your app if you want to use unique resources, or if you want to give custom resources to other people.
-
 ## MotionData playback
 
 You can test the RAMDanceToolkit without MOTIONER or other sensors by playing back recorded motion data.
