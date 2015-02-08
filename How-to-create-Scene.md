@@ -109,16 +109,16 @@ As noted at the end of [Structure of RAMDanceToolkit](Structure-of-RAMDanceToolk
 	    // 1.0 sec is set to RAM_OUTDATED_DURATION in ramConstants.h as default.
 	}
 	
-`{RAM_ROOT}/examples/example-emptyScene` provides a simple example of how to create own scene.
+`{RAM_ROOT}/examples/example-emptyScene` provides a simple example of how to create your own scene.
 
 [[Images/Introduction/fig-scene-1.png]]
 
 
 ### Defining your scene name
 
-getName() is used to display text and be a key for managing scenes.
+getName() is used both for displaying text and as a key for managing scenes.
 Make sure that the scene name is not duplicated among the other scenes in your project.
-(because it's a key as well)
+(because it is used as a unique key)
 
 	string getName() const { return "My new scene"; }
 
@@ -126,8 +126,8 @@ Make sure that the scene name is not duplicated among the other scenes in your p
 ### Initializing GUI
 
 You can add GUI parts to the panel by writing some code in setupControlPanel().
-ofxUICanvas is used as scene panel.
-Please check [ofxUI website](https://github.com/rezaali/ofxUI) or `{RAM_ROOT}/apps/RAMDanceToolkit` project for details.
+ofxUICanvas is used as a scene panel.
+Please check the [ofxUI](https://github.com/rezaali/ofxUI) repo or `{RAM_ROOT}/apps/RAMDanceToolkit` project for details.
 
 		void setupControlPanel()
 		{
@@ -138,19 +138,19 @@ Please check [ofxUI website](https://github.com/rezaali/ofxUI) or `{RAM_ROOT}/ap
 			
 		}
 
-a slider value which is set up in setupControlPanel() can be used as following.
+A slider value which is set up in setupControlPanel() can be used as follows:
 
 		// you can get slider value using variable 
 		// which you registered in setupControlPanel().
 	    ofDrawBitmapString("Slider value: " + ofToString(mySlider), ofVec3f(0,200,0));
 
-or to use a listener method, you can do like below.
+If you want to set up a listener method, you can set it up as follow:
 
-in .h file, add this line to add a member method(between {} of class).
+In the .h file, add this line to add a member method(between {} of class):
 
 	    void onPanelChanged(ofxUIEventArgs &e);
 
-in .cpp file, add this implementation for example.
+In the .cpp file, add this example implementation:
 
 	void EmptyScene::onPanelChanged(ofxUIEventArgs &e)
 	{
@@ -160,21 +160,21 @@ in .cpp file, add this implementation for example.
 	    }
 	}
 
-and register this listener method as following in setupControlPanel(), so you can have a specific method(onPanelChanged(ofxUIEventArgs &e) here) which is called when GUI is changed.
+Register this listener method as follows in setupControlPanel(), so you can have a specific method(onPanelChanged(ofxUIEventArgs &e)) which is called when the GUI changes:
 
 	    ofAddListener(ramGetGUI().getCurrentUIContext()->newGUIEvent, this, &EmptyScene::onPanelChanged);
 
 
 ### Register your scene to SceneManager
-You can register your scene to ramSceneManager, then you can operate your scene on the GUI.
-Here we'll explain about how you register it.
+You can register your scene to ramSceneManager so you can  operate your scene on the GUI.
+Here we'll explain about how you register your scene.
 Please check `{RAM_ROOT}/examples/example-emptyScene` for the details.
 
-at first, include a header file of a scene in testApp.h.
+First, include a header file of a scene in your testApp.h.
 
 		#include "EmptyScene.h"
 
-create a scene object of your scene class.
+Create a scene object of your scene class.
 
 		class testApp : public ramBaseApp
 		{
@@ -183,7 +183,7 @@ create a scene object of your scene class.
 		    EmptyScene myScene;
 		}
 
-in testApp, register the scene to ramSceneManager after ramInitialize(int port) in setup().
+In your testApp.cpp, register the scene to ramSceneManager after ramInitialize(int port) in setup().
 
 		void testApp::setup()
 		{
@@ -198,10 +198,10 @@ in testApp, register the scene to ramSceneManager after ramInitialize(int port) 
 			sceneManager.addScene(&myScene);
 		}
 
-then, you can see and select your scene on the GUI when you run the app.
+Noq you can see and select your scene on the GUI when you run the app.
 
 
-You can write your openFrameworks code for scenes, as well as other methods which work with ramBaseApp. These methods are explained in [RAM API Reference Core](RAM-API-Reference-Core). and also please check [openFrameworks website](http://www.openframeworks.cc/).
+You can write your openFrameworks code for scenes, as well as other methods which work with ramBaseApp. These methods are explained in [RAM API Reference Core](RAM-API-Reference-Core). For more on openFrameworks-specific code, please check the [openFrameworks website](http://www.openframeworks.cc/).
 
 
 <hr>

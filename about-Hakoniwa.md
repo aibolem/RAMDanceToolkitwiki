@@ -1,25 +1,25 @@
-## about Hakoniwa
+## About Hakoniwa
 
-Hakoniwa is a kind of small laboratories that react to dancers' movement. This works with the same concept as RAM scenes, but physical. Using motors, fans, electromagnets to create physical phenomenon to react to motion data, and show the reaction to dancers, so dancers can use this feedbacks as a part of their environment.
+Hakoniwa are small "laboratories" that respond to the movement of dancers. They can be thought of as RAM scenes, but, instead of being virtual or digital, they are physical manifestations of reactive environments. By using motors, fans, electromagnets and other hardware, Hakoniwa embody physical environments that react to motion data. The actions that happen within a Hakoniwa are fed back to the dancers, and the dancers can use this information as inspiration for new movement.
 
-Examples for Hakoniwas
+Hakoniwa Examples:
 
-- ServoPendulum
-Double pendulum is attached on a servo motor. Dancer can control this servo motor's frequency controlling distance between chosen 2 nodes.
+- ServoPendulum:
+ServoPendulum is a double pendulum attached to a servo motor. A dancer can control this servo motor's frequency by changing the distance between chosen 2 nodes on the dancer's body.
 
-* movie link comes
+** movie link to come **
 
-- MagnetPendulum
-hang magnet on a string from the high place (get higher, move slower), dancer can control on/off of electromagnets on the floor, then dancer can affect the movement of the hanged magnet.
+- MagnetPendulum:
+MagnetPendulum comprises of a magnet hung on a string above a set of electromagnets. The dancer can control which electromagnets turn on and off, affecting the position and movement of the hanging magnet.
 
-* movie link comes
+** movie link to come **
 
-- Tornado
-put a water tank and fog machine(in the water tank) and fan(on the ceiling) in a box, and make a tornado. Dancer can control tornado through controlling the fan on the ceiling.
+- Tornado:
+Tornado is made up of a fog machine in a water tank, with a fan in the ceiling. When the fog machine and fan are turned on, it creates a simulated tornado. A dancer can control the creation of the tornado by controlling the fan on the ceiling.
 
-* movie link comes
+** movie link to come **
 
-### system map
+### System Map
 
 RDTK    -----> Arduino -----> Hakoniwa
 machine	<-----         <-----    ↓
@@ -30,38 +30,37 @@ Change here to an image file.
 
 ### Hakoniwa & HakoViz
 
-2 Example projects for Hakoniwa & HakoViz are in `RAM-Root/examples/`.
+You can find two example projects for Hakoniwa and HakoViz in `{RAM_Root}/examples/`:
 
 `example_Hakoniwa_HakoVis_MagPendulum`
+
 `example_Hakoniwa_HakoVis_ServoPendulum`
 
-Each has project files for OSX/Windows development, Arduino source code, and a schematic file.
+Each example has project files for OSX/Windows development, as well as the Arduino source code and schematic file for the Hakoniwa.
 
-RAMDanceToolkit assume 2 scenes for a hakoniwa.
-first one is for controlling a hakoniwa, which we call Hakoniwa. this scene analyze motion data and use specific movement of bodies, and control hakoniwa. in example projects, this scene show a realtime visualization for dancers to understand how their motion can affect hakoniwa.
+The RAMDanceToolkit assume two scenes for a Hakoniwa.
 
-Second one is for showing a visualization using data from Hakoniwa via OSC from Arduino/Sensors or Video analysis, which we call HakoViz. HakoViz is not always needed to use Hakoniwa.
+1. Hakoniwa: This scene is used to control the Hakoniwa, as well as to analyze the incoming motion data of specific body movements to control the Hakoniwa. In the example projects, the Hakoniwa scene shows a realtime visualization, so that the dancers can understand how their movements affect the Hakoniwa.
 
+2. HakoViz: This scene shows a visualization of the data coming in from the Hakoniwa, either via OSC from a sensor or through video analysis. HakoViz is not always needed to use Hakoniwa.
 
 ### Video analysis and sensors
 
-To observe Hakoniwa, there're mainly 2 ways. one is using Camera, the other is using other sensors. CameraUnit in `RAM-Root/apps/` is for video analysis to analyze Hakoniwa. Please check `ram-root/apps/CameraUnit/readme.md` for the usage.
+There are two main ways to "observe" a Hakoniwa. One is though a video camera. The other is through sensors. Please refer to the CameraUnit example in `RAM-Root/apps/` for an example of how to apply video analysis techniques to analyze Hakoniwa. Also please refer to `ram-root/apps/CameraUnit/readme.md` for more documentation on its usage.
 
-data from sensors on hakoniwas go in Arduino and is sent via OSC message to a computer where RAMDanceToolkit is running. Port number can be the same as the number you set in ramInitialize(int port) in setup() in testApp.cpp. and you can use ramOscReceiveTag to get OSC message with registered address in your scene.
+You can also use data from sensors attached to a Hakoniwa to produce visualizations. In your Arduino program, send values via OSC to your RAMDanceToolkit application. Use the same port number that you use in your ramInitialize(int port) function in the setup() function of testApp.cpp. You can also use a ramOscReceiveTag to get the specific OSC message with a registered address in your scene.
 
-for example, in .h & .cpp files for a scene,
+For example, in the .h and .cpp files for a scene,
 
 .h file
 
     ramOscReceiveTag mReceiver;
 
-.cpp file and in setup()
+.cpp file, in setup()
 
     ramOscManager::instance().addReceiverTag(&mReceiver);
     mReceiver.addAddress("/dp/cameraUnit/MagPendulum/contour/boundingRect");
 
-then you can get OSC messages with the address "/dp/cameraUnit/MagPendulum/contour/boundingRect" in this scene.
+From there you can get OSC messages with the address "/dp/cameraUnit/MagPendulum/contour/boundingRect" in this scene.
 
-You can check actual implementations in 2 example projects, so please check HakoViz source codes in them.
-
-
+Please refer to the two example projects for more specific details about implementation.
