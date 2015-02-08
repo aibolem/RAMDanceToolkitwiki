@@ -10,7 +10,8 @@
 [[/Images/Introduction/fig-setup-1.png]]
 
 ### モーションデータのプレイバック
-MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。　　
+MOTIONER等からのモーションデータをOSCで受け取らずに、レコーディング済みのデータを再生してRAMDanceToolkitをテストする事が出来ます。
+
 **※現在、Mac OSのみこの機能に対応しています。**
 
 初回起動時のみ、`Ando_1`というダンサーがステージに現れます。
