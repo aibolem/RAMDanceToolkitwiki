@@ -8,7 +8,8 @@
 - [RAM-app_win_v1_1_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.1.0/RAM-app_win_v1_1_0.zip) (Windows 7+, 136.7MB)
 
 ### change log
-blablabla
+- add **ramMotionExtractor** : It makes you easier to edit node selection. check [wiki](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-MotionExtractor_jp) how to use it.
+
 
 ## v1.1.0
 
