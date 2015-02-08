@@ -1,5 +1,5 @@
 ## Downloads
-
+`
 You can download the RAMDanceToolkit in three different ways:
 
 1) [Compiled application](Overview#downloads)
@@ -101,8 +101,7 @@ This folder contains the RAMDanceToolkit core library.
 
 ### Resources
 
-This folder contains resources which are loaded for each application. You can use `ramToRecourcePath(...)` in your code to get the path to this folder. RAMDanceToolkit finds resources folder close to the application, and the closest one will be used as resource folder. you can put resources folder when you want to give the application you made for some other people.
-
+This folder contains resources which are loaded for each application. You can use `ramToRecourcePath(...)` in your code to get the path to this folder. By design, the RAMDanceToolkit searches for a resources folder that is near your application. By default this will be a few directories above your application, in the RAMDanceToolkit parent folder. If you are creating your own release of the RAMDanceToolkit to share with other people, you can place the resources folder wherever you would like and the application will find it easily.
 
 ## MotionData playback
 
