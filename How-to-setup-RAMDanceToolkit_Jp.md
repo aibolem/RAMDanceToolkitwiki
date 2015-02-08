@@ -33,41 +33,19 @@ MOTIONER等からのモーションデータをOSCで受け取らずに、レコ
 MOTIONER等が手元に無い場合のRAMDanceToolkitのテストに役立ちます。
 
 
+## ソースコードをダウンロードする
+
+ソースコードを取得するためには二種類の方法があります。1つは一式をzipファイルをダウンロードする方法、もう1つはgithubからクローンする方法です。
+
+
+
+
 ## ソースコード一式のzip
 
 ソースコード一式をダウンロードして、本Wiki内のRAM API Referenceを参考にRAMDanceToolkitを編集する事が出来ます。
 ダウンロードしたファイルは、openFrameworks (version 0.7.4+) ディレクトリの直下に置いてください。
 
 [[/Images/Introduction/fig-setup-of.png]]
-
-
-RAMDanceTookitアプリケーションのソースコードは、`RAMDanceToolkit/apps/RAMDanceToolkit`にあります。
-
-
-### addons 
-
-RAMコアライブラリから読まれるofxAddonsが入っています。
-もし別のaddonsを追加したい場合は、このディレクトリではなく `{OF_ROOT}/addons` に追加する事をお勧めします。
-
-### apps
-
-RAMDanceToolkit、OpenNIOSCが入っています。
-もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。Windowsの場合は.slnファイルをVisualC++で、OSXの場合は.xcodeprojファイルをXCodeで開いて使用します。Windowsで新規にダウンロードしたopenFrameworksを使用する場合、<br />
-'openFrameworksフォルダ/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln' <br />
-をVisualC++で開き、あらかじめdebugとreleaseの設定でビルドしておく必要があります。
-
-### examples
-
-RAM APIに慣れる為のサンプルコードがあります。使用するファイル、注意点は上記appsフォルダについて書かれたものをご参照ください。
-
-### libs
-
-RAMDanceToolkit core libraryが入っています。
-
-### resources
-
-画像やフォント等、全てのアプリケーションから読まれる共有リソースが入っています。 各アプリケーションからは、`ramToRecourcePath(...)`でこのディレクトリへの相対パスを作る事が出来ます。
-前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。RAMDanceToolkitはresourcesフォルダをアプリケーションに近いパスから順番に探しだし、最も近い位置にあるresourcesフォルダを用います。コンパイル済みのアプリケーションを人に渡す際などにはアプリケーションと同じフォルダに、それ以外の場合はダウンロード時の位置に置いておくのが良いでしょう。
 
 
 ## RAMDanceTookit repositoryをCloneする
@@ -103,6 +81,38 @@ ofxUI.hはデフォルトの状態で、`GUI/NewMedia Fett.ttf`というパス�
 ダウンロード・解凍後、`Sounds` `MotionData` ディレクトリを `{RAM_ROOT}/resources`に追加してください。
 
 [[/Images/Introduction/fig-setup-4.png]]
+
+
+## RAMDanceToolkitのフォルダ構造
+
+RAMDanceTookitアプリケーションのソースコードは、`RAMDanceToolkit/apps/RAMDanceToolkit`にあります。
+
+
+### addons 
+
+RAMコアライブラリから読まれるofxAddonsが入っています。
+もし別のaddonsを追加したい場合は、このディレクトリではなく `{OF_ROOT}/addons` に追加する事をお勧めします。
+
+### apps
+
+RAMDanceToolkit、OpenNIOSCが入っています。
+もしMicrosoft Kinectをお持ちであれば、MOTIONERや他のモーションキャプチャーシステムの代替えとしてOpenNIOSCを使用する事が出来ます。Windowsの場合は.slnファイルをVisualC++で、OSXの場合は.xcodeprojファイルをXCodeで開いて使用します。Windowsで新規にダウンロードしたopenFrameworksを使用する場合、<br />
+'openFrameworksフォルダ/libs/openFrameworksCompiled/project/vs2010/openframeworksLib.sln' <br />
+をVisualC++で開き、あらかじめdebugとreleaseの設定でビルドしておく必要があります。
+
+### examples
+
+RAM APIに慣れる為のサンプルコードがあります。使用するファイル、注意点は上記appsフォルダについて書かれたものをご参照ください。
+
+### libs
+
+RAMDanceToolkit core libraryが入っています。
+
+### resources
+
+画像やフォント等、全てのアプリケーションから読まれる共有リソースが入っています。 各アプリケーションからは、`ramToRecourcePath(...)`でこのディレクトリへの相対パスを作る事が出来ます。
+前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。RAMDanceToolkitはresourcesフォルダをアプリケーションに近いパスから順番に探しだし、最も近い位置にあるresourcesフォルダを用います。コンパイル済みのアプリケーションを人に渡す際などにはアプリケーションと同じフォルダに、それ以外の場合はダウンロード時の位置に置いておくのが良いでしょう。
+
 
 <hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This Document</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://interlab.ycam.jp/projects/ram" property="cc:attributionName" rel="cc:attributionURL">YCAM InterLab, Yoshito Onishi, Satoru Higa, Motoi Shimizu, and Kyle McDonald</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
