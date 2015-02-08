@@ -1,7 +1,7 @@
 ## ダウンロード
 
 アプリケーション、モーションデータOSCサーバー、ソースコード一式のzipを[ダウンロード](Overview#downloads)出来ます。
-または、GitHubから[RAMDanceTookit repository](https://github.com/YCAMInterlab/RAMDanceToolkit)をcloneする事が出来ます。
+または、GitHubからRAMDanceTookit repositoryを[clone](https://github.com/YCAMInterlab/RAMDanceToolkit)する事が出来ます。
 
 ## アプリケーション
 
