@@ -66,7 +66,7 @@ RAMDanceToolkit core libraryが入っています。
 ### resources
 
 画像やフォント等、全てのアプリケーションから読まれる共有リソースが入っています。 各アプリケーションからは、`ramToRecourcePath(...)`でこのディレクトリへの相対パスを作る事が出来ます。
-前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。
+前述の通り、レコーディング済みのモーションデータは `resources/MotionData` に入っています。RAMDanceToolkitはresourcesフォルダをアプリケーションのパスから順番に探しだします。コンパイル済みのアプリケーションを配布する際にはアプリケーションと同じフォルダに、
 
 
 ## RAMDanceTookit repositoryをCloneする
