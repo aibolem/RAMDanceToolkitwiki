@@ -21,7 +21,7 @@ Full documentation of "Reactor for Awareness in Motion"
 
 ## Downloads 
 
-You can download the latest version (v1.2.1) RAMDanceToolkit app and source code from the links below.
+You can download the latest version of RAMDanceToolkit app and source code from the links below.
 Afterwards please look at [How to setup RAMDanceToolkit](How-to-setup-RAMDanceToolkit) page for setup instructions. Older releases of RAMDanceToolkit and change log are archived [here](Other_Releases).
 
 ### RAMDanceToolkit Application
