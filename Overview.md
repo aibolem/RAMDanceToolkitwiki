@@ -31,7 +31,7 @@ You can download the compiled application from here.
 - [RAM-app_osx_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
 - [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 66.3MB, updated on 9 Feb 2015)
 
-If Visual studio 2012 is not installed in Windows, you need [Visual C++ Redistributable](https://www.microsoft.com/en-US/download/details.aspx?id=30679). Please select your language and download x86 version & install it.
+Windows need [Visual C++ Redistributable](https://www.microsoft.com/en-US/download/details.aspx?id=30679). If Visual studio 2012 is not installed your windows, please select your language and download x86 version & install it.
 
 ### Source code
 
