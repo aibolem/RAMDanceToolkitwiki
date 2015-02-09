@@ -29,7 +29,7 @@ Afterwards please look at [How to setup RAMDanceToolkit](How-to-setup-RAMDanceTo
 You can download the compiled application from here. 
 
 - [RAM-app_osx_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
-- [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 136.7MB)
+- [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 136.7MB, updated on 9 Feb 2015)
 
 ### Source code
 
