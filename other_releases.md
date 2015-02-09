@@ -4,6 +4,8 @@
 - [RAM-app_osx_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
 - [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 66.3MB, updated on 9 Feb 2015)
 
+### change log
+- small bug fixes
 
 ## v1.2.0
 
