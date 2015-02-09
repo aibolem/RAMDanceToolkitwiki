@@ -14,7 +14,6 @@
 
 ### compiled app
 - [RAM-app_osx_v1_2_0.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_0.zip) (Mac OS 10.7+, 77.0MB, updated on 8 Feb 2015)
-- [RAM-app_win_v1_2_0.zip]() (Windows 7+, 136.7MB)
 
 ### change log
 - add **ramMotionExtractor** : It makes you easier to edit node selection. check [wiki](https://github.com/YCAMInterlab/RAMDanceToolkit/wiki/RAM-API-Reference-MotionExtractor_jp) how to use it.
