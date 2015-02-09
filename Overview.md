@@ -31,6 +31,8 @@ You can download the compiled application from here.
 - [RAM-app_osx_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
 - [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 66.3MB, updated on 9 Feb 2015)
 
+If Visual studio 2012 is not installed in your computer, Windows needs [Visual C++ Redistributable](https://www.microsoft.com/en-US/download/details.aspx?id=30679). Please select your language and download & install it to use RAM application.
+
 ### Source code
 
 The following zip files includes the entire source code, as well as motion data that can be used for developing your own projects.
