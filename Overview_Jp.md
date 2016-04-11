@@ -28,8 +28,8 @@ RAMDanceToolkitアプリケーションと、ソースコードを以下のリ�
 
 コンパイル済みのアプリケーションは、以下のリンクからダウンロード出来ます。
 
-- [RAM-app_osx_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
-- [RAM-app_win_v1_2_1.zip](http://interlab.ycam.jp/wp-content/uploads/2015/02/RAM-app_win_v1_2_1.zip) (Windows 7+, 66.3MB, updated on 9 Feb 2015)
+- [RAM-app_osx_v1_2_1.zip](http://data.ycam.jp/interlab/ram/other_releases/RAM-app_osx_v1_2_1.zip) (Mac OS 10.7+, 77.0MB, updated on 9 Feb 2015)
+- [RAM-app_win_v1_2_1.zip](http://data.ycam.jp/interlab/ram/other_releases/RAM-app_win_v1_2_1.zip) (Windows 7+, 66.3MB, updated on 9 Feb 2015)
 
 Windowsバージョンをご使用になる場合で、Visual Studio 2012がインストールされていない場合は、[Visual C++ 再頒布可能パッケージ](https://www.microsoft.com/ja-JP/download/details.aspx?id=30679)をインストールする必要があります。言語を選択し、x86バージョンのものをインストールしてください。
 
