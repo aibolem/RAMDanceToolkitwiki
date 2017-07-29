@@ -1,8 +1,8 @@
-#ramMotionExtractor
+# ramMotionExtractor
 
 ramMotionExtractor allows you to select an actor's nodes.
 
-##Implementation
+## Implementation
 To implement the ramMotionExtractor, you need an motionExtractor instance in your scene class. From there, you need to call **3 methods**.
 
 The following is an sample from [example-ramMotionExtractor](https://github.com/YCAMInterlab/RAMDanceToolkit/tree/master/examples/example-ramMotionExtractor).
@@ -33,27 +33,27 @@ void ramMotionExtractorExampleScene::draw(){
 }
 ~~~
 
-##Usage
+## Usage
 
 When you use the ramMotionExtractor, it has its own GUI on the right side of the console panel 
 
 ![preview image](Images/API-motionExtractor/pic-preview.png)
 
-###Pushing a port
+### Pushing a port
 When you select a node, a red circle will appear on the node you selected. If you select **PushPort** on the GUI, this will register the node to the motionExtractor. If this is sucessful, a white wire cube will appear. This is called a "port".
 
-###Removing a port
+### Removing a port
 If you want to remove a port that you added, simply select the node by clicking it and select **PopPort** from the GUI. This will remove the selected port.
 
 If you want to clear all ports, select **Clear** from the GUI. This will clear all ports.
 
-###Saving and Loading
+### Saving and Loading
 You can save and load port selection data by the save and load buttons, respectively.
 As a default, the data will be saved with the file name **motionExt_SceneName.xml**, but you can call the  **ramMotionExtractor::Save(string file** & **ramMotionExtractor::Load(string file)** method and save the file with a custom file name.
 
-##Connecting to the scenes
+## Connecting to the scenes
 You can use the selected ports in a program by using the following code:
-###Example:draw triangle by selected 3 points
+### Example:draw triangle by selected 3 points
 
 	ofVec3f vec_a = motionExtractor.getPositionAt(0);
 	ofVec3f vec_b = motionExtractor.getPositionAt(1);
@@ -89,7 +89,7 @@ Other getter methods for getting informatiom from a port are as follows:
 	float			getDistanceAt(int port_A, int port_B);
 	float			getAreaAt(int port_A, int port_B, int port_C);
 
-##Editing with OSC
+## Editing with OSC
 motionExtractor can be edited via OSC messages.
 
 The following are protocol details:
