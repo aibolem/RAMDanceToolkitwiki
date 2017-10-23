@@ -33,6 +33,14 @@ You can download the compiled application from here.
 
 Windows needs [Visual C++ Redistributable](https://www.microsoft.com/en-US/download/details.aspx?id=30679). If Visual studio 2012 is not installed your windows, please select your language and download x86 version & install it.
 
+#### Known Issues
+
+  Launching problem precompiled app from `RAM-app_osx_v1_2_1.zip` .
+   Since macOS Sierra version, the gatekeeper has become stricter and prevents launching `RAMDanceToolkit.app` . Because some browser adds extended attributes after download it.
+   One solution is execute bellow command in the `/Applications/Utilities/Terminal.app`
+
+   `xattr -c {replace_path}/RAM-app_osx_v1_2_1.zip`
+
 ### Source code
 
 The following zip files includes the entire source code, as well as motion data that can be used for developing your own projects.
@@ -45,6 +53,14 @@ The Motion Data OSC Server sends OSC messages to the RAMDanceToolkit, so you don
 
 - [RAM-OSCServer_mac-v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-OSCServer_mac-v1_0_0.zip) (Mac OS 10.7+, 32.6MB)
 - [RAM-OSCServer_win-v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-OSCServer_win-v1_0_0.zip) (Windows7+, 39.7MB)
+
+#### Known Issues
+
+  Launching problem precompiled app from `RAM-OSCServer_mac-v1_0_0.zip` .
+   Since macOS Sierra version, the gatekeeper has become stricter and prevents launching `RAMOSCServer.app` . Because some browser adds extended attributes after download it.
+   One solution is execute bellow command in the `/Applications/Utilities/Terminal.app`
+
+   `xattr -c {replace_path}/RAM-OSCServer_mac-v1_0_0.zip`
 
 ### External Resourcse (Sound and MotionData)
 
