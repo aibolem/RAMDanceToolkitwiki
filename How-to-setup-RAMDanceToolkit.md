@@ -66,7 +66,7 @@ This script simply checks out the submodules, and applies the ofxUI.patch on the
 
 This repo doesn't include some big size files e.g. Sounds, MotionData so you have to download them manually.
 
-- [RAM-Sound_MotionData_v1_0_0.zip](https://raw.github.com/wiki/YCAMInterlab/RAMDanceToolkit/releases/resources/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
+- [RAM-Sound_MotionData_v1_0_0.zip](https://github.com/YCAMInterlab/RAMDanceToolkit/releases/download/v1.0.0/RAM-Sound_MotionData_v1_0_0.zip) (29.5MB)
 
 After downloading this zip file, add `Sounds` and `MotionData` folders into your `{RAM_ROOT}/resources` folder.
 
